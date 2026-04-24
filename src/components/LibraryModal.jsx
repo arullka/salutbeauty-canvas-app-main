@@ -62,7 +62,7 @@ export const LibraryModal = (props) => {
           </div>
         ) : (
           <div className="empty-state">
-            <div className="icon">🔍</div>
+            <div className="icon"></div>
             <p>К сожалению, товаров не найдено для этой темы</p>
           </div>
         )}
