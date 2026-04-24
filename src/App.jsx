@@ -2,7 +2,7 @@ import React from 'react';
 import { createAssistant, createSmartappDebugger } from '@salutejs/client';
 
 import './App.css';
-import { MainScreen } from './pages/MainScreen.jsx';
+import { MainScreen } from './pages/MainScreen';
 
 const initializeAssistant = (getState) => {
   if (process.env.NODE_ENV === 'development') {
@@ -28,8 +28,7 @@ export class App extends React.Component {
 
     this.state = {
       selectedCategory: null,
-      selectedTheme: 'party',
-      isListening: false,
+      selectedTheme: null,
     };
 
     this.assistant = initializeAssistant(() => this.getStateForAssistant());
@@ -48,7 +47,6 @@ export class App extends React.Component {
 
     this.assistant.on('start', (event) => {
       console.log(`assistant.on(start)`, event);
-      this.setState({ isListening: true });
     });
 
     this.assistant.on('command', (event) => {
@@ -57,7 +55,6 @@ export class App extends React.Component {
 
     this.assistant.on('error', (event) => {
       console.log(`assistant.on(error)`, event);
-      this.setState({ isListening: false });
     });
 
     this.assistant.on('tts', (event) => {
@@ -72,8 +69,8 @@ export class App extends React.Component {
   getStateForAssistant() {
     const state = {
       beauty_selector: {
-        theme: this.state.selectedTheme,
-        category: this.state.selectedCategory,
+        category: this.state.selectedCategory || 'outfit',
+        theme: this.state.selectedTheme || 'party',
       },
     };
     console.log('getStateForAssistant:', state);
@@ -86,10 +83,12 @@ export class App extends React.Component {
       switch (action.type) {
         case 'select_category':
           return this.selectCategory(action);
-        case 'set_theme':
-          return this.setTheme(action);
+        case 'select_theme':
+          return this.selectTheme(action);
         case 'show_items':
           return this.showItems(action);
+        case 'open_marketplace':
+          return this.openMarketplace(action);
         default:
           console.log('Unknown action type:', action.type);
       }
@@ -101,8 +100,8 @@ export class App extends React.Component {
     this.setState({ selectedCategory: action.category });
   }
 
-  setTheme(action) {
-    console.log('setTheme', action);
+  selectTheme(action) {
+    console.log('selectTheme', action);
     this.setState({ selectedTheme: action.theme });
   }
 
@@ -110,8 +109,12 @@ export class App extends React.Component {
     console.log('showItems', action);
     this.setState({ 
       selectedCategory: action.category,
-      selectedTheme: action.theme || this.state.selectedTheme,
+      selectedTheme: action.theme,
     });
+  }
+
+  openMarketplace(action) {
+    console.log('openMarketplace', action);
   }
 
   render() {
@@ -120,7 +123,7 @@ export class App extends React.Component {
         state={this.state}
         assistant={this.assistant}
         onSelectCategory={(category) => this.selectCategory({ category })}
-        onSetTheme={(theme) => this.setTheme({ theme })}
+        onSelectTheme={(theme) => this.selectTheme({ theme })}
       />
     );
   }

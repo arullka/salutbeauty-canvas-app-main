@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { CategoryCard } from '../components/CategoryCard';
 import { LibraryModal } from '../components/LibraryModal';
 import '../App.css';
@@ -6,21 +6,30 @@ import '../App.css';
 const CATEGORIES = [
   { id: 'outfit', name: 'Образ', icon: '👗' },
   { id: 'accessories', name: 'Аксессуары', icon: '💍' },
-  { id: 'makeup', name: 'Уход', icon: '💄' },
+  { id: 'care', name: 'Уход', icon: '💄' },
 ];
 
 export const MainScreen = (props) => {
-  // eslint-disable-next-line
   const { state, assistant } = props;
   const [selectedCategory, setSelectedCategory] = useState(null);
 
   const handleCategoryClick = (category) => {
+    console.log('handleCategoryClick:', category);
     setSelectedCategory(category);
   };
 
   const handleCloseModal = () => {
+    console.log('handleCloseModal');
     setSelectedCategory(null);
   };
+
+  // Следим за изменениями state от ассистента
+  useEffect(() => {
+    if (state && state.selectedCategory) {
+      console.log('Opening category from voice command:', state.selectedCategory);
+      setSelectedCategory(state.selectedCategory);
+    }
+  }, [state?.selectedCategory]);
 
   return (
     <main className="container">
