@@ -25,7 +25,7 @@ export const MainScreen = (props) => {
   return (
     <main className="container">
       <div className="header">
-        <h1>✨ SalutBeauty</h1>
+        <h1>SalutBeauty</h1>
         <p className="subtitle">Персональный ассистент красоты от Сбера</p>
         <p style={{ fontSize: '20px', marginTop: '10px', color: 'rgba(158, 121, 232, 0.6)' }}>
           Красотка, что наденем сегодня?
