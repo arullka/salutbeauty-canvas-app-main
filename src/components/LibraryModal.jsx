@@ -12,7 +12,7 @@ const THEMES = [
 
 export const LibraryModal = (props) => {
   const { category, onClose } = props;
-  const [selectedTheme, setSelectedTheme] = useState('party');
+  const [selectedTheme, setSelectedTheme] = useState('study');
 
   const getCategoryName = () => {
     const names = {

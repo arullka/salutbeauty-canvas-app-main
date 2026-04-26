@@ -23,7 +23,7 @@ export const ITEMS_DATABASE = [
     image: '▬',
     links: [
       { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/' },
-      { marketplace: 'Yandex.Market', url: 'https://market.yandex.ru/' },
+      { marketplace: 'Ozon', url: 'https://market.yandex.ru/' },
     ]
   },
   {
@@ -35,8 +35,8 @@ export const ITEMS_DATABASE = [
     price: '2000',
     image: '▬',
     links: [
-      { marketplace: 'Ozon', url: 'https://www.ozon.ru/' },
-      { marketplace: 'Yandex.Market', url: 'https://market.yandex.ru/' },
+      { marketplace: 'Wildberries', url: 'https://www.ozon.ru/' },
+      { marketplace: 'Ozon', url: 'https://market.yandex.ru/' },
     ]
   },
   {
@@ -62,7 +62,7 @@ export const ITEMS_DATABASE = [
     image: '▬',
     links: [
       { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/' },
-      { marketplace: 'Yandex.Market', url: 'https://market.yandex.ru/' },
+      { marketplace: 'Ozon', url: 'https://market.yandex.ru/' },
     ]
   },
 
@@ -90,7 +90,7 @@ export const ITEMS_DATABASE = [
     image: '▬',
     links: [
       { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/' },
-      { marketplace: 'Yandex.Market', url: 'https://market.yandex.ru/' },
+      { marketplace: 'Ozon', url: 'https://market.yandex.ru/' },
     ]
   },
   {
@@ -102,8 +102,8 @@ export const ITEMS_DATABASE = [
     price: '2000',
     image: '▬',
     links: [
-      { marketplace: 'Ozon', url: 'https://www.ozon.ru/' },
-      { marketplace: 'Yandex.Market', url: 'https://market.yandex.ru/' },
+      { marketplace: 'Wildberries', url: 'https://www.ozon.ru/' },
+      { marketplace: 'Ozon', url: 'https://market.yandex.ru/' },
     ]
   },
   {
@@ -129,7 +129,7 @@ export const ITEMS_DATABASE = [
     image: '▬',
     links: [
       { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/' },
-      { marketplace: 'Yandex.Market', url: 'https://market.yandex.ru/' },
+      { marketplace: 'Ozon', url: 'https://market.yandex.ru/' },
     ]
   },
 
@@ -157,7 +157,7 @@ export const ITEMS_DATABASE = [
     image: '▬',
     links: [
       { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/' },
-      { marketplace: 'Yandex.Market', url: 'https://market.yandex.ru/' },
+      { marketplace: 'Ozon', url: 'https://market.yandex.ru/' },
     ]
   },
   {
@@ -169,8 +169,8 @@ export const ITEMS_DATABASE = [
     price: '1400',
     image: '▬',
     links: [
-      { marketplace: 'Ozon', url: 'https://www.ozon.ru/' },
-      { marketplace: 'Yandex.Market', url: 'https://market.yandex.ru/' },
+      { marketplace: 'Wildberries', url: 'https://www.ozon.ru/' },
+      { marketplace: 'Ozon', url: 'https://market.yandex.ru/' },
     ]
   },
   {
@@ -196,7 +196,7 @@ export const ITEMS_DATABASE = [
     image: '▬',
     links: [
       { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/' },
-      { marketplace: 'Yandex.Market', url: 'https://market.yandex.ru/' },
+      { marketplace: 'Ozon', url: 'https://market.yandex.ru/' },
     ]
   },
 
@@ -224,7 +224,7 @@ export const ITEMS_DATABASE = [
     image: '▬',
     links: [
       { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/' },
-      { marketplace: 'Yandex.Market', url: 'https://market.yandex.ru/' },
+      { marketplace: 'Ozon', url: 'https://market.yandex.ru/' },
     ]
   },
   {
@@ -236,8 +236,8 @@ export const ITEMS_DATABASE = [
     price: '1600',
     image: '▬',
     links: [
-      { marketplace: 'Ozon', url: 'https://www.ozon.ru/' },
-      { marketplace: 'Yandex.Market', url: 'https://market.yandex.ru/' },
+      { marketplace: 'Wildberries', url: 'https://www.ozon.ru/' },
+      { marketplace: 'Ozon', url: 'https://market.yandex.ru/' },
     ]
   },
   {
@@ -263,7 +263,7 @@ export const ITEMS_DATABASE = [
     image: '▬',
     links: [
       { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/' },
-      { marketplace: 'Yandex.Market', url: 'https://market.yandex.ru/' },
+      { marketplace: 'Ozon', url: 'https://market.yandex.ru/' },
     ]
   },
 
@@ -291,7 +291,7 @@ export const ITEMS_DATABASE = [
     image: '▬',
     links: [
       { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/' },
-      { marketplace: 'Yandex.Market', url: 'https://market.yandex.ru/' },
+      { marketplace: 'Ozon', url: 'https://market.yandex.ru/' },
     ]
   },
   {
@@ -303,8 +303,8 @@ export const ITEMS_DATABASE = [
     price: '3500',
     image: '▬',
     links: [
-      { marketplace: 'Ozon', url: 'https://www.ozon.ru/' },
-      { marketplace: 'Yandex.Market', url: 'https://market.yandex.ru/' },
+      { marketplace: 'Wildberries', url: 'https://www.ozon.ru/' },
+      { marketplace: 'Ozon', url: 'https://market.yandex.ru/' },
     ]
   },
   {
@@ -330,7 +330,7 @@ export const ITEMS_DATABASE = [
     image: '▬',
     links: [
       { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/' },
-      { marketplace: 'Yandex.Market', url: 'https://market.yandex.ru/' },
+      { marketplace: 'Ozon', url: 'https://market.yandex.ru/' },
     ]
   },
 
@@ -358,7 +358,7 @@ export const ITEMS_DATABASE = [
     image: '▬',
     links: [
       { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/' },
-      { marketplace: 'Yandex.Market', url: 'https://market.yandex.ru/' },
+      { marketplace: 'Ozon', url: 'https://market.yandex.ru/' },
     ]
   },
   {
@@ -370,8 +370,8 @@ export const ITEMS_DATABASE = [
     price: '1500',
     image: '▬',
     links: [
-      { marketplace: 'Ozon', url: 'https://www.ozon.ru/' },
-      { marketplace: 'Yandex.Market', url: 'https://market.yandex.ru/' },
+      { marketplace: 'Wildberries', url: 'https://www.ozon.ru/' },
+      { marketplace: 'Ozon', url: 'https://market.yandex.ru/' },
     ]
   },
   {
@@ -397,7 +397,7 @@ export const ITEMS_DATABASE = [
     image: '▬',
     links: [
       { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/' },
-      { marketplace: 'Yandex.Market', url: 'https://market.yandex.ru/' },
+      { marketplace: 'Ozon', url: 'https://market.yandex.ru/' },
     ]
   },
 
@@ -420,12 +420,12 @@ export const ITEMS_DATABASE = [
     category: 'accessories',
     theme: 'work',
     name: 'Часы классические',
-    description: 'Де��овые классические часы',
+    description: 'Деловые классические часы',
     price: '4500',
     image: '▬',
     links: [
       { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/' },
-      { marketplace: 'Yandex.Market', url: 'https://market.yandex.ru/' },
+      { marketplace: 'Ozon', url: 'https://market.yandex.ru/' },
     ]
   },
   {
@@ -437,8 +437,8 @@ export const ITEMS_DATABASE = [
     price: '2800',
     image: '▬',
     links: [
-      { marketplace: 'Ozon', url: 'https://www.ozon.ru/' },
-      { marketplace: 'Yandex.Market', url: 'https://market.yandex.ru/' },
+      { marketplace: 'Wildberries', url: 'https://www.ozon.ru/' },
+      { marketplace: 'Ozon', url: 'https://market.yandex.ru/' },
     ]
   },
   {
@@ -464,7 +464,7 @@ export const ITEMS_DATABASE = [
     image: '▬',
     links: [
       { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/' },
-      { marketplace: 'Yandex.Market', url: 'https://market.yandex.ru/' },
+      { marketplace: 'Ozon', url: 'https://market.yandex.ru/' },
     ]
   },
 
@@ -492,7 +492,7 @@ export const ITEMS_DATABASE = [
     image: '▬',
     links: [
       { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/' },
-      { marketplace: 'Yandex.Market', url: 'https://market.yandex.ru/' },
+      { marketplace: 'Ozon', url: 'https://market.yandex.ru/' },
     ]
   },
   {
@@ -504,8 +504,8 @@ export const ITEMS_DATABASE = [
     price: '800',
     image: '▬',
     links: [
-      { marketplace: 'Ozon', url: 'https://www.ozon.ru/' },
-      { marketplace: 'Yandex.Market', url: 'https://market.yandex.ru/' },
+      { marketplace: 'Wildberries', url: 'https://www.ozon.ru/' },
+      { marketplace: 'Ozon', url: 'https://market.yandex.ru/' },
     ]
   },
   {
@@ -531,7 +531,7 @@ export const ITEMS_DATABASE = [
     image: '▬',
     links: [
       { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/' },
-      { marketplace: 'Yandex.Market', url: 'https://market.yandex.ru/' },
+      { marketplace: 'Ozon', url: 'https://market.yandex.ru/' },
     ]
   },
 
@@ -559,7 +559,7 @@ export const ITEMS_DATABASE = [
     image: '▬',
     links: [
       { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/' },
-      { marketplace: 'Yandex.Market', url: 'https://market.yandex.ru/' },
+      { marketplace: 'Ozon', url: 'https://market.yandex.ru/' },
     ]
   },
   {
@@ -571,8 +571,8 @@ export const ITEMS_DATABASE = [
     price: '2400',
     image: '▬',
     links: [
-      { marketplace: 'Ozon', url: 'https://www.ozon.ru/' },
-      { marketplace: 'Yandex.Market', url: 'https://market.yandex.ru/' },
+      { marketplace: 'Wildberries', url: 'https://www.ozon.ru/' },
+      { marketplace: 'Ozon', url: 'https://market.yandex.ru/' },
     ]
   },
   {
@@ -598,7 +598,7 @@ export const ITEMS_DATABASE = [
     image: '▬',
     links: [
       { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/' },
-      { marketplace: 'Yandex.Market', url: 'https://market.yandex.ru/' },
+      { marketplace: 'Ozon', url: 'https://market.yandex.ru/' },
     ]
   },
 
@@ -626,7 +626,7 @@ export const ITEMS_DATABASE = [
     image: '▬',
     links: [
       { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/' },
-      { marketplace: 'Yandex.Market', url: 'https://market.yandex.ru/' },
+      { marketplace: 'Ozon', url: 'https://market.yandex.ru/' },
     ]
   },
   {
@@ -638,8 +638,8 @@ export const ITEMS_DATABASE = [
     price: '8000',
     image: '▬',
     links: [
-      { marketplace: 'Ozon', url: 'https://www.ozon.ru/' },
-      { marketplace: 'Yandex.Market', url: 'https://market.yandex.ru/' },
+      { marketplace: 'Wildberries', url: 'https://www.ozon.ru/' },
+      { marketplace: 'Ozon', url: 'https://market.yandex.ru/' },
     ]
   },
   {
@@ -665,7 +665,7 @@ export const ITEMS_DATABASE = [
     image: '▬',
     links: [
       { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/' },
-      { marketplace: 'Yandex.Market', url: 'https://market.yandex.ru/' },
+      { marketplace: 'Ozon', url: 'https://market.yandex.ru/' },
     ]
   },
 
@@ -693,7 +693,7 @@ export const ITEMS_DATABASE = [
     image: '▬',
     links: [
       { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/' },
-      { marketplace: 'Yandex.Market', url: 'https://market.yandex.ru/' },
+      { marketplace: 'Ozon', url: 'https://market.yandex.ru/' },
     ]
   },
   {
@@ -705,8 +705,8 @@ export const ITEMS_DATABASE = [
     price: '550',
     image: '▬',
     links: [
-      { marketplace: 'Ozon', url: 'https://www.ozon.ru/' },
-      { marketplace: 'Yandex.Market', url: 'https://market.yandex.ru/' },
+      { marketplace: 'Wildberries', url: 'https://www.ozon.ru/' },
+      { marketplace: 'Ozon', url: 'https://market.yandex.ru/' },
     ]
   },
   {
@@ -732,7 +732,7 @@ export const ITEMS_DATABASE = [
     image: '▬',
     links: [
       { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/' },
-      { marketplace: 'Yandex.Market', url: 'https://market.yandex.ru/' },
+      { marketplace: 'Ozon', url: 'https://market.yandex.ru/' },
     ]
   },
   {
@@ -744,8 +744,8 @@ export const ITEMS_DATABASE = [
     price: '900',
     image: '▬',
     links: [
-      { marketplace: 'Ozon', url: 'https://www.ozon.ru/' },
-      { marketplace: 'Yandex.Market', url: 'https://market.yandex.ru/' },
+      { marketplace: 'Wildberries', url: 'https://www.ozon.ru/' },
+      { marketplace: 'Ozon', url: 'https://market.yandex.ru/' },
     ]
   },
   {
@@ -771,7 +771,7 @@ export const ITEMS_DATABASE = [
     image: '▬',
     links: [
       { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/' },
-      { marketplace: 'Yandex.Market', url: 'https://market.yandex.ru/' },
+      { marketplace: 'Ozon', url: 'https://market.yandex.ru/' },
     ]
   },
   {
@@ -783,8 +783,8 @@ export const ITEMS_DATABASE = [
     price: '380',
     image: '▬',
     links: [
-      { marketplace: 'Ozon', url: 'https://www.ozon.ru/' },
-      { marketplace: 'Yandex.Market', url: 'https://market.yandex.ru/' },
+      { marketplace: 'Wildberries', url: 'https://www.ozon.ru/' },
+      { marketplace: 'Ozon', url: 'https://market.yandex.ru/' },
     ]
   },
   {
@@ -825,7 +825,7 @@ export const ITEMS_DATABASE = [
     image: '▬',
     links: [
       { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/' },
-      { marketplace: 'Yandex.Market', url: 'https://market.yandex.ru/' },
+      { marketplace: 'Ozon', url: 'https://market.yandex.ru/' },
     ]
   },
   {
@@ -837,8 +837,8 @@ export const ITEMS_DATABASE = [
     price: '480',
     image: '▬',
     links: [
-      { marketplace: 'Ozon', url: 'https://www.ozon.ru/' },
-      { marketplace: 'Yandex.Market', url: 'https://market.yandex.ru/' },
+      { marketplace: 'Wildberries', url: 'https://www.ozon.ru/' },
+      { marketplace: 'Ozon', url: 'https://market.yandex.ru/' },
     ]
   },
   {
@@ -864,7 +864,7 @@ export const ITEMS_DATABASE = [
     image: '▬',
     links: [
       { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/' },
-      { marketplace: 'Yandex.Market', url: 'https://market.yandex.ru/' },
+      { marketplace: 'Ozon', url: 'https://market.yandex.ru/' },
     ]
   },
   {
@@ -876,8 +876,8 @@ export const ITEMS_DATABASE = [
     price: '480',
     image: '▬',
     links: [
-      { marketplace: 'Ozon', url: 'https://www.ozon.ru/' },
-      { marketplace: 'Yandex.Market', url: 'https://market.yandex.ru/' },
+      { marketplace: 'Wildberries', url: 'https://www.ozon.ru/' },
+      { marketplace: 'Ozon', url: 'https://market.yandex.ru/' },
     ]
   },
   {
@@ -903,7 +903,7 @@ export const ITEMS_DATABASE = [
     image: '▬',
     links: [
       { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/' },
-      { marketplace: 'Yandex.Market', url: 'https://market.yandex.ru/' },
+      { marketplace: 'Ozon', url: 'https://market.yandex.ru/' },
     ]
   },
   {
@@ -915,8 +915,8 @@ export const ITEMS_DATABASE = [
     price: '620',
     image: '▬',
     links: [
-      { marketplace: 'Ozon', url: 'https://www.ozon.ru/' },
-      { marketplace: 'Yandex.Market', url: 'https://market.yandex.ru/' },
+      { marketplace: 'Wildberries', url: 'https://www.ozon.ru/' },
+      { marketplace: 'Ozon', url: 'https://market.yandex.ru/' },
     ]
   },
   {
@@ -957,7 +957,7 @@ export const ITEMS_DATABASE = [
     image: '▬',
     links: [
       { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/' },
-      { marketplace: 'Yandex.Market', url: 'https://market.yandex.ru/' },
+      { marketplace: 'Ozon', url: 'https://market.yandex.ru/' },
     ]
   },
   {
@@ -969,8 +969,8 @@ export const ITEMS_DATABASE = [
     price: '450',
     image: '▬',
     links: [
-      { marketplace: 'Ozon', url: 'https://www.ozon.ru/' },
-      { marketplace: 'Yandex.Market', url: 'https://market.yandex.ru/' },
+      { marketplace: 'Wildberries', url: 'https://www.ozon.ru/' },
+      { marketplace: 'Ozon', url: 'https://market.yandex.ru/' },
     ]
   },
   {
@@ -996,7 +996,7 @@ export const ITEMS_DATABASE = [
     image: '▬',
     links: [
       { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/' },
-      { marketplace: 'Yandex.Market', url: 'https://market.yandex.ru/' },
+      { marketplace: 'Ozon', url: 'https://market.yandex.ru/' },
     ]
   },
   {
@@ -1008,8 +1008,8 @@ export const ITEMS_DATABASE = [
     price: '380',
     image: '▬',
     links: [
-      { marketplace: 'Ozon', url: 'https://www.ozon.ru/' },
-      { marketplace: 'Yandex.Market', url: 'https://market.yandex.ru/' },
+      { marketplace: 'Wildberries', url: 'https://www.ozon.ru/' },
+      { marketplace: 'Ozon', url: 'https://market.yandex.ru/' },
     ]
   },
   {
@@ -1035,7 +1035,7 @@ export const ITEMS_DATABASE = [
     image: '▬',
     links: [
       { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/' },
-      { marketplace: 'Yandex.Market', url: 'https://market.yandex.ru/' },
+      { marketplace: 'Ozon', url: 'https://market.yandex.ru/' },
     ]
   },
   {
@@ -1047,8 +1047,8 @@ export const ITEMS_DATABASE = [
     price: '500',
     image: '▬',
     links: [
-      { marketplace: 'Ozon', url: 'https://www.ozon.ru/' },
-      { marketplace: 'Yandex.Market', url: 'https://market.yandex.ru/' },
+      { marketplace: 'Wildberries', url: 'https://www.ozon.ru/' },
+      { marketplace: 'Ozon', url: 'https://market.yandex.ru/' },
     ]
   },
   {
@@ -1089,7 +1089,7 @@ export const ITEMS_DATABASE = [
     image: '▬',
     links: [
       { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/' },
-      { marketplace: 'Yandex.Market', url: 'https://market.yandex.ru/' },
+      { marketplace: 'Ozon', url: 'https://market.yandex.ru/' },
     ]
   },
   {
@@ -1101,8 +1101,8 @@ export const ITEMS_DATABASE = [
     price: '580',
     image: '▬',
     links: [
-      { marketplace: 'Ozon', url: 'https://www.ozon.ru/' },
-      { marketplace: 'Yandex.Market', url: 'https://market.yandex.ru/' },
+      { marketplace: 'Wildberries', url: 'https://www.ozon.ru/' },
+      { marketplace: 'Ozon', url: 'https://market.yandex.ru/' },
     ]
   },
   {
@@ -1128,7 +1128,7 @@ export const ITEMS_DATABASE = [
     image: '▬',
     links: [
       { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/' },
-      { marketplace: 'Yandex.Market', url: 'https://market.yandex.ru/' },
+      { marketplace: 'Ozon', url: 'https://market.yandex.ru/' },
     ]
   },
   {
@@ -1140,8 +1140,8 @@ export const ITEMS_DATABASE = [
     price: '520',
     image: '▬',
     links: [
-      { marketplace: 'Ozon', url: 'https://www.ozon.ru/' },
-      { marketplace: 'Yandex.Market', url: 'https://market.yandex.ru/' },
+      { marketplace: 'Wildberries', url: 'https://www.ozon.ru/' },
+      { marketplace: 'Ozon', url: 'https://market.yandex.ru/' },
     ]
   },
   {
@@ -1167,7 +1167,7 @@ export const ITEMS_DATABASE = [
     image: '▬',
     links: [
       { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/' },
-      { marketplace: 'Yandex.Market', url: 'https://market.yandex.ru/' },
+      { marketplace: 'Ozon', url: 'https://market.yandex.ru/' },
     ]
   },
   {
@@ -1179,8 +1179,8 @@ export const ITEMS_DATABASE = [
     price: '750',
     image: '▬',
     links: [
-      { marketplace: 'Ozon', url: 'https://www.ozon.ru/' },
-      { marketplace: 'Yandex.Market', url: 'https://market.yandex.ru/' },
+      { marketplace: 'Wildberries', url: 'https://www.ozon.ru/' },
+      { marketplace: 'Ozon', url: 'https://market.yandex.ru/' },
     ]
   },
   {
@@ -1221,7 +1221,7 @@ export const ITEMS_DATABASE = [
     image: '▬',
     links: [
       { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/' },
-      { marketplace: 'Yandex.Market', url: 'https://market.yandex.ru/' },
+      { marketplace: 'Ozon', url: 'https://market.yandex.ru/' },
     ]
   },
   {
@@ -1233,8 +1233,8 @@ export const ITEMS_DATABASE = [
     price: '750',
     image: '▬',
     links: [
-      { marketplace: 'Ozon', url: 'https://www.ozon.ru/' },
-      { marketplace: 'Yandex.Market', url: 'https://market.yandex.ru/' },
+      { marketplace: 'Wildberries', url: 'https://www.ozon.ru/' },
+      { marketplace: 'Ozon', url: 'https://market.yandex.ru/' },
     ]
   },
   {
@@ -1260,7 +1260,7 @@ export const ITEMS_DATABASE = [
     image: '▬',
     links: [
       { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/' },
-      { marketplace: 'Yandex.Market', url: 'https://market.yandex.ru/' },
+      { marketplace: 'Ozon', url: 'https://market.yandex.ru/' },
     ]
   },
   {
@@ -1272,8 +1272,8 @@ export const ITEMS_DATABASE = [
     price: '680',
     image: '▬',
     links: [
-      { marketplace: 'Ozon', url: 'https://www.ozon.ru/' },
-      { marketplace: 'Yandex.Market', url: 'https://market.yandex.ru/' },
+      { marketplace: 'Wildberries', url: 'https://www.ozon.ru/' },
+      { marketplace: 'Ozon', url: 'https://market.yandex.ru/' },
     ]
   },
   {
@@ -1299,7 +1299,7 @@ export const ITEMS_DATABASE = [
     image: '▬',
     links: [
       { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/' },
-      { marketplace: 'Yandex.Market', url: 'https://market.yandex.ru/' },
+      { marketplace: 'Ozon', url: 'https://market.yandex.ru/' },
     ]
   },
   {
@@ -1311,8 +1311,8 @@ export const ITEMS_DATABASE = [
     price: '620',
     image: '▬',
     links: [
-      { marketplace: 'Ozon', url: 'https://www.ozon.ru/' },
-      { marketplace: 'Yandex.Market', url: 'https://market.yandex.ru/' },
+      { marketplace: 'Wildberries', url: 'https://www.ozon.ru/' },
+      { marketplace: 'Ozon', url: 'https://market.yandex.ru/' },
     ]
   },
   {
