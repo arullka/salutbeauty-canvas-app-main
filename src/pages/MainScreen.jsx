@@ -10,7 +10,7 @@ const CATEGORIES = [
 ];
 
 export const MainScreen = (props) => {
-  const { state, assistant } = props;
+  const { state } = props;
   const [selectedCategory, setSelectedCategory] = useState(null);
 
   const handleCategoryClick = (category) => {
@@ -23,13 +23,13 @@ export const MainScreen = (props) => {
     setSelectedCategory(null);
   };
 
-  // Следим за изменениями state от ассистента
-  useEffect(() => {
-    if (state && state.selectedCategory) {
-      console.log('Opening category from voice command:', state.selectedCategory);
-      setSelectedCategory(state.selectedCategory);
-    }
-  }, [state?.selectedCategory]);
+useEffect(() => {
+  if (state?.selectedCategory) {
+    console.log('Opening category from voice command:', state.selectedCategory);
+    setSelectedCategory(state.selectedCategory);
+  }
+}, [state?.selectedCategory]);
+
 
   return (
     <main className="container">
