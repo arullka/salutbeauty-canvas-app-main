@@ -3,14 +3,14 @@ import React from 'react';
 export const ItemCard = (props) => {
   const { item } = props;
 
-  const handleMarketplaceClick = (url) => {
-    window.open(url, '_blank');
-  };
-
   return (
     <div className="item-card">
       <div className="item-image">
-        {item.image || ''}
+        <img 
+          src={item.image} 
+          alt={item.name}
+          loading="lazy"
+        />
       </div>
       <div className="item-info">
         <div className="item-name">{item.name}</div>
@@ -18,14 +18,16 @@ export const ItemCard = (props) => {
         <div className="item-price">{item.price} ₽</div>
         <div className="item-marketplaces">
           {item.links.map(link => (
-            <button
+            <a
               key={link.marketplace}
+              href={link.url}
+              target="_blank"
+              rel="noopener noreferrer"
               className="marketplace-link"
-              onClick={() => handleMarketplaceClick(link.url)}
-              title={`Открыть в ${link.marketplace}`}
+              title={link.marketplace}
             >
               {link.marketplace}
-            </button>
+            </a>
           ))}
         </div>
       </div>

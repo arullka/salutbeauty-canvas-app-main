@@ -1,3 +1,6 @@
+function getImagePath(category, theme, filename) {
+  return `/images/${category}/${theme}/${filename}`;
+}
 export const ITEMS_DATABASE = [
   // ОБРАЗ - ВЕЧЕРИНКА
   {
@@ -7,7 +10,7 @@ export const ITEMS_DATABASE = [
     name: 'Черное платье',
     description: 'Универсальное черное платье',
     price: '2500',
-    image: '▬',
+    image: getImagePath('outfit', 'party', 'black-dress.jpg'),
     links: [
       { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/' },
       { marketplace: 'Ozon', url: 'https://www.ozon.ru/' },
@@ -20,7 +23,7 @@ export const ITEMS_DATABASE = [
     name: 'Топ белый',
     description: 'Простой белый топ из хлопка',
     price: '800',
-    image: '▬',
+    image: getImagePath('outfit', 'party', 'white-top.jpg'),
     links: [
       { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/' },
       { marketplace: 'Ozon', url: 'https://market.yandex.ru/' },
