@@ -4,9 +4,9 @@ import { LibraryModal } from '../components/LibraryModal';
 import '../App.css';
 
 const CATEGORIES = [
-  { id: 'outfit', name: 'Образ', icon: '👗' },
-  { id: 'accessories', name: 'Аксессуары', icon: '💍' },
-  { id: 'care', name: 'Уход', icon: '💄' },
+  { id: 'outfit', name: 'Образ', icon: '/images/icons/dress.png'},
+  { id: 'accessories', name: 'Аксессуары', icon: '/images/icons/woman-bag.png' },
+  { id: 'care', name: 'Уход', icon: '/images/icons/lipstick.png' },
 ];
 
 export const MainScreen = (props) => {
@@ -36,7 +36,7 @@ useEffect(() => {
       <div className="header">
         <h1>SalutBeauty</h1>
         <p className="subtitle">Персональный ассистент красоты от Сбера</p>
-        <p style={{ fontSize: '20px', marginTop: '10px', color: 'rgba(158, 121, 232, 0.6)' }}>
+        <p style={{ fontSize: '36px', marginTop: '10px', color: 'rgb(255, 255, 255)' }}>
           Красотка, что наденем сегодня?
         </p>
       </div>

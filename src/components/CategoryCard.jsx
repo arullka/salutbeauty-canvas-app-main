@@ -9,7 +9,9 @@ export const CategoryCard = (props) => {
       onClick={onClick}
     >
       <div>
-        <div className="category-icon">{category.icon}</div>
+        <div className="category-icon">
+          <img src={category.icon} alt={category.name} />
+        </div>
         <h3>{category.name}</h3>
       </div>
     </div>

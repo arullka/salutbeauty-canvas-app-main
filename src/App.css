@@ -75,9 +75,10 @@ body {
   text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
 }
 
-.category-icon {
-  font-size: 64px;
-  margin-bottom: 20px;
+.category-icon img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
 }
 
 /* Модальное окно */
