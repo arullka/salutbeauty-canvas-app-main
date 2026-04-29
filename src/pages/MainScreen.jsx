@@ -4,8 +4,8 @@ import { LibraryModal } from '../components/LibraryModal';
 import '../App.css';
 
 const CATEGORIES = [
-  { id: 'outfit', name: 'Образ', icon: '/images/icons/dress.png'},
-  { id: 'accessories', name: 'Аксессуары', icon: '/images/icons/woman-bag.png' },
+  { id: 'outfit', name: 'Образ', icon: '/images/icons/dress.png', image:'/images/main/outfit.jpg'},
+  { id: 'accessories', name: 'Аксессуары', icon: '/images/icons/woman-bag.png', image:'/images/main/bags.jpg'},
   { id: 'care', name: 'Уход', icon: '/images/icons/lips.png', image:'/images/main/makeup.webp'},
 ];
 
