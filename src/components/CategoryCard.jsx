@@ -7,12 +7,15 @@ export const CategoryCard = (props) => {
     <div
       className={`category-card ${isActive ? 'active' : ''}`}
       onClick={onClick}
+      style={{ 
+        backgroundImage: category.image ? `url(${category.image})` : 'none' 
+      }}
     >
-      <div>
-        <div className="category-icon">
-          <img src={category.icon} alt={category.name} />
-        </div>
-        <h3>{category.name}</h3>
+      <div className="card-overlay"></div>
+      
+      <div className="card-content">
+        <img src={category.icon} alt={category.name} className="category-icon" />
+        <h3 className="category-title">{category.name}</h3>
       </div>
     </div>
   );
