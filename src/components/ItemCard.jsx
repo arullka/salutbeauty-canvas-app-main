@@ -15,7 +15,7 @@ export const ItemCard = (props) => {
       <div className="item-info">
         <div className="item-name">{item.name}</div>
         <div className="item-description">{item.description}</div>
-        <div className="item-price">{item.price} ₽</div>
+        {/* <div className="item-price">{item.price} ₽</div> */}
         <div className="item-marketplaces">
           {item.links.map(link => (
             <a

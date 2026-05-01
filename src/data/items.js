@@ -7,65 +7,60 @@ export const ITEMS_DATABASE = [
     id: '1',
     category: 'outfit',
     theme: 'party',
-    name: 'Черное платье',
-    description: 'Универсальное черное платье',
-    price: '2500',
+    name: 'Блестящее платье-мини',
+    description: '',
     image: getImagePath('outfit', 'party', 'black-dress.jpg'),
     links: [
-      { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/' },
-      { marketplace: 'Ozon', url: 'https://www.ozon.ru/' },
+      { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/catalog/585298722/detail.aspx' },
+      { marketplace: 'Ozon', url: 'https://ozon.ru/t/homMkMw' },
     ]
   },
   {
     id: '2',
     category: 'outfit',
     theme: 'party',
-    name: 'Топ белый',
-    description: 'Простой белый топ из хлопка',
-    price: '800',
+    name: 'Кожаный топ',
+    description: '',
     image: getImagePath('outfit', 'party', 'white-top.jpg'),
     links: [
-      { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/' },
-      { marketplace: 'Ozon', url: 'https://market.yandex.ru/' },
+      { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/catalog/303523921/detail.aspx' },
+      { marketplace: 'Ozon', url: 'https://ozon.ru/t/wG8u2Yr' },
     ]
   },
   {
     id: '3',
     category: 'outfit',
     theme: 'party',
-    name: 'Джинсы черные',
-    description: 'Классические черные джинсы',
-    price: '2000',
+    name: 'Кожаные брюки',
+    description: '',
     image: '▬',
     links: [
-      { marketplace: 'Wildberries', url: 'https://www.ozon.ru/' },
-      { marketplace: 'Ozon', url: 'https://market.yandex.ru/' },
+      { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/catalog/171031458/detail.aspx' },
+      { marketplace: 'Ozon', url: 'https://ozon.ru/t/AFtRLyX' },
     ]
   },
   {
     id: '4',
     category: 'outfit',
     theme: 'party',
-    name: 'Рубашка черная',
-    description: 'Базовая черная рубашка',
-    price: '1200',
+    name: 'Туфли',
+    description: '',
     image: '▬',
     links: [
-      { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/' },
-      { marketplace: 'Ozon', url: 'https://www.ozon.ru/' },
+      { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/catalog/211671986/detail.aspx' },
+      { marketplace: 'Ozon', url: 'https://ozon.ru/t/BYClETx' },
     ]
   },
   {
     id: '5',
     category: 'outfit',
     theme: 'party',
-    name: 'Юбка черная',
-    description: 'Прямая юбка до колена',
-    price: '1800',
+    name: 'Кеды',
+    description: '',
     image: '▬',
     links: [
-      { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/' },
-      { marketplace: 'Ozon', url: 'https://market.yandex.ru/' },
+      { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/catalog/342441320/detail.aspx' },
+      { marketplace: 'Ozon', url: 'https://ozon.ru/t/QimnsEE' },
     ]
   },
 
@@ -75,265 +70,245 @@ export const ITEMS_DATABASE = [
     category: 'outfit',
     theme: 'work',
     name: 'Белая блузка',
-    description: 'Классическая офисная блузка',
-    price: '1500',
+    description: '',
     image: '▬',
     links: [
-      { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/' },
-      { marketplace: 'Ozon', url: 'https://www.ozon.ru/' },
+      { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/catalog/458575854/detail.aspx' },
+      { marketplace: 'Ozon', url: 'https://ozon.ru/t/Vaj1vdr' },
     ]
   },
   {
     id: '7',
     category: 'outfit',
     theme: 'work',
-    name: 'Брюки черные',
-    description: 'Строгие офисные брюки',
-    price: '2200',
+    name: 'Юбка-карандаш',
+    description: '',
     image: '▬',
     links: [
-      { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/' },
-      { marketplace: 'Ozon', url: 'https://market.yandex.ru/' },
+      { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/catalog/806287460/detail.aspx' },
+      { marketplace: 'Ozon', url: 'https://ozon.ru/t/p5hG7EQ' },
     ]
   },
   {
     id: '8',
     category: 'outfit',
     theme: 'work',
-    name: 'Юбка серая',
-    description: 'Юбка-карандаш серого цвета',
-    price: '2000',
+    name: 'Вязаный топ',
+    description: '',
     image: '▬',
     links: [
-      { marketplace: 'Wildberries', url: 'https://www.ozon.ru/' },
-      { marketplace: 'Ozon', url: 'https://market.yandex.ru/' },
+      { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/catalog/342132944/detail.aspx' },
+      { marketplace: 'Ozon', url: 'https://ozon.ru/t/p5hG1CU' },
     ]
   },
   {
     id: '9',
     category: 'outfit',
     theme: 'work',
-    name: 'Кардиган бежевый',
-    description: 'Легкий кардиган для офиса',
-    price: '2800',
+    name: 'Черные брюки',
+    description: '',
     image: '▬',
     links: [
-      { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/' },
-      { marketplace: 'Ozon', url: 'https://www.ozon.ru/' },
+      { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/catalog/58253040/detail.aspx' },
+      { marketplace: 'Ozon', url: 'https://ozon.ru/t/rlb5Og1' },
     ]
   },
   {
     id: '10',
     category: 'outfit',
     theme: 'work',
-    name: 'Пиджак черный',
-    description: 'Классический черный пиджак',
-    price: '4500',
+    name: 'Пиджак',
+    description: '',
     image: '▬',
     links: [
-      { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/' },
-      { marketplace: 'Ozon', url: 'https://market.yandex.ru/' },
+      { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/catalog/552493313/detail.aspx' },
+      { marketplace: 'Ozon', url: 'https://ozon.ru/t/b2door3' },
     ]
   },
-
-  // ОБРАЗ - УЧЕБА
   {
     id: '11',
     category: 'outfit',
-    theme: 'study',
-    name: 'Футболка серая',
-    description: 'Простая серая футболка',
-    price: '600',
+    theme: 'work',
+    name: 'Туфли',
+    description: '',
     image: '▬',
     links: [
-      { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/' },
-      { marketplace: 'Ozon', url: 'https://www.ozon.ru/' },
+      { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/catalog/265838244/detail.aspx' },
+      { marketplace: 'Ozon', url: 'https://ozon.ru/t/1EzuC0Y' },
     ]
   },
+
+    // ОБРАЗ - УЧЕБА
   {
     id: '12',
     category: 'outfit',
     theme: 'study',
-    name: 'Джинсы голубые',
-    description: 'Удобные джинсы светлого цвета',
-    price: '1800',
+    name: 'Джинсы',
+    description: '',
     image: '▬',
     links: [
-      { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/' },
-      { marketplace: 'Ozon', url: 'https://market.yandex.ru/' },
+      { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/catalog/275655189/detail.aspx' },
+      { marketplace: 'Ozon', url: 'https://ozon.ru/t/BYnhimg' },
     ]
   },
   {
     id: '13',
     category: 'outfit',
     theme: 'study',
-    name: 'Худи серое',
-    description: 'Комфортное худи для учебы',
-    price: '1400',
+    name: 'Свитер',
+    description: '',
     image: '▬',
     links: [
-      { marketplace: 'Wildberries', url: 'https://www.ozon.ru/' },
-      { marketplace: 'Ozon', url: 'https://market.yandex.ru/' },
+      { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/catalog/668819466/detail.aspx' },
+      { marketplace: 'Ozon', url: 'https://ozon.ru/t/3hgqrHn' },
     ]
   },
   {
     id: '14',
     category: 'outfit',
     theme: 'study',
-    name: 'Кроссовки белые',
-    description: 'Классические белые кроссовки',
-    price: '2500',
+    name: 'Рубашка',
+    description: '',
     image: '▬',
     links: [
-      { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/' },
-      { marketplace: 'Ozon', url: 'https://www.ozon.ru/' },
+      { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/catalog/446925160/detail.aspx' },
+      { marketplace: 'Ozon', url: 'https://ozon.ru/t/sSCQChf' },
     ]
   },
   {
     id: '15',
     category: 'outfit',
     theme: 'study',
-    name: 'Свитер бежевый',
-    description: 'Уютный бежевый свитер',
-    price: '1900',
+    name: 'Серые брюки',
+    description: '',
     image: '▬',
     links: [
-      { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/' },
-      { marketplace: 'Ozon', url: 'https://market.yandex.ru/' },
+      { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/catalog/634952911/detail.aspx' },
+      { marketplace: 'Ozon', url: 'https://ozon.ru/t/zMWYgfe' },
     ]
   },
-
-  // ОБРАЗ - СВИДАНИЕ
   {
     id: '16',
     category: 'outfit',
-    theme: 'date',
-    name: 'Платье светлое',
-    description: 'Элегантное светлое платье',
-    price: '3200',
+    theme: 'study',
+    name: 'Кеды',
+    description: '',
     image: '▬',
     links: [
-      { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/' },
-      { marketplace: 'Ozon', url: 'https://www.ozon.ru/' },
+      { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/catalog/389152314/detail.aspx' },
+      { marketplace: 'Ozon', url: 'https://ozon.ru/t/7WzZT07' },
     ]
   },
+
+    // ОБРАЗ - СВИДАНИЕ
   {
     id: '17',
     category: 'outfit',
     theme: 'date',
-    name: 'Джинсы синие',
-    description: 'Красивые синие джинсы',
-    price: '2100',
+    name: 'Бежевое платье с открытой спиной',
+    description: '',
     image: '▬',
     links: [
-      { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/' },
-      { marketplace: 'Ozon', url: 'https://market.yandex.ru/' },
+      { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/catalog/715890589/detail.aspx' },
+      { marketplace: 'Ozon', url: 'https://ozon.ru/t/1EzEXsM' },
     ]
   },
   {
     id: '18',
     category: 'outfit',
     theme: 'date',
-    name: 'Кофточка нежная',
-    description: 'Нежная кофта пастельного цвета',
-    price: '1600',
+    name: 'Шелковый топ',
+    description: '',
     image: '▬',
     links: [
-      { marketplace: 'Wildberries', url: 'https://www.ozon.ru/' },
-      { marketplace: 'Ozon', url: 'https://market.yandex.ru/' },
+      { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/catalog/924316742/detail.aspx?size=1396127422' },
+      { marketplace: 'Ozon', url: 'https://ozon.ru/t/1EzEVkM' },
     ]
   },
   {
     id: '19',
     category: 'outfit',
     theme: 'date',
-    name: 'Туфли нюд',
-    description: 'Туфли нейтрального цвета',
-    price: '3500',
+    name: 'Светлые джинсы клеш',
+    description: '',
     image: '▬',
     links: [
-      { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/' },
-      { marketplace: 'Ozon', url: 'https://www.ozon.ru/' },
+      { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/catalog/786119924/detail.aspx' },
+      { marketplace: 'Ozon', url: 'https://ozon.ru/t/tK0KJMM' },
     ]
   },
   {
     id: '20',
     category: 'outfit',
     theme: 'date',
-    name: 'Жакет приталенный',
-    description: 'Классический приталенный жакет',
-    price: '4200',
+    name: 'Бежевые туфли',
+    description: '',
     image: '▬',
     links: [
-      { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/' },
-      { marketplace: 'Ozon', url: 'https://market.yandex.ru/' },
+      { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/catalog/632543089/detail.aspx' },
+      { marketplace: 'Ozon', url: 'https://ozon.ru/t/Qi5ikcA' },
     ]
   },
-
-  // ОБРАЗ - СПОРТ
   {
     id: '26',
     category: 'outfit',
-    theme: 'sport',
-    name: 'Спортивный топ',
-    description: 'Удобный спортивный топ',
-    price: '1200',
+    theme: 'date',
+    name: 'Балетки Мэри Джейн',
+    description: '',
     image: '▬',
     links: [
-      { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/' },
-      { marketplace: 'Ozon', url: 'https://www.ozon.ru/' },
+      { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/catalog/790401131/detail.aspx' },
+      { marketplace: 'Ozon', url: 'https://ozon.ru/t/MtI7GZi' },
     ]
   },
+
+    // ОБРАЗ - СПОРТ
   {
     id: '27',
     category: 'outfit',
     theme: 'sport',
-    name: 'Леггинсы черные',
-    description: 'Удобные черные леггинсы',
-    price: '1800',
+    name: 'Спортивный комбинезон',
+    description: '',
     image: '▬',
     links: [
-      { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/' },
-      { marketplace: 'Ozon', url: 'https://market.yandex.ru/' },
+      { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/catalog/337431360/detail.aspx' },
+      { marketplace: 'Ozon', url: 'https://ozon.ru/t/QimnPNP' },
     ]
   },
   {
     id: '28',
     category: 'outfit',
     theme: 'sport',
-    name: 'Кроссовки спортивные',
-    description: 'Удобные спортивные кроссовки',
-    price: '3500',
+    name: 'Спортивный топ',
+    description: '',
     image: '▬',
     links: [
-      { marketplace: 'Wildberries', url: 'https://www.ozon.ru/' },
-      { marketplace: 'Ozon', url: 'https://market.yandex.ru/' },
+      { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/catalog/252681730/detail.aspx' },
+      { marketplace: 'Ozon', url: 'https://ozon.ru/t/OLGZtYL' },
     ]
   },
   {
     id: '29',
     category: 'outfit',
     theme: 'sport',
-    name: 'Ветровка спортивная',
-    description: 'Легкая спортивная ветровка',
-    price: '2200',
+    name: 'Велосипедки',
+    description: '',
     image: '▬',
     links: [
-      { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/' },
-      { marketplace: 'Ozon', url: 'https://www.ozon.ru/' },
+      { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/catalog/21154521/detail.aspx' },
+      { marketplace: 'Ozon', url: 'https://ozon.ru/t/aHhBKz3' },
     ]
   },
   {
     id: '30',
     category: 'outfit',
     theme: 'sport',
-    name: 'Шорты спортивные',
-    description: 'Удобные спортивные шорты',
-    price: '1500',
+    name: 'Кроссовки',
+    description: '',
     image: '▬',
     links: [
-      { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/' },
-      { marketplace: 'Ozon', url: 'https://market.yandex.ru/' },
+      { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/catalog/881149749/detail.aspx' },
+      { marketplace: 'Ozon', url: 'https://ozon.ru/t/q4Ng1h5' },
     ]
   },
 
@@ -344,7 +319,6 @@ export const ITEMS_DATABASE = [
     theme: 'party',
     name: 'Серьги золотые',
     description: 'Простые золотые серьги',
-    price: '1200',
     image: '▬',
     links: [
       { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/' },
@@ -677,65 +651,60 @@ export const ITEMS_DATABASE = [
     id: '61',
     category: 'care',
     theme: 'party',
-    name: 'Помада красная',
-    description: 'Насыщенная красная помада',
-    price: '650',
+    name: 'Румяна',
+    description: '',
     image: '▬',
     links: [
-      { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/' },
-      { marketplace: 'Ozon', url: 'https://www.ozon.ru/' },
+      { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/catalog/479708377/detail.aspx?size=670372227' },
+      { marketplace: 'Ozon', url: 'https://ozon.ru/t/wG8yQrR' },
     ]
   },
   {
     id: '62',
     category: 'care',
     theme: 'party',
-    name: 'Палетка теней',
-    description: '12 оттенков для вечера',
-    price: '1100',
+    name: 'Тушь',
+    description: '',
     image: '▬',
     links: [
-      { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/' },
-      { marketplace: 'Ozon', url: 'https://market.yandex.ru/' },
+      { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/catalog/349571965/detail.aspx?size=517696890' },
+      { marketplace: 'Ozon', url: 'https://ozon.ru/t/yCApHek' },
     ]
   },
   {
     id: '63',
     category: 'care',
     theme: 'party',
-    name: 'Тушь объемная',
-    description: 'Объемная тушь для ресниц',
-    price: '550',
+    name: 'Палетка теней для век',
+    description: '',
     image: '▬',
     links: [
-      { marketplace: 'Wildberries', url: 'https://www.ozon.ru/' },
-      { marketplace: 'Ozon', url: 'https://market.yandex.ru/' },
+      { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/catalog/550549741/detail.aspx?size=757567418' },
+      { marketplace: 'Ozon', url: 'https://ozon.ru/t/EAMP6HP' },
     ]
   },
   {
     id: '64',
     category: 'care',
     theme: 'party',
-    name: 'Подводка черная',
-    description: 'Черная жидкая подводка',
-    price: '450',
+    name: 'Карандаш для глаз',
+    description: '',
     image: '▬',
     links: [
-      { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/' },
-      { marketplace: 'Ozon', url: 'https://www.ozon.ru/' },
+      { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/catalog/349497697/detail.aspx?size=517612016' },
+      { marketplace: 'Ozon', url: 'https://ozon.ru/t/ofzK316' },
     ]
   },
   {
     id: '65',
     category: 'care',
     theme: 'party',
-    name: 'Хайлайтер золотой',
-    description: 'Золотой хайлайтер',
-    price: '750',
+    name: 'Карандаш для бровей',
+    description: '',
     image: '▬',
     links: [
-      { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/' },
-      { marketplace: 'Ozon', url: 'https://market.yandex.ru/' },
+      { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/catalog/216652616/detail.aspx?size=345298108' },
+      { marketplace: 'Ozon', url: 'https://ozon.ru/t/d7aOdzj' },
     ]
   },
   {
@@ -743,8 +712,7 @@ export const ITEMS_DATABASE = [
     category: 'care',
     theme: 'party',
     name: 'Тональный крем',
-    description: 'Тональный крем длительного действия',
-    price: '900',
+    description: '',
     image: '▬',
     links: [
       { marketplace: 'Wildberries', url: 'https://www.ozon.ru/' },
@@ -756,8 +724,7 @@ export const ITEMS_DATABASE = [
     category: 'care',
     theme: 'party',
     name: 'Консилер',
-    description: 'Консилер для маскировки несовершенств',
-    price: '680',
+    description: '',
     image: '▬',
     links: [
       { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/' },
@@ -769,8 +736,7 @@ export const ITEMS_DATABASE = [
     category: 'care',
     theme: 'party',
     name: 'Румяна',
-    description: 'Румяна розового цвета',
-    price: '550',
+    description: '',
     image: '▬',
     links: [
       { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/' },
@@ -782,12 +748,11 @@ export const ITEMS_DATABASE = [
     category: 'care',
     theme: 'party',
     name: 'Карандаш для глаз',
-    description: 'Карандаш коричневого цвета',
-    price: '380',
+    description: '',
     image: '▬',
     links: [
-      { marketplace: 'Wildberries', url: 'https://www.ozon.ru/' },
-      { marketplace: 'Ozon', url: 'https://market.yandex.ru/' },
+      { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/catalog/349497697/detail.aspx?size=517612016' },
+      { marketplace: 'Ozon', url: 'https://ozon.ru/t/ofzK316' },
     ]
   },
   {
@@ -796,7 +761,6 @@ export const ITEMS_DATABASE = [
     theme: 'party',
     name: 'Фиксатор макияжа',
     description: 'Спрей для фиксации макияжа',
-    price: '820',
     image: '▬',
     links: [
       { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/' },
