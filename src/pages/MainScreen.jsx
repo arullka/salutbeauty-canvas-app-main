@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { CategoryCard } from '../components/CategoryCard';
-import { LibraryModal } from '../components/LibraryModal';
+import { ThemeView } from '../components/ThemeView';
 import '../App.css';
 
 const CATEGORIES = [
@@ -9,56 +9,54 @@ const CATEGORIES = [
   { id: 'care', name: 'Макияж', icon: '/images/icons/lips.png', image:'/images/main/makeup.webp'},
 ];
 
+const THEMES = [
+  { id: 'study', name: 'Учеба' },
+  { id: 'work', name: 'Работа' },
+  { id: 'party', name: 'Вечеринка' },
+  { id: 'date', name: 'Свидание' },
+  { id: 'sport', name: 'Спорт' },
+];
+
 export const MainScreen = (props) => {
   const { state } = props;
   const [selectedCategory, setSelectedCategory] = useState(null);
 
-  const handleCategoryClick = (category) => {
-    console.log('handleCategoryClick:', category);
-    setSelectedCategory(category);
-  };
+  useEffect(() => {
+    if (state?.selectedCategory) {
+      setSelectedCategory(state.selectedCategory);
+    }
+  }, [state?.selectedCategory]);
 
-  const handleCloseModal = () => {
-    console.log('handleCloseModal');
+  const handleBack = () => {
     setSelectedCategory(null);
   };
-
-useEffect(() => {
-  if (state?.selectedCategory) {
-    console.log('Opening category from voice command:', state.selectedCategory);
-    setSelectedCategory(state.selectedCategory);
-  }
-}, [state?.selectedCategory]);
-
 
   return (
     <main className="container">
       <div className="header">
         <h1>SalutBeauty</h1>
         <p className="subtitle">Персональный ассистент красоты от Сбера</p>
-        <p style={{ fontSize: '36px', marginTop: '5px', color: 'rgb(255, 255, 255)' }}>
-          Красотка, что наденем сегодня?
-        </p>
       </div>
 
-      <div className="categories-grid">
-        {CATEGORIES.map((category) => (
-          <CategoryCard
-            key={category.id}
-            category={category}
-            isActive={selectedCategory === category.id}
-            onClick={() => handleCategoryClick(category.id)}
-          />
-        ))}
-      </div>
-
-      {selectedCategory && (
-        <LibraryModal
-          category={selectedCategory}
-          onClose={handleCloseModal}
-        />
+      {!selectedCategory && (
+        <div className="main-categories">
+          {CATEGORIES.map((category) => (
+            <CategoryCard
+              key={category.id}
+              category={category}
+              onClick={() => setSelectedCategory(category.id)}
+            />
+          ))}
+        </div>
       )}
 
+      {selectedCategory && (
+        <ThemeView
+          category={selectedCategory}
+          themes={THEMES}
+          onBack={handleBack}
+        />
+      )}
     </main>
   );
 };

@@ -1,1233 +1,643 @@
-function getImagePath(category, theme, filename) {
-  return `/images/${category}/${theme}/${filename}`;
-}
+// function getImagePath(category, theme, filename) {
+//   return `/images/${category}/${theme}/${filename}`;
+// }
 export const ITEMS_DATABASE = [
-  // ОБРАЗ - ВЕЧЕРИНКА
+  // ============ ОБРАЗ - ВЕЧЕРИНКА ============
   {
-    id: '1',
+    id: 'outfit_party_capsule_1',
+    type: 'capsule',
     category: 'outfit',
     theme: 'party',
-    name: 'Блестящее платье-мини',
-    description: '',
-    image: getImagePath('outfit', 'party', 'black-dress.jpg'),
-    links: [
-      { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/catalog/585298722/detail.aspx' },
-      { marketplace: 'Ozon', url: 'https://ozon.ru/t/homMkMw' },
+    name: 'Платье + Туфли',
+    description: 'Классический вечерний набор: черное платье и элегантные туфли',
+    image: '/images/capsules/outfit/party/capsule-1.jpg'
+  },
+  {
+    id: 'outfit_party_item_1',
+    type: 'item',
+    category: 'outfit',
+    theme: 'party',
+    capsule: 'outfit_party_capsule_1',
+    name: 'Черное платье',
+    description: 'Универсальное черное платье с элегантным кроем, идеально для вечеринки. Приталенный силуэт подчеркивает фигуру, а длина до колена выглядит стильно и современно.',
+    image: '/images/outfit/party/dress-black.jpg',
+    mainMarketplace: 'Сбер Маркет',
+    mainMarketplaceUrl: 'https://sbermegamarket.ru/',
+    partnerMarketplaces: [
+      { name: 'Wildberries', url: 'https://www.wildberries.ru/' },
+      { name: 'Ozon', url: 'https://www.ozon.ru/' }
     ]
   },
   {
-    id: '2',
+    id: 'outfit_party_item_2',
+    type: 'item',
     category: 'outfit',
     theme: 'party',
+    capsule: 'outfit_party_capsule_1',
+    name: 'Черные туфли',
+    description: 'Элегантные туфли с тонким каблуком из натуральной кожи. Классический силуэт делает их универсальным выбором для любого вечернего наряда.',
+    image: '/images/outfit/party/heels-black.jpg',
+    mainMarketplace: 'Сбер Маркет',
+    mainMarketplaceUrl: 'https://sbermegamarket.ru/',
+    partnerMarketplaces: [
+      { name: 'Wildberries', url: 'https://www.wildberries.ru/' },
+      { name: 'Ozon', url: 'https://www.ozon.ru/' }
+    ]
+  },
+  {
+    id: 'outfit_party_capsule_2',
+    type: 'capsule',
+    category: 'outfit',
+    theme: 'party',
+    name: 'Кожаный топ + Кожаные брюки',
+    description: 'Смелый и стильный образ: кожаный топ с кожаными брюками для уверенной девушки',
+    image: '/images/capsules/outfit/party/capsule-2.jpg'
+  },
+  {
+    id: 'outfit_party_item_3',
+    type: 'item',
+    category: 'outfit',
+    theme: 'party',
+    capsule: 'outfit_party_capsule_2',
     name: 'Кожаный топ',
-    description: '',
-    image: getImagePath('outfit', 'party', 'white-top.jpg'),
-    links: [
-      { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/catalog/303523921/detail.aspx' },
-      { marketplace: 'Ozon', url: 'https://ozon.ru/t/wG8u2Yr' },
+    description: 'Стильный черный топ из мягкой натуральной кожи. Облегающий крой и минималистичный дизайн делают его идеальным для смелого вечернего образа.',
+    image: '/images/outfit/party/leather-top.jpg',
+    mainMarketplace: 'Сбер Маркет',
+    mainMarketplaceUrl: 'https://sbermegamarket.ru/',
+    partnerMarketplaces: [
+      { name: 'Wildberries', url: 'https://www.wildberries.ru/' },
+      { name: 'Ozon', url: 'https://www.ozon.ru/' }
     ]
   },
   {
-    id: '3',
+    id: 'outfit_party_item_4',
+    type: 'item',
     category: 'outfit',
     theme: 'party',
+    capsule: 'outfit_party_capsule_2',
     name: 'Кожаные брюки',
-    description: '',
-    image: '▬',
-    links: [
-      { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/catalog/171031458/detail.aspx' },
-      { marketplace: 'Ozon', url: 'https://ozon.ru/t/AFtRLyX' },
-    ]
-  },
-  {
-    id: '4',
-    category: 'outfit',
-    theme: 'party',
-    name: 'Туфли',
-    description: '',
-    image: '▬',
-    links: [
-      { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/catalog/211671986/detail.aspx' },
-      { marketplace: 'Ozon', url: 'https://ozon.ru/t/BYClETx' },
-    ]
-  },
-  {
-    id: '5',
-    category: 'outfit',
-    theme: 'party',
-    name: 'Кеды',
-    description: '',
-    image: '▬',
-    links: [
-      { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/catalog/342441320/detail.aspx' },
-      { marketplace: 'Ozon', url: 'https://ozon.ru/t/QimnsEE' },
+    description: 'Классические черные брюки из качественной кожи с идеальной посадкой. Универсальный предмет гардероба, который подходит для любого вечера.',
+    image: '/images/outfit/party/leather-pants.jpg',
+    mainMarketplace: 'Сбер Маркет',
+    mainMarketplaceUrl: 'https://sbermegamarket.ru/',
+    partnerMarketplaces: [
+      { name: 'Wildberries', url: 'https://www.wildberries.ru/' },
+      { name: 'Ozon', url: 'https://www.ozon.ru/' }
     ]
   },
 
-  // ОБРАЗ - РАБОТА
+  // ============ ОБРАЗ - РАБОТА ============
   {
-    id: '6',
+    id: 'outfit_work_capsule_1',
+    type: 'capsule',
     category: 'outfit',
     theme: 'work',
+    name: 'Блузка + Брюки',
+    description: 'Профессиональный набор для офиса: классическая блузка и строгие брюки',
+    image: '/images/capsules/outfit/work/capsule-1.jpg'
+  },
+  {
+    id: 'outfit_work_item_1',
+    type: 'item',
+    category: 'outfit',
+    theme: 'work',
+    capsule: 'outfit_work_capsule_1',
     name: 'Белая блузка',
-    description: '',
-    image: '▬',
-    links: [
-      { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/catalog/458575854/detail.aspx' },
-      { marketplace: 'Ozon', url: 'https://ozon.ru/t/Vaj1vdr' },
+    description: 'Элегантная белая блузка из хлопка с идеальной посадкой. Классический фасон подходит для любого офиса и легко комбинируется с другими предметами гардероба.',
+    image: '/images/outfit/work/blouse-white.jpg',
+    mainMarketplace: 'Сбер Маркет',
+    mainMarketplaceUrl: 'https://sbermegamarket.ru/',
+    partnerMarketplaces: [
+      { name: 'Wildberries', url: 'https://www.wildberries.ru/' },
+      { name: 'Ozon', url: 'https://www.ozon.ru/' }
     ]
   },
   {
-    id: '7',
+    id: 'outfit_work_item_2',
+    type: 'item',
     category: 'outfit',
     theme: 'work',
-    name: 'Юбка-карандаш',
-    description: '',
-    image: '▬',
-    links: [
-      { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/catalog/806287460/detail.aspx' },
-      { marketplace: 'Ozon', url: 'https://ozon.ru/t/p5hG7EQ' },
+    capsule: 'outfit_work_capsule_1',
+    name: 'Брюки черные',
+    description: 'Строгие офисные брюки из качественной ткани с идеальным кроем. Удобный пояс и правильная длина делают их идеальным выбором для работы.',
+    image: '/images/outfit/work/pants-black.jpg',
+    mainMarketplace: 'Сбер Маркет',
+    mainMarketplaceUrl: 'https://sbermegamarket.ru/',
+    partnerMarketplaces: [
+      { name: 'Wildberries', url: 'https://www.wildberries.ru/' },
+      { name: 'Ozon', url: 'https://www.ozon.ru/' }
     ]
   },
   {
-    id: '8',
+    id: 'outfit_work_capsule_2',
+    type: 'capsule',
     category: 'outfit',
     theme: 'work',
-    name: 'Вязаный топ',
-    description: '',
-    image: '▬',
-    links: [
-      { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/catalog/342132944/detail.aspx' },
-      { marketplace: 'Ozon', url: 'https://ozon.ru/t/p5hG1CU' },
+    name: 'Рубашка + Юбка',
+    description: 'Женственный деловой образ: приталенная рубашка и юбка до колена',
+    image: '/images/capsules/outfit/work/capsule-2.jpg'
+  },
+  {
+    id: 'outfit_work_item_3',
+    type: 'item',
+    category: 'outfit',
+    theme: 'work',
+    capsule: 'outfit_work_capsule_2',
+    name: 'Рубашка голубая',
+    description: 'Нежная голубая рубашка с приталенным силуэтом. Классический цвет и качественная ткань делают её незаменимой в деловом гардеробе.',
+    image: '/images/outfit/work/shirt-blue.jpg',
+    mainMarketplace: 'Сбер Маркет',
+    mainMarketplaceUrl: 'https://sbermegamarket.ru/',
+    partnerMarketplaces: [
+      { name: 'Wildberries', url: 'https://www.wildberries.ru/' },
+      { name: 'Ozon', url: 'https://www.ozon.ru/' }
     ]
   },
   {
-    id: '9',
+    id: 'outfit_work_item_4',
+    type: 'item',
     category: 'outfit',
     theme: 'work',
-    name: 'Черные брюки',
-    description: '',
-    image: '▬',
-    links: [
-      { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/catalog/58253040/detail.aspx' },
-      { marketplace: 'Ozon', url: 'https://ozon.ru/t/rlb5Og1' },
-    ]
-  },
-  {
-    id: '10',
-    category: 'outfit',
-    theme: 'work',
-    name: 'Пиджак',
-    description: '',
-    image: '▬',
-    links: [
-      { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/catalog/552493313/detail.aspx' },
-      { marketplace: 'Ozon', url: 'https://ozon.ru/t/b2door3' },
-    ]
-  },
-  {
-    id: '11',
-    category: 'outfit',
-    theme: 'work',
-    name: 'Туфли',
-    description: '',
-    image: '▬',
-    links: [
-      { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/catalog/265838244/detail.aspx' },
-      { marketplace: 'Ozon', url: 'https://ozon.ru/t/1EzuC0Y' },
+    capsule: 'outfit_work_capsule_2',
+    name: 'Юбка серая',
+    description: 'Элегантная серая юбка-карандаш до колена из легкой ткани. Универсальный цвет и классический крой делают её основой любого офисного гардероба.',
+    image: '/images/outfit/work/skirt-gray.jpg',
+    mainMarketplace: 'Сбер Маркет',
+    mainMarketplaceUrl: 'https://sbermegamarket.ru/',
+    partnerMarketplaces: [
+      { name: 'Wildberries', url: 'https://www.wildberries.ru/' },
+      { name: 'Ozon', url: 'https://www.ozon.ru/' }
     ]
   },
 
-    // ОБРАЗ - УЧЕБА
+  // ============ ОБРАЗ - УЧЕБА ============
   {
-    id: '12',
+    id: 'outfit_study_capsule_1',
+    type: 'capsule',
     category: 'outfit',
     theme: 'study',
-    name: 'Джинсы',
-    description: '',
-    image: '▬',
-    links: [
-      { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/catalog/275655189/detail.aspx' },
-      { marketplace: 'Ozon', url: 'https://ozon.ru/t/BYnhimg' },
+    name: 'Футболка + Джинсы',
+    description: 'Классический комфортный набор для университета: простая футболка и удобные джинсы',
+    image: '/images/capsules/outfit/study/capsule-1.jpg'
+  },
+  {
+    id: 'outfit_study_item_1',
+    type: 'item',
+    category: 'outfit',
+    theme: 'study',
+    capsule: 'outfit_study_capsule_1',
+    name: 'Футболка серая',
+    description: 'Простая и удобная серая футболка из мягкого хлопка. Нейтральный цвет легко комбинируется с любыми другими предметами гардероба.',
+    image: '/images/outfit/study/tshirt-gray.jpg',
+    mainMarketplace: 'Сбер Маркет',
+    mainMarketplaceUrl: 'https://sbermegamarket.ru/',
+    partnerMarketplaces: [
+      { name: 'Wildberries', url: 'https://www.wildberries.ru/' },
+      { name: 'Ozon', url: 'https://www.ozon.ru/' }
     ]
   },
   {
-    id: '13',
+    id: 'outfit_study_item_2',
+    type: 'item',
     category: 'outfit',
     theme: 'study',
-    name: 'Свитер',
-    description: '',
-    image: '▬',
-    links: [
-      { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/catalog/668819466/detail.aspx' },
-      { marketplace: 'Ozon', url: 'https://ozon.ru/t/3hgqrHn' },
-    ]
-  },
-  {
-    id: '14',
-    category: 'outfit',
-    theme: 'study',
-    name: 'Рубашка',
-    description: '',
-    image: '▬',
-    links: [
-      { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/catalog/446925160/detail.aspx' },
-      { marketplace: 'Ozon', url: 'https://ozon.ru/t/sSCQChf' },
-    ]
-  },
-  {
-    id: '15',
-    category: 'outfit',
-    theme: 'study',
-    name: 'Серые брюки',
-    description: '',
-    image: '▬',
-    links: [
-      { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/catalog/634952911/detail.aspx' },
-      { marketplace: 'Ozon', url: 'https://ozon.ru/t/zMWYgfe' },
-    ]
-  },
-  {
-    id: '16',
-    category: 'outfit',
-    theme: 'study',
-    name: 'Кеды',
-    description: '',
-    image: '▬',
-    links: [
-      { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/catalog/389152314/detail.aspx' },
-      { marketplace: 'Ozon', url: 'https://ozon.ru/t/7WzZT07' },
+    capsule: 'outfit_study_capsule_1',
+    name: 'Джинсы голубые',
+    description: 'Удобные джинсы светлого оттенка с классическим кроем. Идеальны для повседневного ношения благодаря хорошей растяжимости ткани.',
+    image: '/images/outfit/study/jeans-light.jpg',
+    mainMarketplace: 'Сбер Маркет',
+    mainMarketplaceUrl: 'https://sbermegamarket.ru/',
+    partnerMarketplaces: [
+      { name: 'Wildberries', url: 'https://www.wildberries.ru/' },
+      { name: 'Ozon', url: 'https://www.ozon.ru/' }
     ]
   },
 
-    // ОБРАЗ - СВИДАНИЕ
+  // ============ ОБРАЗ - СВИДАНИЕ ============
   {
-    id: '17',
+    id: 'outfit_date_capsule_1',
+    type: 'capsule',
     category: 'outfit',
     theme: 'date',
-    name: 'Бежевое платье с открытой спиной',
-    description: '',
-    image: '▬',
-    links: [
-      { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/catalog/715890589/detail.aspx' },
-      { marketplace: 'Ozon', url: 'https://ozon.ru/t/1EzEXsM' },
+    name: 'Платье + Туфли',
+    description: 'Нежный и элегантный набор для первого свидания: светлое платье и туфли нюд',
+    image: '/images/capsules/outfit/date/capsule-1.jpg'
+  },
+  {
+    id: 'outfit_date_item_1',
+    type: 'item',
+    category: 'outfit',
+    theme: 'date',
+    capsule: 'outfit_date_capsule_1',
+    name: 'Платье светлое',
+    description: 'Элегантное платье светлого оттенка с мягким силуэтом. Нежный цвет и изящный крой создают романтичный образ для особого вечера.',
+    image: '/images/outfit/date/dress-light.jpg',
+    mainMarketplace: 'Сбер Маркет',
+    mainMarketplaceUrl: 'https://sbermegamarket.ru/',
+    partnerMarketplaces: [
+      { name: 'Wildberries', url: 'https://www.wildberries.ru/' },
+      { name: 'Ozon', url: 'https://www.ozon.ru/' }
     ]
   },
   {
-    id: '18',
+    id: 'outfit_date_item_2',
+    type: 'item',
     category: 'outfit',
     theme: 'date',
-    name: 'Шелковый топ',
-    description: '',
-    image: '▬',
-    links: [
-      { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/catalog/924316742/detail.aspx?size=1396127422' },
-      { marketplace: 'Ozon', url: 'https://ozon.ru/t/1EzEVkM' },
-    ]
-  },
-  {
-    id: '19',
-    category: 'outfit',
-    theme: 'date',
-    name: 'Светлые джинсы клеш',
-    description: '',
-    image: '▬',
-    links: [
-      { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/catalog/786119924/detail.aspx' },
-      { marketplace: 'Ozon', url: 'https://ozon.ru/t/tK0KJMM' },
-    ]
-  },
-  {
-    id: '20',
-    category: 'outfit',
-    theme: 'date',
-    name: 'Бежевые туфли',
-    description: '',
-    image: '▬',
-    links: [
-      { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/catalog/632543089/detail.aspx' },
-      { marketplace: 'Ozon', url: 'https://ozon.ru/t/Qi5ikcA' },
-    ]
-  },
-  {
-    id: '26',
-    category: 'outfit',
-    theme: 'date',
-    name: 'Балетки Мэри Джейн',
-    description: '',
-    image: '▬',
-    links: [
-      { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/catalog/790401131/detail.aspx' },
-      { marketplace: 'Ozon', url: 'https://ozon.ru/t/MtI7GZi' },
+    capsule: 'outfit_date_capsule_1',
+    name: 'Туфли нюд',
+    description: 'Элегантные туфли нейтрального цвета из качественной кожи. Универсальный оттенок удлиняет ногу и подходит к любому нарядному платью.',
+    image: '/images/outfit/date/heels-nude.jpg',
+    mainMarketplace: 'Сбер Маркет',
+    mainMarketplaceUrl: 'https://sbermegamarket.ru/',
+    partnerMarketplaces: [
+      { name: 'Wildberries', url: 'https://www.wildberries.ru/' },
+      { name: 'Ozon', url: 'https://www.ozon.ru/' }
     ]
   },
 
-    // ОБРАЗ - СПОРТ
+  // ============ ОБРАЗ - СПОРТ ============
   {
-    id: '27',
+    id: 'outfit_sport_capsule_1',
+    type: 'capsule',
     category: 'outfit',
     theme: 'sport',
-    name: 'Спортивный комбинезон',
-    description: '',
-    image: '▬',
-    links: [
-      { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/catalog/337431360/detail.aspx' },
-      { marketplace: 'Ozon', url: 'https://ozon.ru/t/QimnPNP' },
-    ]
+    name: 'Спортивный топ + Леггинсы',
+    description: 'Комфортный спортивный набор: дышащий топ и удобные леггинсы для тренировок',
+    image: '/images/capsules/outfit/sport/capsule-1.jpg'
   },
   {
-    id: '28',
+    id: 'outfit_sport_item_1',
+    type: 'item',
     category: 'outfit',
     theme: 'sport',
+    capsule: 'outfit_sport_capsule_1',
     name: 'Спортивный топ',
-    description: '',
-    image: '▬',
-    links: [
-      { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/catalog/252681730/detail.aspx' },
-      { marketplace: 'Ozon', url: 'https://ozon.ru/t/OLGZtYL' },
+    description: 'Дышащий спортивный топ из высокотехнологичной ткани. Удобный крой поддерживает во время активных тренировок и обеспечивает свободу движений.',
+    image: '/images/outfit/sport/top-sport.jpg',
+    mainMarketplace: 'Сбер Маркет',
+    mainMarketplaceUrl: 'https://sbermegamarket.ru/',
+    partnerMarketplaces: [
+      { name: 'Wildberries', url: 'https://www.wildberries.ru/' },
+      { name: 'Ozon', url: 'https://www.ozon.ru/' }
     ]
   },
   {
-    id: '29',
+    id: 'outfit_sport_item_2',
+    type: 'item',
     category: 'outfit',
     theme: 'sport',
-    name: 'Велосипедки',
-    description: '',
-    image: '▬',
-    links: [
-      { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/catalog/21154521/detail.aspx' },
-      { marketplace: 'Ozon', url: 'https://ozon.ru/t/aHhBKz3' },
-    ]
-  },
-  {
-    id: '30',
-    category: 'outfit',
-    theme: 'sport',
-    name: 'Кроссовки',
-    description: '',
-    image: '▬',
-    links: [
-      { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/catalog/881149749/detail.aspx' },
-      { marketplace: 'Ozon', url: 'https://ozon.ru/t/q4Ng1h5' },
+    capsule: 'outfit_sport_capsule_1',
+    name: 'Леггинсы черные',
+    description: 'Удобные спортивные леггинсы с высокой талией. Эластичная ткань обеспечивает идеальную посадку и полную свободу движений во время тренировки.',
+    image: '/images/outfit/sport/leggings-black.jpg',
+    mainMarketplace: 'Сбер Маркет',
+    mainMarketplaceUrl: 'https://sbermegamarket.ru/',
+    partnerMarketplaces: [
+      { name: 'Wildberries', url: 'https://www.wildberries.ru/' },
+      { name: 'Ozon', url: 'https://www.ozon.ru/' }
     ]
   },
 
-  // АКСЕССУАРЫ - ВЕЧЕРИНКА
+  // ============ АКСЕССУАРЫ - ВЕЧЕРИНКА ============
   {
-    id: '31',
+    id: 'acc_party_capsule_1',
+    type: 'capsule',
     category: 'accessories',
     theme: 'party',
-    name: 'Серьги золотые',
-    description: '',
-    image: '▬',
-    links: [
-      { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/' },
-      { marketplace: 'Ozon', url: 'https://www.ozon.ru/' },
-    ]
+    name: 'Сумка + Серьги',
+    description: 'Стильный комплект аксессуаров: черная сумка и золотые серьги',
+    image: '/images/capsules/accessories/party/capsule-1.jpg'
   },
   {
-    id: '32',
+    id: 'acc_party_item_1',
+    type: 'item',
     category: 'accessories',
     theme: 'party',
+    capsule: 'acc_party_capsule_1',
     name: 'Сумка черная',
-    description: '',
-    image: '▬',
-    links: [
-      { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/' },
-      { marketplace: 'Ozon', url: 'https://market.yandex.ru/' },
+    description: 'Элегантная черная сумка из качественной кожи. Просторная, но компактная - идеальна для вечеринки, когда нужно носить минимум вещей с максимальным стилем.',
+    image: '/images/accessories/party/bag-black.jpg',
+    mainMarketplace: 'Сбер Маркет',
+    mainMarketplaceUrl: 'https://sbermegamarket.ru/',
+    partnerMarketplaces: [
+      { name: 'Wildberries', url: 'https://www.wildberries.ru/' },
+      { name: 'Ozon', url: 'https://www.ozon.ru/' }
     ]
   },
   {
-    id: '33',
+    id: 'acc_party_item_2',
+    type: 'item',
     category: 'accessories',
     theme: 'party',
-    name: 'Браслет серебро',
-    description: '',
-    image: '▬',
-    links: [
-      { marketplace: 'Wildberries', url: 'https://www.ozon.ru/' },
-      { marketplace: 'Ozon', url: 'https://market.yandex.ru/' },
-    ]
-  },
-  {
-    id: '34',
-    category: 'accessories',
-    theme: 'party',
-    name: 'Кольцо золотое',
-    description: '',
-    image: '▬',
-    links: [
-      { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/' },
-      { marketplace: 'Ozon', url: 'https://www.ozon.ru/' },
-    ]
-  },
-  {
-    id: '35',
-    category: 'accessories',
-    theme: 'party',
-    name: 'Туфли черные',
-    description: '',
-    image: '▬',
-    links: [
-      { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/' },
-      { marketplace: 'Ozon', url: 'https://market.yandex.ru/' },
+    capsule: 'acc_party_capsule_1',
+    name: 'Серьги золотые',
+    description: 'Изящные золотые серьги с классическим дизайном. Универсальны и элегантны - отлично дополняют любой вечерний образ.',
+    image: '/images/accessories/party/earrings-gold.jpg',
+    mainMarketplace: 'Сбер Маркет',
+    mainMarketplaceUrl: 'https://sbermegamarket.ru/',
+    partnerMarketplaces: [
+      { name: 'Wildberries', url: 'https://www.wildberries.ru/' },
+      { name: 'Ozon', url: 'https://www.ozon.ru/' }
     ]
   },
 
-  // АКСЕССУАРЫ - РАБОТА
+  // ============ АКСЕССУАРЫ - РАБОТА ============
   {
-    id: '36',
+    id: 'acc_work_capsule_1',
+    type: 'capsule',
     category: 'accessories',
     theme: 'work',
-    name: 'Сумка портфель',
-    description: '',
-    image: '▬',
-    links: [
-      { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/' },
-      { marketplace: 'Ozon', url: 'https://www.ozon.ru/' },
-    ]
+    name: 'Часы + Портфель',
+    description: 'Деловой комплект: классические часы и функциональный портфель',
+    image: '/images/capsules/accessories/work/capsule-1.jpg'
   },
   {
-    id: '37',
+    id: 'acc_work_item_1',
+    type: 'item',
     category: 'accessories',
     theme: 'work',
+    capsule: 'acc_work_capsule_1',
     name: 'Часы классические',
-    description: '',
-    image: '▬',
-    links: [
-      { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/' },
-      { marketplace: 'Ozon', url: 'https://market.yandex.ru/' },
+    description: 'Элегантные наручные часы с классическим циферблатом. Деловой стиль и надежность - идеальный аксессуар для офиса.',
+    image: '/images/accessories/work/watch.jpg',
+    mainMarketplace: 'Сбер Маркет',
+    mainMarketplaceUrl: 'https://sbermegamarket.ru/',
+    partnerMarketplaces: [
+      { name: 'Wildberries', url: 'https://www.wildberries.ru/' },
+      { name: 'Ozon', url: 'https://www.ozon.ru/' }
     ]
   },
   {
-    id: '38',
+    id: 'acc_work_item_2',
+    type: 'item',
     category: 'accessories',
     theme: 'work',
-    name: 'Туфли бежевые',
-    description: '',
-    image: '▬',
-    links: [
-      { marketplace: 'Wildberries', url: 'https://www.ozon.ru/' },
-      { marketplace: 'Ozon', url: 'https://market.yandex.ru/' },
-    ]
-  },
-  {
-    id: '39',
-    category: 'accessories',
-    theme: 'work',
-    name: 'Шарф нейтральный',
-    description: '',
-    image: '▬',
-    links: [
-      { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/' },
-      { marketplace: 'Ozon', url: 'https://www.ozon.ru/' },
-    ]
-  },
-  {
-    id: '40',
-    category: 'accessories',
-    theme: 'work',
-    name: 'Ремень черный',
-    description: '',
-    image: '▬',
-    links: [
-      { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/' },
-      { marketplace: 'Ozon', url: 'https://market.yandex.ru/' },
+    capsule: 'acc_work_capsule_1',
+    name: 'Портфель черный',
+    description: 'Функциональный черный портфель из кожи с удобными ручками. Просторный и стильный - идеален для работы и деловых встреч.',
+    image: '/images/accessories/work/briefcase.jpg',
+    mainMarketplace: 'Сбер Маркет',
+    mainMarketplaceUrl: 'https://sbermegamarket.ru/',
+    partnerMarketplaces: [
+      { name: 'Wildberries', url: 'https://www.wildberries.ru/' },
+      { name: 'Ozon', url: 'https://www.ozon.ru/' }
     ]
   },
 
-  // АКСЕССУАРЫ - УЧЕБА
+  // ============ МАКИЯЖ - ВЕЧЕРИНКА ============
   {
-    id: '41',
-    category: 'accessories',
-    theme: 'study',
-    name: 'Рюкзак повседневный',
-    description: '',
-    image: '▬',
-    links: [
-      { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/' },
-      { marketplace: 'Ozon', url: 'https://www.ozon.ru/' },
-    ]
-  },
-  {
-    id: '42',
-    category: 'accessories',
-    theme: 'study',
-    name: 'Кроссовки удобные',
-    description: '',
-    image: '▬',
-    links: [
-      { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/' },
-      { marketplace: 'Ozon', url: 'https://market.yandex.ru/' },
-    ]
-  },
-  {
-    id: '43',
-    category: 'accessories',
-    theme: 'study',
-    name: 'Шапка вязаная',
-    description: '',
-    image: '▬',
-    links: [
-      { marketplace: 'Wildberries', url: 'https://www.ozon.ru/' },
-      { marketplace: 'Ozon', url: 'https://market.yandex.ru/' },
-    ]
-  },
-  {
-    id: '44',
-    category: 'accessories',
-    theme: 'study',
-    name: 'Наушники',
-    description: '',
-    image: '▬',
-    links: [
-      { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/' },
-      { marketplace: 'Ozon', url: 'https://www.ozon.ru/' },
-    ]
-  },
-  {
-    id: '45',
-    category: 'accessories',
-    theme: 'study',
-    name: 'Сумка-мессенджер',
-    description: '',
-    image: '▬',
-    links: [
-      { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/' },
-      { marketplace: 'Ozon', url: 'https://market.yandex.ru/' },
-    ]
-  },
-
-  // АКСЕССУАРЫ - СВИДАНИЕ
-  {
-    id: '46',
-    category: 'accessories',
-    theme: 'date',
-    name: 'Серьги нежные',
-    description: '',
-    image: '▬',
-    links: [
-      { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/' },
-      { marketplace: 'Ozon', url: 'https://www.ozon.ru/' },
-    ]
-  },
-  {
-    id: '47',
-    category: 'accessories',
-    theme: 'date',
-    name: 'Кольцо женское',
-    description: '',
-    image: '▬',
-    links: [
-      { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/' },
-      { marketplace: 'Ozon', url: 'https://market.yandex.ru/' },
-    ]
-  },
-  {
-    id: '48',
-    category: 'accessories',
-    theme: 'date',
-    name: 'Сумка клатч',
-    description: '',
-    image: '▬',
-    links: [
-      { marketplace: 'Wildberries', url: 'https://www.ozon.ru/' },
-      { marketplace: 'Ozon', url: 'https://market.yandex.ru/' },
-    ]
-  },
-  {
-    id: '49',
-    category: 'accessories',
-    theme: 'date',
-    name: 'Туфли нежные',
-    description: '',
-    image: '▬',
-    links: [
-      { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/' },
-      { marketplace: 'Ozon', url: 'https://www.ozon.ru/' },
-    ]
-  },
-  {
-    id: '50',
-    category: 'accessories',
-    theme: 'date',
-    name: 'Браслет нежный',
-    description: '',
-    image: '▬',
-    links: [
-      { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/' },
-      { marketplace: 'Ozon', url: 'https://market.yandex.ru/' },
-    ]
-  },
-
-  // АКСЕССУАРЫ - СПОРТ
-  {
-    id: '56',
-    category: 'accessories',
-    theme: 'sport',
-    name: 'Кроссовки спортивные',
-    description: '',
-    image: '▬',
-    links: [
-      { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/' },
-      { marketplace: 'Ozon', url: 'https://www.ozon.ru/' },
-    ]
-  },
-  {
-    id: '57',
-    category: 'accessories',
-    theme: 'sport',
-    name: 'Спортивная сумка',
-    description: '',
-    image: '▬',
-    links: [
-      { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/' },
-      { marketplace: 'Ozon', url: 'https://market.yandex.ru/' },
-    ]
-  },
-  {
-    id: '58',
-    category: 'accessories',
-    theme: 'sport',
-    name: 'Спортивные часы',
-    description: '',
-    image: '▬',
-    links: [
-      { marketplace: 'Wildberries', url: 'https://www.ozon.ru/' },
-      { marketplace: 'Ozon', url: 'https://market.yandex.ru/' },
-    ]
-  },
-  {
-    id: '59',
-    category: 'accessories',
-    theme: 'sport',
-    name: 'Бутылка для воды',
-    description: '',
-    image: '▬',
-    links: [
-      { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/' },
-      { marketplace: 'Ozon', url: 'https://www.ozon.ru/' },
-    ]
-  },
-  {
-    id: '60',
-    category: 'accessories',
-    theme: 'sport',
-    name: 'Повязка на голову',
-    description: '',
-    image: '▬',
-    links: [
-      { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/' },
-      { marketplace: 'Ozon', url: 'https://market.yandex.ru/' },
-    ]
-  },
-
-  // УХОД - ВЕЧЕРИНКА
-  {
-    id: '61',
+    id: 'care_party_capsule_1',
+    type: 'capsule',
     category: 'care',
     theme: 'party',
-    name: 'Тональная основа',
-    description: '',
-    image: '▬',
-    links: [
-      { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/catalog/138742829/detail.aspx?size=235729482' },
-      { marketplace: 'Ozon', url: 'https://ozon.ru/t/BYnQ1ma' },
-    ]
+    name: 'Смоки Айс',
+    description: 'Дымчатый макияж для вечеринки: темные тени и объемная тушь',
+    image: '/images/capsules/care/party/smoky-eyes.jpg'
   },
   {
-    id: '62',
+    id: 'care_party_item_1',
+    type: 'item',
     category: 'care',
     theme: 'party',
-    name: 'Консилер',
-    description: '',
-    image: '▬',
-    links: [
-      { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/catalog/663778504/detail.aspx?size=892317684' },
-      { marketplace: 'Ozon', url: 'https://ozon.ru/t/5U1Fmti' },
+    capsule: 'care_party_capsule_1',
+    name: 'Палетка теней',
+    description: 'Профессиональная палетка с 12 оттенками от светлых до угольно-черных. Идеальна для создания дымчатого макияжа с плавными переходами.',
+    image: '/images/care/party/eyeshadow-palette.jpg',
+    mainMarketplace: 'Сбер Маркет',
+    mainMarketplaceUrl: 'https://sbermegamarket.ru/',
+    partnerMarketplaces: [
+      { name: 'Wildberries', url: 'https://www.wildberries.ru/' },
+      { name: 'Ozon', url: 'https://www.ozon.ru/' }
     ]
   },
   {
-    id: '63',
+    id: 'care_party_item_2',
+    type: 'item',
     category: 'care',
     theme: 'party',
-    name: 'Скульптор',
-    description: '',
-    image: '▬',
-    links: [
-      { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/catalog/73446003/detail.aspx?size=124456641' },
-      { marketplace: 'Ozon', url: 'https://ozon.ru/t/C6xJuEw' },
-    ]
-  },
-  {
-    id: '64',
-    category: 'care',
-    theme: 'party',
-    name: 'Румяна',
-    description: '',
-    image: '▬',
-    links: [
-      { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/catalog/479708377/detail.aspx?size=670372227' },
-      { marketplace: 'Ozon', url: 'https://ozon.ru/t/wG8yQrR' },
-    ]
-  },
-  {
-    id: '65',
-    category: 'care',
-    theme: 'party',
-    name: 'Пудра',
-    description: '',
-    image: '▬',
-    links: [
-      { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/catalog/147796707/detail.aspx?size=248386617' },
-      { marketplace: 'Ozon', url: 'https://ozon.ru/t/DuNFOWt' },
-    ]
-  },
-  {
-    id: '66',
-    category: 'care',
-    theme: 'party',
-    name: 'Карандаш для глаз',
-    description: '',
-    image: '▬',
-    links: [
-      { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/catalog/349497697/detail.aspx?size=517612016' },
-      { marketplace: 'Ozon', url: 'https://ozon.ru/t/ofzK316' },
-    ]
-  },
-  {
-    id: '67',
-    category: 'care',
-    theme: 'party',
-    name: 'Тушь',
-    description: '',
-    image: '▬',
-    links: [
-      { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/catalog/349571965/detail.aspx?size=517696890' },
-      { marketplace: 'Ozon', url: 'https://ozon.ru/t/yCApHek' },
-    ]
-  },
-  {
-    id: '68',
-    category: 'care',
-    theme: 'party',
-    name: 'Палетка теней для век',
-    description: '',
-    image: '▬',
-    links: [
-      { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/catalog/550549741/detail.aspx?size=757567418' },
-      { marketplace: 'Ozon', url: 'https://market.yandex.ru/' },
-    ]
-  },
-  {
-    id: '69',
-    category: 'care',
-    theme: 'party',
-    name: 'Карандаш для бровей',
-    description: '',
-    image: '▬',
-    links: [
-      { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/catalog/216652616/detail.aspx?size=345298108' },
-      { marketplace: 'Ozon', url: 'https://ozon.ru/t/d7aOdzj' },
-    ]
-  },
-  {
-    id: '70',
-    category: 'care',
-    theme: 'party',
-    name: 'Гель для бровей',
-    description: '',
-    image: '▬',
-    links: [
-      { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/catalog/254291019/detail.aspx?size=396693773' },
-      { marketplace: 'Ozon', url: 'https://ozon.ru/t/BYCjg3V' },
-    ]
-  },
-  {
-    id: '71',
-    category: 'care',
-    theme: 'party',
-    name: 'Накладные ресницы',
-    description: '',
-    image: '▬',
-    links: [
-      { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/catalog/547823970/detail.aspx?size=754296944' },
-      { marketplace: 'Ozon', url: 'https://ozon.ru/t/ueBgJ7s' },
-    ]
-  },
-  {
-    id: '72',
-    category: 'care',
-    theme: 'party',
-    name: 'Стразы',
-    description: '',
-    image: '▬',
-    links: [
-      { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/catalog/343296684/detail.aspx?size=510490115' },
-      { marketplace: 'Ozon', url: 'https://ozon.ru/t/3hJUzPF' },
-    ]
-  },
-  {
-    id: '73',
-    category: 'care',
-    theme: 'party',
-    name: 'Жидкая матовая помада',
-    description: '',
-    image: '▬',
-    links: [
-      { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/catalog/64244536/detail.aspx' },
-      { marketplace: 'Ozon', url: 'https://ozon.ru/t/fI4Yift' },
-    ]
-  },
-  {
-    id: '74',
-    category: 'care',
-    theme: 'party',
-    name: 'Карандаш для губ',
-    description: '',
-    image: '▬',
-    links: [
-      { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/catalog/415517603/detail.aspx' },
-      { marketplace: 'Ozon', url: 'https://ozon.ru/t/NBtXSRK' },
-    ]
-  },
-    // УХОД - РАБОТА
-  {
-    id: '75',
-    category: 'care',
-    theme: 'work',
-    name: 'Тональная основа',
-    description: '',
-    image: '▬',
-    links: [
-      { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/catalog/138742829/detail.aspx?size=235729482' },
-      { marketplace: 'Ozon', url: 'https://ozon.ru/t/BYnQ1ma' },
-    ]
-  },
-  {
-    id: '76',
-    category: 'care',
-    theme: 'work',
-    name: 'Консилер',
-    description: '',
-    image: '▬',
-    links: [
-      { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/catalog/663778504/detail.aspx?size=892317684' },
-      { marketplace: 'Ozon', url: 'https://ozon.ru/t/5U1Fmti' },
-    ]
-  },
-  {
-    id: '77',
-    category: 'care',
-    theme: 'work',
-    name: 'Румяна',
-    description: 'Палетка нейтральных оттенков',
-    image: '▬',
-    links: [
-      { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/catalog/479708377/detail.aspx?size=670372227' },
-      { marketplace: 'Ozon', url: 'https://ozon.ru/t/wG8yQrR' },
-    ]
-  },
-  {
-    id: '78',
-    category: 'care',
-    theme: 'work',
-    name: 'Пудра',
-    description: '',
-    image: '▬',
-    links: [
-      { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/catalog/147796707/detail.aspx?size=248386617' },
-      { marketplace: 'Ozon', url: 'https://ozon.ru/t/DuNFOWt' },
-    ]
-  },
-  {
-    id: '79',
-    category: 'care',
-    theme: 'work',
-    name: 'Тушь',
-    description: '',
-    image: '▬',
-    links: [
-      { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/catalog/349571965/detail.aspx?size=517696890' },
-      { marketplace: 'Ozon', url: 'https://ozon.ru/t/yCApHek' },
-    ]
-  },
-  {
-    id: '80',
-    category: 'care',
-    theme: 'work',
-    name: 'Кремовые нюдовые тени',
-    description: '',
-    image: '▬',
-    links: [
-      { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/catalog/373276873/detail.aspx?size=544938792' },
-      { marketplace: 'Ozon', url: 'https://ozon.ru/t/homM7FO' },
-    ]
-  },
-  {
-    id: '81',
-    category: 'care',
-    theme: 'work',
-    name: 'Гель для бровей',
-    description: '',
-    image: '▬',
-    links: [
-      { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/catalog/254291019/detail.aspx?size=396693773' },
-      { marketplace: 'Ozon', url: 'https://ozon.ru/t/BYCjg3V' },
-    ]
-  },
-  {
-    id: '82',
-    category: 'care',
-    theme: 'work',
-    name: 'Нюдовая помада',
-    description: '',
-    image: '▬',
-    links: [
-      { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/catalog/806815278/detail.aspx' },
-      { marketplace: 'Ozon', url: 'https://ozon.ru/t/wG8uBch' },
-    ]
-  },
-  {
-    id: '83',
-    category: 'care',
-    theme: 'work',
-    name: 'Нюдовый карандаш для губ',
-    description: '',
-    image: '▬',
-    links: [
-      { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/catalog/900899202/detail.aspx' },
-      { marketplace: 'Ozon', url: 'https://ozon.ru/t/Uyckiau' },
-    ]
-  },
-
-    // УХОД - УЧЕБА
-  {
-    id: '84',
-    category: 'care',
-    theme: 'study',
-    name: 'BB-крем',
-    description: '',
-    image: '▬',
-    links: [
-      { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/catalog/97205056/detail.aspx' },
-      { marketplace: 'Ozon', url: 'https://ozon.ru/t/7WOAMFy' },
-    ]
-  },
-  {
-    id: '85',
-    category: 'care',
-    theme: 'study',
-    name: 'Консилер',
-    description: '',
-    image: '▬',
-    links: [
-      { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/catalog/663778504/detail.aspx?size=892317684' },
-      { marketplace: 'Ozon', url: 'https://ozon.ru/t/5U1Fmti' },
-    ]
-  },
-  {
-    id: '86',
-    category: 'care',
-    theme: 'study',
-    name: 'Румяна',
-    description: '',
-    image: '▬',
-    links: [
-      { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/catalog/10111638/detail.aspx?size=32994153' },
-      { marketplace: 'Ozon', url: 'https://ozon.ru/t/yCApLP4' },
-    ]
-  },
-  {
-    id: '87',
-    category: 'care',
-    theme: 'study',
-    name: 'Хайлайтер',
-    description: '',
-    image: '▬',
-    links: [
-      { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/catalog/17196521/detail.aspx?size=47954737' },
-      { marketplace: 'Ozon', url: 'https://ozon.ru/t/5U1FpBq' },
-    ]
-  },
-  {
-    id: '88',
-    category: 'care',
-    theme: 'study',
-    name: 'Тушь',
-    description: '',
-    image: '▬',
-    links: [
-      { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/catalog/349497697/detail.aspx?size=517612016' },
-      { marketplace: 'Ozon', url: 'https://ozon.ru/t/ofzK316' },
-    ]
-  },
-  {
-    id: '89',
-    category: 'care',
-    theme: 'study',
-    name: 'Мусс для бровей',
-    description: '',
-    image: '▬',
-    links: [
-      { marketplace: 'Wildberries', url: 'https://www.ozon.ru/' },
-      { marketplace: 'Ozon', url: 'https://market.yandex.ru/' },
-    ]
-  },
-  {
-    id: '90',
-    category: 'care',
-    theme: 'study',
-    name: 'Хайлайтер шиммер',
-    description: '',
-    image: '▬',
-    links: [
-      { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/' },
-      { marketplace: 'Ozon', url: 'https://www.ozon.ru/' },
-    ]
-  },
-
-  // УХОД - СВИДАНИЕ
-  {
-    id: '91',
-    category: 'care',
-    theme: 'date',
-    name: 'Помада роза',
-    description: '',
-    image: '▬',
-    links: [
-      { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/' },
-      { marketplace: 'Ozon', url: 'https://www.ozon.ru/' },
-    ]
-  },
-  {
-    id: '92',
-    category: 'care',
-    theme: 'date',
-    name: 'Блеск помада',
-    description: '',
-    image: '▬',
-    links: [
-      { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/' },
-      { marketplace: 'Ozon', url: 'https://market.yandex.ru/' },
-    ]
-  },
-  {
-    id: '93',
-    category: 'care',
-    theme: 'date',
+    capsule: 'care_party_capsule_1',
     name: 'Тушь объемная',
-    description: '',
-    image: '▬',
-    links: [
-      { marketplace: 'Wildberries', url: 'https://www.ozon.ru/' },
-      { marketplace: 'Ozon', url: 'https://market.yandex.ru/' },
+    description: 'Объемная тушь с питательной формулой. Легко наносится, создает эффект густых ресниц и держится весь вечер без смазывания.',
+    image: '/images/care/party/mascara.jpg',
+    mainMarketplace: 'Сбер Маркет',
+    mainMarketplaceUrl: 'https://sbermegamarket.ru/',
+    partnerMarketplaces: [
+      { name: 'Wildberries', url: 'https://www.wildberries.ru/' },
+      { name: 'Ozon', url: 'https://www.ozon.ru/' }
     ]
   },
   {
-    id: '94',
+    id: 'care_party_capsule_2',
+    type: 'capsule',
     category: 'care',
-    theme: 'date',
-    name: 'Тени шимер',
-    description: '',
-    image: '▬',
-    links: [
-      { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/' },
-      { marketplace: 'Ozon', url: 'https://www.ozon.ru/' },
+    theme: 'party',
+    name: 'Красная помада',
+    description: 'Классический вечерний макияж: красная помада и нейтральные тени',
+    image: '/images/capsules/care/party/red-lips.jpg'
+  },
+  {
+    id: 'care_party_item_3',
+    type: 'item',
+    category: 'care',
+    theme: 'party',
+    capsule: 'care_party_capsule_2',
+    name: 'Помада красная',
+    description: 'Насыщенная красная помада с матовым финишем. Классический выбор для вечеринки - смелый, элегантный и всегда актуальный.',
+    image: '/images/care/party/lipstick-red.jpg',
+    mainMarketplace: 'Сбер Маркет',
+    mainMarketplaceUrl: 'https://sbermegamarket.ru/',
+    partnerMarketplaces: [
+      { name: 'Wildberries', url: 'https://www.wildberries.ru/' },
+      { name: 'Ozon', url: 'https://www.ozon.ru/' }
     ]
   },
   {
-    id: '95',
+    id: 'care_party_item_4',
+    type: 'item',
     category: 'care',
-    theme: 'date',
-    name: 'Карандаш графит',
-    description: '',
-    image: '▬',
-    links: [
-      { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/' },
-      { marketplace: 'Ozon', url: 'https://market.yandex.ru/' },
-    ]
-  },
-  {
-    id: '96',
-    category: 'care',
-    theme: 'date',
-    name: 'Румяна coral',
-    description: '',
-    image: '▬',
-    links: [
-      { marketplace: 'Wildberries', url: 'https://www.ozon.ru/' },
-      { marketplace: 'Ozon', url: 'https://market.yandex.ru/' },
-    ]
-  },
-  {
-    id: '97',
-    category: 'care',
-    theme: 'date',
-    name: 'Основа под макияж',
-    description: '',
-    image: '▬',
-    links: [
-      { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/' },
-      { marketplace: 'Ozon', url: 'https://www.ozon.ru/' },
-    ]
-  },
-  {
-    id: '98',
-    category: 'care',
-    theme: 'date',
-    name: 'Тональный крем',
-    description: '',
-    image: '▬',
-    links: [
-      { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/' },
-      { marketplace: 'Ozon', url: 'https://market.yandex.ru/' },
-    ]
-  },
-  {
-    id: '99',
-    category: 'care',
-    theme: 'date',
-    name: 'Хайлайтер розовый',
-    description: '',
-    image: '▬',
-    links: [
-      { marketplace: 'Wildberries', url: 'https://www.ozon.ru/' },
-      { marketplace: 'Ozon', url: 'https://market.yandex.ru/' },
-    ]
-  },
-  {
-    id: '100',
-    category: 'care',
-    theme: 'date',
-    name: 'Спрей фиксатор',
-    description: '',
-    image: '▬',
-    links: [
-      { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/' },
-      { marketplace: 'Ozon', url: 'https://www.ozon.ru/' },
+    theme: 'party',
+    capsule: 'care_party_capsule_2',
+    name: 'Тени нейтральные',
+    description: 'Палетка с нежными нейтральными оттенками. Идеальная база для красной помады - не отвлекает от губ и подчеркивает их.',
+    image: '/images/care/party/eyeshadow-neutral.jpg',
+    mainMarketplace: 'Сбер Маркет',
+    mainMarketplaceUrl: 'https://sbermegamarket.ru/',
+    partnerMarketplaces: [
+      { name: 'Wildberries', url: 'https://www.wildberries.ru/' },
+      { name: 'Ozon', url: 'https://www.ozon.ru/' }
     ]
   },
 
-  // УХОД - СПОРТ
+  // ============ МАКИЯЖ - РАБОТА ============
   {
-    id: '111',
+    id: 'care_work_capsule_1',
+    type: 'capsule',
+    category: 'care',
+    theme: 'work',
+    name: 'Нюдовый макияж',
+    description: 'Свежий офисный макияж: нюдовая помада и легкие нейтральные тени',
+    image: '/images/capsules/care/work/nude-makeup.jpg'
+  },
+  {
+    id: 'care_work_item_1',
+    type: 'item',
+    category: 'care',
+    theme: 'work',
+    capsule: 'care_work_capsule_1',
+    name: 'Помада нюд',
+    description: 'Нежная помада естественного оттенка. Деловая и ненавязчивая - идеальна для офиса и деловых встреч.',
+    image: '/images/care/work/lipstick-nude.jpg',
+    mainMarketplace: 'Сбер Маркет',
+    mainMarketplaceUrl: 'https://sbermegamarket.ru/',
+    partnerMarketplaces: [
+      { name: 'Wildberries', url: 'https://www.wildberries.ru/' },
+      { name: 'Ozon', url: 'https://www.ozon.ru/' }
+    ]
+  },
+  {
+    id: 'care_work_item_2',
+    type: 'item',
+    category: 'care',
+    theme: 'work',
+    capsule: 'care_work_capsule_1',
+    name: 'ВВ крем',
+    description: 'Легкий ВВ крем с SPF защитой. Выравнивает тон кожи и обеспечивает свежий, ухоженный вид в течение всего рабочего дня.',
+    image: '/images/care/work/bb-cream.jpg',
+    mainMarketplace: 'Сбер Маркет',
+    mainMarketplaceUrl: 'https://sbermegamarket.ru/',
+    partnerMarketplaces: [
+      { name: 'Wildberries', url: 'https://www.wildberries.ru/' },
+      { name: 'Ozon', url: 'https://www.ozon.ru/' }
+    ]
+  },
+
+  // ============ МАКИЯЖ - УЧЕБА ============
+  {
+    id: 'care_study_capsule_1',
+    type: 'capsule',
+    category: 'care',
+    theme: 'study',
+    name: 'Естественный макияж',
+    description: 'Легкий повседневный макияж: прозрачный блеск и тонкая подводка',
+    image: '/images/capsules/care/study/natural-makeup.jpg'
+  },
+  {
+    id: 'care_study_item_1',
+    type: 'item',
+    category: 'care',
+    theme: 'study',
+    capsule: 'care_study_capsule_1',
+    name: 'Блеск для губ',
+    description: 'Прозрачный блеск с едва заметным перламутром. Подчеркивает естественную красоту губ и придает свежий, ухоженный вид.',
+    image: '/images/care/study/lip-gloss.jpg',
+    mainMarketplace: 'Сбер Маркет',
+    mainMarketplaceUrl: 'https://sbermegamarket.ru/',
+    partnerMarketplaces: [
+      { name: 'Wildberries', url: 'https://www.wildberries.ru/' },
+      { name: 'Ozon', url: 'https://www.ozon.ru/' }
+    ]
+  },
+  {
+    id: 'care_study_item_2',
+    type: 'item',
+    category: 'care',
+    theme: 'study',
+    capsule: 'care_study_capsule_1',
+    name: 'Подводка коричневая',
+    description: 'Мягкая коричневая подводка для век. Создает естественный, но ухоженный взгляд - идеальна для повседневного макияжа.',
+    image: '/images/care/study/eyeliner-brown.jpg',
+    mainMarketplace: 'Сбер Маркет',
+    mainMarketplaceUrl: 'https://sbermegamarket.ru/',
+    partnerMarketplaces: [
+      { name: 'Wildberries', url: 'https://www.wildberries.ru/' },
+      { name: 'Ozon', url: 'https://www.ozon.ru/' }
+    ]
+  },
+
+  // ============ МАКИЯЖ - СВИДАНИЕ ============
+  {
+    id: 'care_date_capsule_1',
+    type: 'capsule',
+    category: 'care',
+    theme: 'date',
+    name: 'Романтичный макияж',
+    description: 'Нежный макияж для свидания: розовые тени и легкая помада',
+    image: '/images/capsules/care/date/romantic-makeup.jpg'
+  },
+  {
+    id: 'care_date_item_1',
+    type: 'item',
+    category: 'care',
+    theme: 'date',
+    capsule: 'care_date_capsule_1',
+    name: 'Помада роза',
+    description: 'Нежная помада розового цвета. Создает романтичный и женственный образ, идеальна для особого вечера.',
+    image: '/images/care/date/lipstick-rose.jpg',
+    mainMarketplace: 'Сбер Маркет',
+    mainMarketplaceUrl: 'https://sbermegamarket.ru/',
+    partnerMarketplaces: [
+      { name: 'Wildberries', url: 'https://www.wildberries.ru/' },
+      { name: 'Ozon', url: 'https://www.ozon.ru/' }
+    ]
+  },
+  {
+    id: 'care_date_item_2',
+    type: 'item',
+    category: 'care',
+    theme: 'date',
+    capsule: 'care_date_capsule_1',
+    name: 'Тени шимер',
+    description: 'Палетка с нежными оттенками и мягким блеском. Создает деликатный, но выразительный макияж.',
+    image: '/images/care/date/eyeshadow-shimmer.jpg',
+    mainMarketplace: 'Сбер Маркет',
+    mainMarketplaceUrl: 'https://sbermegamarket.ru/',
+    partnerMarketplaces: [
+      { name: 'Wildberries', url: 'https://www.wildberries.ru/' },
+      { name: 'Ozon', url: 'https://www.ozon.ru/' }
+    ]
+  },
+
+  // ============ МАКИЯЖ - СПОРТ ============
+  {
+    id: 'care_sport_capsule_1',
+    type: 'capsule',
     category: 'care',
     theme: 'sport',
+    name: 'Спортивный макияж',
+    description: 'Водостойкий макияж для тренировок: помада и тушь',
+    image: '/images/capsules/care/sport/sport-makeup.jpg'
+  },
+  {
+    id: 'care_sport_item_1',
+    type: 'item',
+    category: 'care',
+    theme: 'sport',
+    capsule: 'care_sport_capsule_1',
     name: 'Помада водостойкая',
-    description: '',
-    image: '▬',
-    links: [
-      { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/' },
-      { marketplace: 'Ozon', url: 'https://www.ozon.ru/' },
+    description: 'Водостойкая помада, которая держится даже во время интенсивной тренировки. Комфортная и стойкая к поту.',
+    image: '/images/care/sport/lipstick-waterproof.jpg',
+    mainMarketplace: 'Сбе�� Маркет',
+    mainMarketplaceUrl: 'https://sbermegamarket.ru/',
+    partnerMarketplaces: [
+      { name: 'Wildberries', url: 'https://www.wildberries.ru/' },
+      { name: 'Ozon', url: 'https://www.ozon.ru/' }
     ]
   },
   {
-    id: '112',
+    id: 'care_sport_item_2',
+    type: 'item',
     category: 'care',
     theme: 'sport',
+    capsule: 'care_sport_capsule_1',
     name: 'Тушь спортивная',
-    description: '',
-    image: '▬',
-    links: [
-      { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/' },
-      { marketplace: 'Ozon', url: 'https://market.yandex.ru/' },
-    ]
-  },
-  {
-    id: '113',
-    category: 'care',
-    theme: 'sport',
-    name: 'ББ крем спорт',
-    description: '',
-    image: '▬',
-    links: [
-      { marketplace: 'Wildberries', url: 'https://www.ozon.ru/' },
-      { marketplace: 'Ozon', url: 'https://market.yandex.ru/' },
-    ]
-  },
-  {
-    id: '114',
-    category: 'care',
-    theme: 'sport',
-    name: 'Пудра компактная',
-    description: '',
-    image: '▬',
-    links: [
-      { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/' },
-      { marketplace: 'Ozon', url: 'https://www.ozon.ru/' },
-    ]
-  },
-  {
-    id: '115',
-    category: 'care',
-    theme: 'sport',
-    name: 'Румяна стойкие',
-    description: '',
-    image: '▬',
-    links: [
-      { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/' },
-      { marketplace: 'Ozon', url: 'https://market.yandex.ru/' },
-    ]
-  },
-  {
-    id: '116',
-    category: 'care',
-    theme: 'sport',
-    name: 'Праймер водостойкий',
-    description: '',
-    image: '▬',
-    links: [
-      { marketplace: 'Wildberries', url: 'https://www.ozon.ru/' },
-      { marketplace: 'Ozon', url: 'https://market.yandex.ru/' },
-    ]
-  },
-  {
-    id: '117',
-    category: 'care',
-    theme: 'sport',
-    name: 'Карандаш водостойкий',
-    description: '',
-    image: '▬',
-    links: [
-      { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/' },
-      { marketplace: 'Ozon', url: 'https://www.ozon.ru/' },
-    ]
-  },
-  {
-    id: '118',
-    category: 'care',
-    theme: 'sport',
-    name: 'Спрей фиксатор спорт',
-    description: '',
-    image: '▬',
-    links: [
-      { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/' },
-      { marketplace: 'Ozon', url: 'https://market.yandex.ru/' },
-    ]
-  },
-  {
-    id: '119',
-    category: 'care',
-    theme: 'sport',
-    name: 'Консилер водостойкий',
-    description: '',
-    image: '▬',
-    links: [
-      { marketplace: 'Wildberries', url: 'https://www.ozon.ru/' },
-      { marketplace: 'Ozon', url: 'https://market.yandex.ru/' },
-    ]
-  },
-  {
-    id: '120',
-    category: 'care',
-    theme: 'sport',
-    name: 'Масло для губ',
-    description: '',
-    image: '▬',
-    links: [
-      { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/' },
-      { marketplace: 'Ozon', url: 'https://www.ozon.ru/' },
+    description: 'Водостойкая спортивная тушь, которая не размазывается и держится весь день. Идеальна для активного образа жизни.',
+    image: '/images/care/sport/mascara-sport.jpg',
+    mainMarketplace: 'Сбер Маркет',
+    mainMarketplaceUrl: 'https://sbermegamarket.ru/',
+    partnerMarketplaces: [
+      { name: 'Wildberries', url: 'https://www.wildberries.ru/' },
+      { name: 'Ozon', url: 'https://www.ozon.ru/' }
     ]
   },
 ];
