@@ -18,7 +18,7 @@ export const LibraryModal = (props) => {
     const names = {
       outfit: 'Образ',
       accessories: 'Аксессуары',
-      care: 'Уход',
+      care: 'Макияж',
     };
     return names[category] || category;
   };

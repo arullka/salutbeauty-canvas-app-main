@@ -318,7 +318,7 @@ export const ITEMS_DATABASE = [
     category: 'accessories',
     theme: 'party',
     name: 'Серьги золотые',
-    description: 'Простые золотые серьги',
+    description: '',
     image: '▬',
     links: [
       { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/' },
@@ -330,8 +330,7 @@ export const ITEMS_DATABASE = [
     category: 'accessories',
     theme: 'party',
     name: 'Сумка черная',
-    description: 'Стильная черная сумка',
-    price: '2000',
+    description: '',
     image: '▬',
     links: [
       { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/' },
@@ -343,8 +342,7 @@ export const ITEMS_DATABASE = [
     category: 'accessories',
     theme: 'party',
     name: 'Браслет серебро',
-    description: 'Серебряный браслет',
-    price: '1500',
+    description: '',
     image: '▬',
     links: [
       { marketplace: 'Wildberries', url: 'https://www.ozon.ru/' },
@@ -356,8 +354,7 @@ export const ITEMS_DATABASE = [
     category: 'accessories',
     theme: 'party',
     name: 'Кольцо золотое',
-    description: 'Простое золотое кольцо',
-    price: '1800',
+    description: '',
     image: '▬',
     links: [
       { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/' },
@@ -369,8 +366,7 @@ export const ITEMS_DATABASE = [
     category: 'accessories',
     theme: 'party',
     name: 'Туфли черные',
-    description: 'Классические черные туфли',
-    price: '3200',
+    description: '',
     image: '▬',
     links: [
       { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/' },
@@ -384,8 +380,7 @@ export const ITEMS_DATABASE = [
     category: 'accessories',
     theme: 'work',
     name: 'Сумка портфель',
-    description: 'Классический портфель',
-    price: '3500',
+    description: '',
     image: '▬',
     links: [
       { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/' },
@@ -397,8 +392,7 @@ export const ITEMS_DATABASE = [
     category: 'accessories',
     theme: 'work',
     name: 'Часы классические',
-    description: 'Деловые классические часы',
-    price: '4500',
+    description: '',
     image: '▬',
     links: [
       { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/' },
@@ -410,8 +404,7 @@ export const ITEMS_DATABASE = [
     category: 'accessories',
     theme: 'work',
     name: 'Туфли бежевые',
-    description: 'Удобные офисные туфли',
-    price: '2800',
+    description: '',
     image: '▬',
     links: [
       { marketplace: 'Wildberries', url: 'https://www.ozon.ru/' },
@@ -423,8 +416,7 @@ export const ITEMS_DATABASE = [
     category: 'accessories',
     theme: 'work',
     name: 'Шарф нейтральный',
-    description: 'Шарф нейтрального цвета',
-    price: '1200',
+    description: '',
     image: '▬',
     links: [
       { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/' },
@@ -436,8 +428,7 @@ export const ITEMS_DATABASE = [
     category: 'accessories',
     theme: 'work',
     name: 'Ремень черный',
-    description: 'Кожаный черный ремень',
-    price: '1600',
+    description: '',
     image: '▬',
     links: [
       { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/' },
@@ -451,8 +442,7 @@ export const ITEMS_DATABASE = [
     category: 'accessories',
     theme: 'study',
     name: 'Рюкзак повседневный',
-    description: 'Удобный повседневный рюкзак',
-    price: '2200',
+    description: '',
     image: '▬',
     links: [
       { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/' },
@@ -464,8 +454,7 @@ export const ITEMS_DATABASE = [
     category: 'accessories',
     theme: 'study',
     name: 'Кроссовки удобные',
-    description: 'Удобные повседневные кроссовки',
-    price: '2500',
+    description: '',
     image: '▬',
     links: [
       { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/' },
@@ -477,8 +466,7 @@ export const ITEMS_DATABASE = [
     category: 'accessories',
     theme: 'study',
     name: 'Шапка вязаная',
-    description: 'Теплая вязаная шапка',
-    price: '800',
+    description: '',
     image: '▬',
     links: [
       { marketplace: 'Wildberries', url: 'https://www.ozon.ru/' },
@@ -490,8 +478,7 @@ export const ITEMS_DATABASE = [
     category: 'accessories',
     theme: 'study',
     name: 'Наушники',
-    description: 'Стильные наушники',
-    price: '2000',
+    description: '',
     image: '▬',
     links: [
       { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/' },
@@ -503,8 +490,7 @@ export const ITEMS_DATABASE = [
     category: 'accessories',
     theme: 'study',
     name: 'Сумка-мессенджер',
-    description: 'Удобная сумка через плечо',
-    price: '1800',
+    description: '',
     image: '▬',
     links: [
       { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/' },
@@ -518,8 +504,7 @@ export const ITEMS_DATABASE = [
     category: 'accessories',
     theme: 'date',
     name: 'Серьги нежные',
-    description: 'Нежные красивые серьги',
-    price: '1400',
+    description: '',
     image: '▬',
     links: [
       { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/' },
@@ -531,8 +516,7 @@ export const ITEMS_DATABASE = [
     category: 'accessories',
     theme: 'date',
     name: 'Кольцо женское',
-    description: 'Стильное женское кольцо',
-    price: '1600',
+    description: '',
     image: '▬',
     links: [
       { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/' },
@@ -544,8 +528,7 @@ export const ITEMS_DATABASE = [
     category: 'accessories',
     theme: 'date',
     name: 'Сумка клатч',
-    description: 'Элегантный клатч',
-    price: '2400',
+    description: '',
     image: '▬',
     links: [
       { marketplace: 'Wildberries', url: 'https://www.ozon.ru/' },
@@ -557,8 +540,7 @@ export const ITEMS_DATABASE = [
     category: 'accessories',
     theme: 'date',
     name: 'Туфли нежные',
-    description: 'Элегантные туфли',
-    price: '3100',
+    description: '',
     image: '▬',
     links: [
       { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/' },
@@ -570,8 +552,7 @@ export const ITEMS_DATABASE = [
     category: 'accessories',
     theme: 'date',
     name: 'Браслет нежный',
-    description: 'Тонкий элегантный браслет',
-    price: '1500',
+    description: '',
     image: '▬',
     links: [
       { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/' },
@@ -585,8 +566,7 @@ export const ITEMS_DATABASE = [
     category: 'accessories',
     theme: 'sport',
     name: 'Кроссовки спортивные',
-    description: 'Профессиональные спортивные кроссовки',
-    price: '5000',
+    description: '',
     image: '▬',
     links: [
       { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/' },
@@ -598,8 +578,7 @@ export const ITEMS_DATABASE = [
     category: 'accessories',
     theme: 'sport',
     name: 'Спортивная сумка',
-    description: 'Спортивная сумка для тренировок',
-    price: '2800',
+    description: '',
     image: '▬',
     links: [
       { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/' },
@@ -611,8 +590,7 @@ export const ITEMS_DATABASE = [
     category: 'accessories',
     theme: 'sport',
     name: 'Спортивные часы',
-    description: 'Смарт-часы для спорта',
-    price: '8000',
+    description: '',
     image: '▬',
     links: [
       { marketplace: 'Wildberries', url: 'https://www.ozon.ru/' },
@@ -624,8 +602,7 @@ export const ITEMS_DATABASE = [
     category: 'accessories',
     theme: 'sport',
     name: 'Бутылка для воды',
-    description: 'Удобная бутылка для воды',
-    price: '800',
+    description: '',
     image: '▬',
     links: [
       { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/' },
@@ -637,8 +614,7 @@ export const ITEMS_DATABASE = [
     category: 'accessories',
     theme: 'sport',
     name: 'Повязка на голову',
-    description: 'Спортивная повязка на голову',
-    price: '400',
+    description: '',
     image: '▬',
     links: [
       { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/' },
@@ -651,6 +627,42 @@ export const ITEMS_DATABASE = [
     id: '61',
     category: 'care',
     theme: 'party',
+    name: 'Тональная основа',
+    description: '',
+    image: '▬',
+    links: [
+      { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/catalog/138742829/detail.aspx?size=235729482' },
+      { marketplace: 'Ozon', url: 'https://ozon.ru/t/BYnQ1ma' },
+    ]
+  },
+  {
+    id: '62',
+    category: 'care',
+    theme: 'party',
+    name: 'Консилер',
+    description: '',
+    image: '▬',
+    links: [
+      { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/catalog/663778504/detail.aspx?size=892317684' },
+      { marketplace: 'Ozon', url: 'https://ozon.ru/t/5U1Fmti' },
+    ]
+  },
+  {
+    id: '63',
+    category: 'care',
+    theme: 'party',
+    name: 'Скульптор',
+    description: '',
+    image: '▬',
+    links: [
+      { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/catalog/73446003/detail.aspx?size=124456641' },
+      { marketplace: 'Ozon', url: 'https://ozon.ru/t/C6xJuEw' },
+    ]
+  },
+  {
+    id: '64',
+    category: 'care',
+    theme: 'party',
     name: 'Румяна',
     description: '',
     image: '▬',
@@ -660,7 +672,31 @@ export const ITEMS_DATABASE = [
     ]
   },
   {
-    id: '62',
+    id: '65',
+    category: 'care',
+    theme: 'party',
+    name: 'Пудра',
+    description: '',
+    image: '▬',
+    links: [
+      { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/catalog/147796707/detail.aspx?size=248386617' },
+      { marketplace: 'Ozon', url: 'https://ozon.ru/t/DuNFOWt' },
+    ]
+  },
+  {
+    id: '66',
+    category: 'care',
+    theme: 'party',
+    name: 'Карандаш для глаз',
+    description: '',
+    image: '▬',
+    links: [
+      { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/catalog/349497697/detail.aspx?size=517612016' },
+      { marketplace: 'Ozon', url: 'https://ozon.ru/t/ofzK316' },
+    ]
+  },
+  {
+    id: '67',
     category: 'care',
     theme: 'party',
     name: 'Тушь',
@@ -672,7 +708,7 @@ export const ITEMS_DATABASE = [
     ]
   },
   {
-    id: '63',
+    id: '68',
     category: 'care',
     theme: 'party',
     name: 'Палетка теней для век',
@@ -680,23 +716,11 @@ export const ITEMS_DATABASE = [
     image: '▬',
     links: [
       { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/catalog/550549741/detail.aspx?size=757567418' },
-      { marketplace: 'Ozon', url: 'https://ozon.ru/t/EAMP6HP' },
+      { marketplace: 'Ozon', url: 'https://market.yandex.ru/' },
     ]
   },
   {
-    id: '64',
-    category: 'care',
-    theme: 'party',
-    name: 'Карандаш для глаз',
-    description: '',
-    image: '▬',
-    links: [
-      { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/catalog/349497697/detail.aspx?size=517612016' },
-      { marketplace: 'Ozon', url: 'https://ozon.ru/t/ofzK316' },
-    ]
-  },
-  {
-    id: '65',
+    id: '69',
     category: 'care',
     theme: 'party',
     name: 'Карандаш для бровей',
@@ -708,46 +732,229 @@ export const ITEMS_DATABASE = [
     ]
   },
   {
-    id: '66',
+    id: '70',
     category: 'care',
     theme: 'party',
-    name: 'Тональный крем',
+    name: 'Гель для бровей',
     description: '',
     image: '▬',
     links: [
-      { marketplace: 'Wildberries', url: 'https://www.ozon.ru/' },
-      { marketplace: 'Ozon', url: 'https://market.yandex.ru/' },
+      { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/catalog/254291019/detail.aspx?size=396693773' },
+      { marketplace: 'Ozon', url: 'https://ozon.ru/t/BYCjg3V' },
     ]
   },
   {
-    id: '67',
+    id: '71',
     category: 'care',
     theme: 'party',
+    name: 'Накладные ресницы',
+    description: '',
+    image: '▬',
+    links: [
+      { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/catalog/547823970/detail.aspx?size=754296944' },
+      { marketplace: 'Ozon', url: 'https://ozon.ru/t/ueBgJ7s' },
+    ]
+  },
+  {
+    id: '72',
+    category: 'care',
+    theme: 'party',
+    name: 'Стразы',
+    description: '',
+    image: '▬',
+    links: [
+      { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/catalog/343296684/detail.aspx?size=510490115' },
+      { marketplace: 'Ozon', url: 'https://ozon.ru/t/3hJUzPF' },
+    ]
+  },
+  {
+    id: '73',
+    category: 'care',
+    theme: 'party',
+    name: 'Жидкая матовая помада',
+    description: '',
+    image: '▬',
+    links: [
+      { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/catalog/64244536/detail.aspx' },
+      { marketplace: 'Ozon', url: 'https://ozon.ru/t/fI4Yift' },
+    ]
+  },
+  {
+    id: '74',
+    category: 'care',
+    theme: 'party',
+    name: 'Карандаш для губ',
+    description: '',
+    image: '▬',
+    links: [
+      { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/catalog/415517603/detail.aspx' },
+      { marketplace: 'Ozon', url: 'https://ozon.ru/t/NBtXSRK' },
+    ]
+  },
+    // УХОД - РАБОТА
+  {
+    id: '75',
+    category: 'care',
+    theme: 'work',
+    name: 'Тональная основа',
+    description: '',
+    image: '▬',
+    links: [
+      { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/catalog/138742829/detail.aspx?size=235729482' },
+      { marketplace: 'Ozon', url: 'https://ozon.ru/t/BYnQ1ma' },
+    ]
+  },
+  {
+    id: '76',
+    category: 'care',
+    theme: 'work',
     name: 'Консилер',
     description: '',
     image: '▬',
     links: [
-      { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/' },
-      { marketplace: 'Ozon', url: 'https://www.ozon.ru/' },
+      { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/catalog/663778504/detail.aspx?size=892317684' },
+      { marketplace: 'Ozon', url: 'https://ozon.ru/t/5U1Fmti' },
     ]
   },
   {
-    id: '68',
+    id: '77',
     category: 'care',
-    theme: 'party',
+    theme: 'work',
+    name: 'Румяна',
+    description: 'Палетка нейтральных оттенков',
+    image: '▬',
+    links: [
+      { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/catalog/479708377/detail.aspx?size=670372227' },
+      { marketplace: 'Ozon', url: 'https://ozon.ru/t/wG8yQrR' },
+    ]
+  },
+  {
+    id: '78',
+    category: 'care',
+    theme: 'work',
+    name: 'Пудра',
+    description: '',
+    image: '▬',
+    links: [
+      { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/catalog/147796707/detail.aspx?size=248386617' },
+      { marketplace: 'Ozon', url: 'https://ozon.ru/t/DuNFOWt' },
+    ]
+  },
+  {
+    id: '79',
+    category: 'care',
+    theme: 'work',
+    name: 'Тушь',
+    description: '',
+    image: '▬',
+    links: [
+      { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/catalog/349571965/detail.aspx?size=517696890' },
+      { marketplace: 'Ozon', url: 'https://ozon.ru/t/yCApHek' },
+    ]
+  },
+  {
+    id: '80',
+    category: 'care',
+    theme: 'work',
+    name: 'Кремовые нюдовые тени',
+    description: '',
+    image: '▬',
+    links: [
+      { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/catalog/373276873/detail.aspx?size=544938792' },
+      { marketplace: 'Ozon', url: 'https://ozon.ru/t/homM7FO' },
+    ]
+  },
+  {
+    id: '81',
+    category: 'care',
+    theme: 'work',
+    name: 'Гель для бровей',
+    description: '',
+    image: '▬',
+    links: [
+      { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/catalog/254291019/detail.aspx?size=396693773' },
+      { marketplace: 'Ozon', url: 'https://ozon.ru/t/BYCjg3V' },
+    ]
+  },
+  {
+    id: '82',
+    category: 'care',
+    theme: 'work',
+    name: 'Нюдовая помада',
+    description: '',
+    image: '▬',
+    links: [
+      { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/catalog/806815278/detail.aspx' },
+      { marketplace: 'Ozon', url: 'https://ozon.ru/t/wG8uBch' },
+    ]
+  },
+  {
+    id: '83',
+    category: 'care',
+    theme: 'work',
+    name: 'Нюдовый карандаш для губ',
+    description: '',
+    image: '▬',
+    links: [
+      { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/catalog/900899202/detail.aspx' },
+      { marketplace: 'Ozon', url: 'https://ozon.ru/t/Uyckiau' },
+    ]
+  },
+
+    // УХОД - УЧЕБА
+  {
+    id: '84',
+    category: 'care',
+    theme: 'study',
+    name: 'BB-крем',
+    description: '',
+    image: '▬',
+    links: [
+      { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/catalog/97205056/detail.aspx' },
+      { marketplace: 'Ozon', url: 'https://ozon.ru/t/7WOAMFy' },
+    ]
+  },
+  {
+    id: '85',
+    category: 'care',
+    theme: 'study',
+    name: 'Консилер',
+    description: '',
+    image: '▬',
+    links: [
+      { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/catalog/663778504/detail.aspx?size=892317684' },
+      { marketplace: 'Ozon', url: 'https://ozon.ru/t/5U1Fmti' },
+    ]
+  },
+  {
+    id: '86',
+    category: 'care',
+    theme: 'study',
     name: 'Румяна',
     description: '',
     image: '▬',
     links: [
-      { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/' },
-      { marketplace: 'Ozon', url: 'https://market.yandex.ru/' },
+      { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/catalog/10111638/detail.aspx?size=32994153' },
+      { marketplace: 'Ozon', url: 'https://ozon.ru/t/yCApLP4' },
     ]
   },
   {
-    id: '69',
+    id: '87',
     category: 'care',
-    theme: 'party',
-    name: 'Карандаш для глаз',
+    theme: 'study',
+    name: 'Хайлайтер',
+    description: '',
+    image: '▬',
+    links: [
+      { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/catalog/17196521/detail.aspx?size=47954737' },
+      { marketplace: 'Ozon', url: 'https://ozon.ru/t/5U1FpBq' },
+    ]
+  },
+  {
+    id: '88',
+    category: 'care',
+    theme: 'study',
+    name: 'Тушь',
     description: '',
     image: '▬',
     links: [
@@ -756,262 +963,11 @@ export const ITEMS_DATABASE = [
     ]
   },
   {
-    id: '70',
-    category: 'care',
-    theme: 'party',
-    name: 'Фиксатор макияжа',
-    description: 'Спрей для фиксации макияжа',
-    image: '▬',
-    links: [
-      { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/' },
-      { marketplace: 'Ozon', url: 'https://www.ozon.ru/' },
-    ]
-  },
-
-  // УХОД - РАБОТА
-  {
-    id: '71',
-    category: 'care',
-    theme: 'work',
-    name: 'Помада нюд',
-    description: 'Помада натурального оттенка',
-    price: '600',
-    image: '▬',
-    links: [
-      { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/' },
-      { marketplace: 'Ozon', url: 'https://www.ozon.ru/' },
-    ]
-  },
-  {
-    id: '72',
-    category: 'care',
-    theme: 'work',
-    name: 'ВВ крем',
-    description: 'Тональный ВВ крем',
-    price: '850',
-    image: '▬',
-    links: [
-      { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/' },
-      { marketplace: 'Ozon', url: 'https://market.yandex.ru/' },
-    ]
-  },
-  {
-    id: '73',
-    category: 'care',
-    theme: 'work',
-    name: 'Пудра прессованная',
-    description: 'Матирующая пудра',
-    price: '480',
-    image: '▬',
-    links: [
-      { marketplace: 'Wildberries', url: 'https://www.ozon.ru/' },
-      { marketplace: 'Ozon', url: 'https://market.yandex.ru/' },
-    ]
-  },
-  {
-    id: '74',
-    category: 'care',
-    theme: 'work',
-    name: 'Тушь коричневая',
-    description: 'Натуральная коричневая тушь',
-    price: '520',
-    image: '▬',
-    links: [
-      { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/' },
-      { marketplace: 'Ozon', url: 'https://www.ozon.ru/' },
-    ]
-  },
-  {
-    id: '75',
-    category: 'care',
-    theme: 'work',
-    name: 'Карандаш для бровей',
-    description: 'Карандаш для коррекции бровей',
-    price: '420',
-    image: '▬',
-    links: [
-      { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/' },
-      { marketplace: 'Ozon', url: 'https://market.yandex.ru/' },
-    ]
-  },
-  {
-    id: '76',
-    category: 'care',
-    theme: 'work',
-    name: 'Румяна бежевые',
-    description: 'Нейтральные бежевые румяна',
-    price: '480',
-    image: '▬',
-    links: [
-      { marketplace: 'Wildberries', url: 'https://www.ozon.ru/' },
-      { marketplace: 'Ozon', url: 'https://market.yandex.ru/' },
-    ]
-  },
-  {
-    id: '77',
-    category: 'care',
-    theme: 'work',
-    name: 'Тени нейтральные',
-    description: 'Палетка нейтральных оттенков',
-    price: '850',
-    image: '▬',
-    links: [
-      { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/' },
-      { marketplace: 'Ozon', url: 'https://www.ozon.ru/' },
-    ]
-  },
-  {
-    id: '78',
-    category: 'care',
-    theme: 'work',
-    name: 'Праймер для макияжа',
-    description: 'Праймер под макияж',
-    price: '750',
-    image: '▬',
-    links: [
-      { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/' },
-      { marketplace: 'Ozon', url: 'https://market.yandex.ru/' },
-    ]
-  },
-  {
-    id: '79',
-    category: 'care',
-    theme: 'work',
-    name: 'Консилер',
-    description: 'Консилер для маскировки',
-    price: '620',
-    image: '▬',
-    links: [
-      { marketplace: 'Wildberries', url: 'https://www.ozon.ru/' },
-      { marketplace: 'Ozon', url: 'https://market.yandex.ru/' },
-    ]
-  },
-  {
-    id: '80',
-    category: 'care',
-    theme: 'work',
-    name: 'Спрей фиксатор',
-    description: 'Фиксирующий спрей',
-    price: '780',
-    image: '▬',
-    links: [
-      { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/' },
-      { marketplace: 'Ozon', url: 'https://www.ozon.ru/' },
-    ]
-  },
-
-  // УХОД - УЧЕБА
-  {
-    id: '81',
-    category: 'care',
-    theme: 'study',
-    name: 'Помада светлая',
-    description: 'Светлая помада для учебы',
-    price: '520',
-    image: '▬',
-    links: [
-      { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/' },
-      { marketplace: 'Ozon', url: 'https://www.ozon.ru/' },
-    ]
-  },
-  {
-    id: '82',
-    category: 'care',
-    theme: 'study',
-    name: 'Крем-база',
-    description: 'База под макияж',
-    price: '680',
-    image: '▬',
-    links: [
-      { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/' },
-      { marketplace: 'Ozon', url: 'https://market.yandex.ru/' },
-    ]
-  },
-  {
-    id: '83',
-    category: 'care',
-    theme: 'study',
-    name: 'Тушь коричневая',
-    description: 'Легкая коричневая тушь',
-    price: '450',
-    image: '▬',
-    links: [
-      { marketplace: 'Wildberries', url: 'https://www.ozon.ru/' },
-      { marketplace: 'Ozon', url: 'https://market.yandex.ru/' },
-    ]
-  },
-  {
-    id: '84',
-    category: 'care',
-    theme: 'study',
-    name: 'Блеск для губ',
-    description: 'Прозрачный блеск для губ',
-    price: '380',
-    image: '▬',
-    links: [
-      { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/' },
-      { marketplace: 'Ozon', url: 'https://www.ozon.ru/' },
-    ]
-  },
-  {
-    id: '85',
-    category: 'care',
-    theme: 'study',
-    name: 'Румяна розовые',
-    description: 'Нежные розовые румяна',
-    price: '420',
-    image: '▬',
-    links: [
-      { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/' },
-      { marketplace: 'Ozon', url: 'https://market.yandex.ru/' },
-    ]
-  },
-  {
-    id: '86',
-    category: 'care',
-    theme: 'study',
-    name: 'Подводка коричневая',
-    description: 'Мягкая коричневая подводка',
-    price: '380',
-    image: '▬',
-    links: [
-      { marketplace: 'Wildberries', url: 'https://www.ozon.ru/' },
-      { marketplace: 'Ozon', url: 'https://market.yandex.ru/' },
-    ]
-  },
-  {
-    id: '87',
-    category: 'care',
-    theme: 'study',
-    name: 'Тени светлые',
-    description: 'Палетка светлых оттенков',
-    price: '650',
-    image: '▬',
-    links: [
-      { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/' },
-      { marketplace: 'Ozon', url: 'https://www.ozon.ru/' },
-    ]
-  },
-  {
-    id: '88',
-    category: 'care',
-    theme: 'study',
-    name: 'Карандаш для бровей',
-    description: 'Карандаш светлого цвета',
-    price: '350',
-    image: '▬',
-    links: [
-      { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/' },
-      { marketplace: 'Ozon', url: 'https://market.yandex.ru/' },
-    ]
-  },
-  {
     id: '89',
     category: 'care',
     theme: 'study',
     name: 'Мусс для бровей',
-    description: 'Фиксирующий мусс для бровей',
-    price: '500',
+    description: '',
     image: '▬',
     links: [
       { marketplace: 'Wildberries', url: 'https://www.ozon.ru/' },
@@ -1023,8 +979,7 @@ export const ITEMS_DATABASE = [
     category: 'care',
     theme: 'study',
     name: 'Хайлайтер шиммер',
-    description: 'Легкий блеск-хайлайтер',
-    price: '600',
+    description: '',
     image: '▬',
     links: [
       { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/' },
@@ -1038,8 +993,7 @@ export const ITEMS_DATABASE = [
     category: 'care',
     theme: 'date',
     name: 'Помада роза',
-    description: 'Помада розового цвета',
-    price: '620',
+    description: '',
     image: '▬',
     links: [
       { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/' },
@@ -1051,8 +1005,7 @@ export const ITEMS_DATABASE = [
     category: 'care',
     theme: 'date',
     name: 'Блеск помада',
-    description: 'Блеск с нежным оттенком',
-    price: '550',
+    description: '',
     image: '▬',
     links: [
       { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/' },
@@ -1064,8 +1017,7 @@ export const ITEMS_DATABASE = [
     category: 'care',
     theme: 'date',
     name: 'Тушь объемная',
-    description: 'Объемная тушь с кисточкой',
-    price: '580',
+    description: '',
     image: '▬',
     links: [
       { marketplace: 'Wildberries', url: 'https://www.ozon.ru/' },
@@ -1077,8 +1029,7 @@ export const ITEMS_DATABASE = [
     category: 'care',
     theme: 'date',
     name: 'Тени шимер',
-    description: 'Палетка с шимером',
-    price: '950',
+    description: '',
     image: '▬',
     links: [
       { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/' },
@@ -1090,8 +1041,7 @@ export const ITEMS_DATABASE = [
     category: 'care',
     theme: 'date',
     name: 'Карандаш графит',
-    description: 'Карандаш для подводки глаз',
-    price: '420',
+    description: '',
     image: '▬',
     links: [
       { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/' },
@@ -1103,8 +1053,7 @@ export const ITEMS_DATABASE = [
     category: 'care',
     theme: 'date',
     name: 'Румяна coral',
-    description: 'Румяна коралового цвета',
-    price: '520',
+    description: '',
     image: '▬',
     links: [
       { marketplace: 'Wildberries', url: 'https://www.ozon.ru/' },
@@ -1116,8 +1065,7 @@ export const ITEMS_DATABASE = [
     category: 'care',
     theme: 'date',
     name: 'Основа под макияж',
-    description: 'Праймер для лица',
-    price: '780',
+    description: '',
     image: '▬',
     links: [
       { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/' },
@@ -1129,8 +1077,7 @@ export const ITEMS_DATABASE = [
     category: 'care',
     theme: 'date',
     name: 'Тональный крем',
-    description: 'Легкий тональный крем',
-    price: '920',
+    description: '',
     image: '▬',
     links: [
       { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/' },
@@ -1142,8 +1089,7 @@ export const ITEMS_DATABASE = [
     category: 'care',
     theme: 'date',
     name: 'Хайлайтер розовый',
-    description: 'Хайлайтер розового цвета',
-    price: '750',
+    description: '',
     image: '▬',
     links: [
       { marketplace: 'Wildberries', url: 'https://www.ozon.ru/' },
@@ -1155,8 +1101,7 @@ export const ITEMS_DATABASE = [
     category: 'care',
     theme: 'date',
     name: 'Спрей фиксатор',
-    description: 'Фиксирующий спрей',
-    price: '800',
+    description: '',
     image: '▬',
     links: [
       { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/' },
@@ -1170,8 +1115,7 @@ export const ITEMS_DATABASE = [
     category: 'care',
     theme: 'sport',
     name: 'Помада водостойкая',
-    description: 'Водостойкая помада',
-    price: '580',
+    description: '',
     image: '▬',
     links: [
       { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/' },
@@ -1183,8 +1127,7 @@ export const ITEMS_DATABASE = [
     category: 'care',
     theme: 'sport',
     name: 'Тушь спортивная',
-    description: 'Водостойкая спортивная тушь',
-    price: '720',
+    description: '',
     image: '▬',
     links: [
       { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/' },
@@ -1196,8 +1139,7 @@ export const ITEMS_DATABASE = [
     category: 'care',
     theme: 'sport',
     name: 'ББ крем спорт',
-    description: 'Легкий ББ крем водостойкий',
-    price: '750',
+    description: '',
     image: '▬',
     links: [
       { marketplace: 'Wildberries', url: 'https://www.ozon.ru/' },
@@ -1209,8 +1151,7 @@ export const ITEMS_DATABASE = [
     category: 'care',
     theme: 'sport',
     name: 'Пудра компактная',
-    description: 'Компактная матирующая пудра',
-    price: '520',
+    description: '',
     image: '▬',
     links: [
       { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/' },
@@ -1222,8 +1163,7 @@ export const ITEMS_DATABASE = [
     category: 'care',
     theme: 'sport',
     name: 'Румяна стойкие',
-    description: 'Стойкие румяна для спорта',
-    price: '480',
+    description: '',
     image: '▬',
     links: [
       { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/' },
@@ -1235,8 +1175,7 @@ export const ITEMS_DATABASE = [
     category: 'care',
     theme: 'sport',
     name: 'Праймер водостойкий',
-    description: 'Праймер для спортивного макияжа',
-    price: '680',
+    description: '',
     image: '▬',
     links: [
       { marketplace: 'Wildberries', url: 'https://www.ozon.ru/' },
@@ -1248,8 +1187,7 @@ export const ITEMS_DATABASE = [
     category: 'care',
     theme: 'sport',
     name: 'Карандаш водостойкий',
-    description: 'Водостойкий карандаш для глаз',
-    price: '420',
+    description: '',
     image: '▬',
     links: [
       { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/' },
@@ -1261,8 +1199,7 @@ export const ITEMS_DATABASE = [
     category: 'care',
     theme: 'sport',
     name: 'Спрей фиксатор спорт',
-    description: 'Спрей для фиксации макияжа при активности',
-    price: '850',
+    description: '',
     image: '▬',
     links: [
       { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/' },
@@ -1274,8 +1211,7 @@ export const ITEMS_DATABASE = [
     category: 'care',
     theme: 'sport',
     name: 'Консилер водостойкий',
-    description: 'Водостойкий консилер',
-    price: '620',
+    description: '',
     image: '▬',
     links: [
       { marketplace: 'Wildberries', url: 'https://www.ozon.ru/' },
@@ -1287,8 +1223,7 @@ export const ITEMS_DATABASE = [
     category: 'care',
     theme: 'sport',
     name: 'Масло для губ',
-    description: 'Защитное масло для губ',
-    price: '380',
+    description: '',
     image: '▬',
     links: [
       { marketplace: 'Wildberries', url: 'https://www.wildberries.ru/' },
