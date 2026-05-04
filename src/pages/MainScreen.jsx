@@ -4,9 +4,9 @@ import { ThemeView } from '../components/ThemeView';
 import '../App.css';
 
 const CATEGORIES = [
-  { id: 'outfit', name: 'Образ', icon: '/images/icons/dress.png', image:'/images/main/outfit.jpg'},
-  { id: 'accessories', name: 'Аксессуары', icon: '/images/icons/woman-bag.png', image:'/images/main/bags.jpg'},
-  { id: 'care', name: 'Макияж', icon: '/images/icons/lips.png', image:'/images/main/makeup.webp'},
+  { id: 'outfit', name: 'Образ', icon: '/images/icons/dress.png'},
+  { id: 'accessories', name: 'Аксессуары', icon: '/images/icons/woman-bag.png'},
+  { id: 'care', name: 'Макияж', icon: '/images/icons/lips.png'},
 ];
 
 const THEMES = [
@@ -33,11 +33,13 @@ export const MainScreen = (props) => {
 
   return (
     <main className="container">
-      <div className="header">
-        <h1>SalutBeauty</h1>
-        <p className="subtitle">Персональный ассистент красоты от Сбера</p>
+    <div class="header">
+      <h1>SalutBeauty</h1>
+      <h3>Персональный ассистент красоты от Сбера</h3>
+      <div class="subtitle">
         <h2>Красотка, что наденем сегодня?</h2>
       </div>
+    </div>
 
       {!selectedCategory && (
         <div className="main-categories">

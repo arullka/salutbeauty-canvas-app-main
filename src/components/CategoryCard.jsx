@@ -5,7 +5,10 @@ export const CategoryCard = (props) => {
 
   return (
     <div className="category-card" onClick={onClick}>
-      <h3>{category.name}</h3>
+      <div className="category-icon-wrapper">
+        <img src={category.icon} alt={category.name} className="category-icon" />
+      </div>
+      <h3 className="category-title">{category.name}</h3>
     </div>
   );
 };
