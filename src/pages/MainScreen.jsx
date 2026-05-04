@@ -36,6 +36,7 @@ export const MainScreen = (props) => {
       <div className="header">
         <h1>SalutBeauty</h1>
         <p className="subtitle">Персональный ассистент красоты от Сбера</p>
+        <h2>Красотка, что наденем сегодня?</h2>
       </div>
 
       {!selectedCategory && (

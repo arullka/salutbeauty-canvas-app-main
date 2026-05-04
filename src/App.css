@@ -17,16 +17,24 @@ body {
 
 .header h1 {
   font-size: 48px;
-  background: linear-gradient(135deg, #d946ef 0%, #a855f7 100%);
+  color: #FF82AD;
+  /*background: linear-gradient(135deg, #d946ef 0%, #a855f7 100%);*/
   background-clip: text;
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  /*-webkit-text-fill-color: transparent;*/
   margin-bottom: 10px;
 }
 
 .header .subtitle {
   font-size: 18px;
   color: rgba(255, 255, 255, 0.7);
+}
+
+.header h2{
+    color: #FFFFFF;
+    font-size: 32px;
+    font-weight: 500;
+    margin-bottom: 30;
 }
 
 /* ===== ГЛАВНЫЕ КАТЕГОРИИ - ГОРИЗОНТАЛЬНО ===== */
