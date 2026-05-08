@@ -7,7 +7,7 @@ export const ITEMS_DATABASE = [
   // ============ ОБРАЗ - ВЕЧЕРИНКА ============
 
     id: 'outfit_party_capsule_1',
-    type: 'capcule',
+    type: 'capsule',
     category: 'outfit',
     theme: 'party',
     name: 'Кружевной корсет + Джинсовая юбка',

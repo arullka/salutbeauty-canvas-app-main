@@ -31,18 +31,18 @@ export const ThemeView = (props) => {
   }
 
   return (
-  <div class="theme-selection">
+  <div className="theme-selection">
     <h2>Образы</h2>
     
-    <div class="bottom-row">
-      <button class="back-btn" onClick={onBack}>← Назад</button>
+    <div className="bottom-row">
+      <button className="back-btn" onClick={onBack}>← Назад</button>
 
-      <div class="themes-grid">
-        <button class="theme-btn">Учеба</button>
-        <button class="theme-btn">Работа</button>
-        <button class="theme-btn">Вечеринка</button>
-        <button class="theme-btn">Свидание</button>
-        <button class="theme-btn">Спорт</button>
+      <div className="themes-grid">
+        <button className="theme-btn">Учеба</button>
+        <button className="theme-btn">Работа</button>
+        <button className="theme-btn">Вечеринка</button>
+        <button className="theme-btn">Свидание</button>
+        <button className="theme-btn">Спорт</button>
       </div>
     </div>
   </div>
