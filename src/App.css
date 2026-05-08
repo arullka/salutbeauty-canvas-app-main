@@ -39,7 +39,7 @@ body {
 }
 
 
-/* ===== ГЛАВНЫЕ КАТЕГОРИИ - ГОРИЗОНТАЛЬНО ===== */
+/*ГЛАВНЫЕ КАТЕГОРИИ - ГОРИЗОНТАЛЬНО*/
 .main-categories {
   display: flex;
   gap: 40px;
@@ -101,32 +101,62 @@ body {
   box-shadow: 0 20px 40px rgba(217, 70, 239, 0.3);
 }
 
-/* ===== ВЫБОР ТЕМ - ГОРИЗОНТАЛЬНО ===== */
+/*ВЫБОР ТЕМ - ГОРИЗОНТАЛЬНО */
+
+/* Основной контейнер */
 .theme-selection {
   animation: fadeIn 0.3s ease;
+  position: relative;
+  min-height: 100vh;
 }
 
+/* Заголовок "Образы" — сверху по центру */
 .theme-selection h2 {
-  font-size: 32px;
-  margin-bottom: 30px;
+  font-size: 30px;
+  margin-bottom: 20px;
   text-align: center;
 }
 
+/* Контейнер для кнопок категорий */
 .themes-grid {
   display: flex;
   gap: 15px;
   justify-content: center;
   flex-wrap: wrap;
-  margin-bottom: 30px;
+  margin-top: 20px;
 }
 
-.theme-btn {
+/* Стили для кнопки "Назад"*/
+.back-btn {
+  position: absolute;
+  top: 65px;
+
   padding: 15px 30px;
   border-radius: 12px;
   border: 2px solid rgba(217, 70, 239, 0.3);
   background: rgba(217, 70, 239, 0.1);
   color: #ffffff;
   font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+.back-btn:hover {
+  background: rgba(217, 70, 239, 0.2);
+  border-color: #d946ef;
+  transform: translateY(-3px);
+}
+
+/* Кнопки категорий */
+.theme-btn {
+  padding: 15px 30px;
+  border-radius: 12px;
+  border: 2px solid rgba(217, 70, 239, 0.3);
+  background: rgba(217, 70, 239, 0.1);
+  color: #ffffff;
+  font-size: 18px;
   font-weight: 600;
   cursor: pointer;
   transition: all 0.3s ease;

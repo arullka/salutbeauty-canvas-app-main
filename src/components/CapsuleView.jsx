@@ -15,7 +15,6 @@ export const CapsuleView = (props) => {
 
   return (
     <div className="capsule-view">
-      <button className="back-btn" onClick={onBack}>← Назад</button>
       <h2>{capsule.name}</h2>
       <div className="items-grid">
         {getItems().map(item => (

@@ -31,38 +31,20 @@ export const ThemeView = (props) => {
   }
 
   return (
-    <div className="theme-view">
-      <button className="back-btn" onClick={onBack}>← Назад</button>
-      <h2>{getCategoryName()}</h2>
-      
-      <div className="themes-grid">
-        {themes.map(theme => (
-          <button
-            key={theme.id}
-            className={`theme-btn ${selectedTheme === theme.id ? 'active' : ''}`}
-            onClick={() => setSelectedTheme(theme.id)}
-          >
-            {theme.name}
-          </button>
-        ))}
-      </div>
+  <div class="theme-selection">
+    <h2>Образы</h2>
+    
+    <div class="bottom-row">
+      <button class="back-btn" onClick={onBack}>← Назад</button>
 
-      <div className="capsules-section">
-        <h3>{selectedTheme}</h3>
-        <div className="capsules-grid">
-          {getCapsules().map(capsule => (
-            <div 
-              key={capsule.id} 
-              className="capsule-card"
-              onClick={() => setSelectedCapsule(capsule)}
-            >
-              <img src={capsule.image} alt={capsule.name} />
-              <h4>{capsule.name}</h4>
-              <p>{capsule.description}</p>
-            </div>
-          ))}
-        </div>
+      <div class="themes-grid">
+        <button class="theme-btn">Учеба</button>
+        <button class="theme-btn">Работа</button>
+        <button class="theme-btn">Вечеринка</button>
+        <button class="theme-btn">Свидание</button>
+        <button class="theme-btn">Спорт</button>
       </div>
     </div>
+  </div>
   );
 };
