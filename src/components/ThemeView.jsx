@@ -1,10 +1,10 @@
-import React, { useState} from 'react';
+import React, { useState } from 'react';
 import { CapsuleView } from './CapsuleView';
 import { ITEMS_DATABASE } from '../data/items';
 
 export const ThemeView = (props) => {
   const { category, themes, onBack } = props;
-  const [selectedTheme, setSelectedTheme] = useState('study');
+  const [selectedTheme, setSelectedTheme] = useState('party');
   const [selectedCapsule, setSelectedCapsule] = useState(null);
 
   const getCapsules = () => {
@@ -31,20 +31,39 @@ export const ThemeView = (props) => {
   }
 
   return (
-  <div className="theme-selection">
-    <h2>Образы</h2>
-    
-    <div className="bottom-row">
-      <button className="back-btn" onClick={onBack}>← Назад</button>
+    <div className="theme-selection">
+      <div className="theme-header">
+        <button className="back-btn" onClick={onBack}>← Назад</button>
+        
+        <div className="themes-grid">
+          {themes.map((theme) => (
+            <button
+              key={theme.id}
+              className={`theme-btn ${selectedTheme === theme.id ? 'active' : ''}`}
+              onClick={() => setSelectedTheme(theme.id)}
+            >
+              {theme.name}
+            </button>
+          ))}
+        </div>
+      </div>
 
-      <div className="themes-grid">
-        <button className="theme-btn">Учеба</button>
-        <button className="theme-btn">Работа</button>
-        <button className="theme-btn">Вечеринка</button>
-        <button className="theme-btn">Свидание</button>
-        <button className="theme-btn">Спорт</button>
+      <div className="theme-content">
+        <h2>{getCategoryName()}</h2>
+        <div className="capsules-grid">
+          {getCapsules().map((capsule) => (
+            <div
+              key={capsule.id}
+              className="capsule-card"
+              onClick={() => setSelectedCapsule(capsule)}
+            >
+              <img src={capsule.image} alt={capsule.name} />
+              <h4>{capsule.name}</h4>
+              <p>{capsule.description}</p>
+            </div>
+          ))}
+        </div>
       </div>
     </div>
-  </div>
   );
 };
