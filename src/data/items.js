@@ -1,6 +1,6 @@
-// function getImagePath(category, theme, filename) {
-//   return `/images/${category}/${theme}/${filename}`;
-// }
+function getImagePath(category, theme, filename) {
+   return `/images/${category}/${theme}/${filename}`;
+}
 
 export const ITEMS_DATABASE = [
   {
@@ -10,7 +10,7 @@ export const ITEMS_DATABASE = [
     type: 'capsule',
     category: 'outfit',
     theme: 'party',
-    name: 'Кружевной корсет + Джинсовая юбка',
+    name: 'Кружевной корсет + джинсовая юбка',
     description: 'Женственный вечерний образ',
     image: '/images/capsules/outfit/party/capsule-1.jpg'
   },
@@ -21,7 +21,7 @@ export const ITEMS_DATABASE = [
     theme: 'party',
     capsule: 'outfit_party_capsule_1',
     name: 'Кружевной белый корсет',
-    description: 'Нежный кружевной корсет, идеален для вечеринки.',
+    description: 'Нежный кружевной корсет, идеальный для праздничной вечеринки',
     image: '/images/outfit/party/corset-white.jpg',
     mainMarketplace: 'Ламода',
     mainMarketplaceUrl: 'https://www.lamoda.ru/p/MP002XW1L4SZ/',
@@ -37,7 +37,7 @@ export const ITEMS_DATABASE = [
     theme: 'party',
     capsule: 'outfit_party_capsule_1',
     name: 'Джинсовая юбка мини',
-    description: 'Короткая джинсовая юбка для яркого образа.',
+    description: 'Короткая джинсовая юбка для нежного, но уверенного образа',
     image: '/images/outfit/party/denim-skirt.jpg',
     mainMarketplace: 'Ламода',
     mainMarketplaceUrl: 'https://www.lamoda.ru/p/MP002XW1LCHD/',
@@ -51,8 +51,8 @@ export const ITEMS_DATABASE = [
     type: 'capsule',
     category: 'outfit',
     theme: 'party',
-    name: 'Кожаный топ + Кожаные штаны',
-    description: 'Смелый и стильный образ: кожаный топ с кожаными брюками для уверенной девушки',
+    name: 'Кожаный топ + кожаные брюки',
+    description: 'Смелый и стильный образ: кожаный топ с кожаными брюками для дерзкой девушки',
     image: '/images/capsules/outfit/party/capsule-2.jpg'
   },
   {
@@ -61,8 +61,8 @@ export const ITEMS_DATABASE = [
     category: 'outfit',
     theme: 'party',
     capsule: 'outfit_party_capsule_2',
-    name: 'Кожаный черный топ с рукавами',
-    description: 'Стильный черный топ из мягкой натуральной кожи.',
+    name: 'Кожаный чёрный топ',
+    description: 'Стильный чёрный топ из мягкой кожи',
     image: '/images/outfit/party/leather-top.jpg',
     mainMarketplace: 'Ламода',
     mainMarketplaceUrl: 'https://www.lamoda.ru/p/MP002XW0WFLN/',
@@ -77,8 +77,8 @@ export const ITEMS_DATABASE = [
     category: 'outfit',
     theme: 'party',
     capsule: 'outfit_party_capsule_2',
-    name: 'Кожаные штаны',
-    description: 'Черные кожаные брюки-скинни.',
+    name: 'Кожаные брюки',
+    description: 'Черные кожаные брюки-клёш',
     image: '/images/outfit/party/leather-pants.jpg',
     mainMarketplace: 'Ламода',
     mainMarketplaceUrl: 'https://www.lamoda.ru/p/MP002XW0G1V8/',
@@ -95,8 +95,8 @@ export const ITEMS_DATABASE = [
     type: 'capsule',
     category: 'outfit',
     theme: 'work',
-    name: 'Блузка + Юбка-карандаш',
-    description: 'Элегантный офисный образ.',
+    name: 'Блузка + юбка-карандаш',
+    description: 'Элегантный офисный образ',
     image: '/images/capsules/outfit/work/capsule-1.jpg'
   },
   {
@@ -105,8 +105,8 @@ export const ITEMS_DATABASE = [
     category: 'outfit',
     theme: 'work',
     capsule: 'outfit_work_capsule_1',
-    name: 'Шелковая белая блузка',
-    description: 'Изысканная шелковая блузка с идеальной посадкой.',
+    name: 'Шёлковая белая блузка',
+    description: 'Изысканная шелковая блузка с идеальной посадкой',
     image: '/images/outfit/work/silk-blouse.jpg',
     mainMarketplace: 'Ламода',
     mainMarketplaceUrl: 'https://www.lamoda.ru/p/MP002XW1DR5L/',
@@ -121,8 +121,8 @@ export const ITEMS_DATABASE = [
     category: 'outfit',
     theme: 'work',
     capsule: 'outfit_work_capsule_1',
-    name: 'Юбка карандаш черная',
-    description: 'Классическая офисная юбка-карандаш.',
+    name: 'Юбка карандаш чёрная',
+    description: 'Классическая офисная юбка-карандаш',
     image: '/images/outfit/work/pencil-skirt.jpg',
     mainMarketplace: 'Ламода',
     mainMarketplaceUrl: 'https://www.lamoda.ru/p/MP002XW1DX7I/',
@@ -136,7 +136,7 @@ export const ITEMS_DATABASE = [
     type: 'capsule',
     category: 'outfit',
     theme: 'work',
-    name: 'Черный пиджак + черные брюки',
+    name: 'Чёрный пиджак + чёрные брюки',
     description: 'Строгий и стильный образ',
     image: '/images/capsules/outfit/work/capsule-2.jpg'
   },
@@ -146,9 +146,9 @@ export const ITEMS_DATABASE = [
     category: 'outfit',
     theme: 'work',
     capsule: 'outfit_work_capsule_2',
-    name: 'Черный пиджак',
-    description: 'Строгий черный пиджак прямого кроя из качественной костюмной ткани.',
-    image: '/images/outfit/work/black-dress.jpg',
+    name: 'Чёрный пиджак',
+    description: 'Строгий чёрный пиджак прямого кроя из качественных материалов',
+    image: '/images/outfit/work/black-jacket.jpg',
     mainMarketplace: 'Ламода',
     mainMarketplaceUrl: 'https://www.lamoda.ru/p/MP002XW1KRK3/',
     partnerMarketplaces: [
@@ -162,9 +162,9 @@ export const ITEMS_DATABASE = [
     category: 'outfit',
     theme: 'work',
     capsule: 'outfit_work_capsule_2',
-    name: 'Черные брюки',
-    description: 'Классические черные брюки со стрелками из плотной ткани с добавлением эластана. Идеальная посадка по талии и длина до середины каблука обеспечивают безупречный вид в офисе. Универсальная база для рабочих образов.',
-    image: '/images/outfit/work/vest.jpg',
+    name: 'Чёрные брюки',
+    description: 'Классические чёрные брюки из приятной ткани - универсальная база для рабочих образов',
+    image: '/images/outfit/work/black-pants.jpg',
     mainMarketplace: 'Ламода',
     mainMarketplaceUrl: 'https://www.lamoda.ru/p/MP002XW1CUDD/',
     partnerMarketplaces: [
@@ -180,8 +180,8 @@ export const ITEMS_DATABASE = [
     type: 'capsule',
     category: 'outfit',
     theme: 'study',
-    name: 'Свитер + Джинсы',
-    description: 'Уютный и удобный образ для учебы',
+    name: 'Свитер + джинсы',
+    description: 'Уютный и удобный образ для учёбы',
     image: '/images/capsules/outfit/study/capsule-1.jpg'
   },
   {
@@ -191,7 +191,7 @@ export const ITEMS_DATABASE = [
     theme: 'study',
     capsule: 'outfit_study_capsule_1',
     name: 'Свитер синий',
-    description: 'Теплый синий свитер.',
+    description: 'Теплый синий свитер для комфортного образа',
     image: '/images/outfit/study/sweater-blue.jpg',
     mainMarketplace: 'Ламода',
     mainMarketplaceUrl: 'https://www.lamoda.ru/p/MP002XW0VMPX/',
@@ -207,7 +207,7 @@ export const ITEMS_DATABASE = [
     theme: 'study',
     capsule: 'outfit_study_capsule_1',
     name: 'Джинсы',
-    description: 'Классические голубые джинсы.',
+    description: 'Классические голубые джинсы',
     image: '/images/outfit/study/jeans.jpg',
     mainMarketplace: 'Ламода',
     mainMarketplaceUrl: 'https://www.lamoda.ru/p/MP002XW1DSUS/',
@@ -221,8 +221,8 @@ export const ITEMS_DATABASE = [
     type: 'capsule',
     category: 'outfit',
     theme: 'study',
-    name: 'Белая рубашка + Серые брюки',
-    description: 'Базовый академичный стиль',
+    name: 'Белая рубашка + серые брюки',
+    description: 'Строгий, но стильный учебный образ',
     image: '/images/capsules/outfit/study/capsule-2.jpg'
   },
   {
@@ -232,8 +232,8 @@ export const ITEMS_DATABASE = [
     theme: 'study',
     capsule: 'outfit_study_capsule_2',
     name: 'Белая рубашка',
-    description: 'Свежая белая рубашка из хлопка с легкой текстурой. Классический воротник и удобный крой позволяют носить её как с джинсами, так и с брюками или под пиджак.',
-    image: '/images/outfit/study/blazer.jpg',
+    description: 'Белая рубашка из хлопка с лёгкой текстурой. Можно сочетать как с джинсами, так и с брюками и пиджаком',
+    image: '/images/outfit/study/shirt.jpg',
     mainMarketplace: 'Ламода',
     mainMarketplaceUrl: 'https://www.lamoda.ru/p/MP002XW1K4ZN/',
     partnerMarketplaces: [
@@ -248,8 +248,8 @@ export const ITEMS_DATABASE = [
     theme: 'study',
     capsule: 'outfit_study_capsule_2',
     name: 'Серые брюки',
-    description: 'Удобные серые брюки зауженного кроя из мягкой, но держащей форму ткани. Нейтральный оттенок легко комбинируется с футболками, свитерами и рубашками.',
-    image: '/images/outfit/study/t-shirt.jpg',
+    description: 'Удобные серые брюки. Нейтральный оттенок легко комбинируется с футболками, свитерами и рубашками',
+    image: '/images/outfit/study/grey-pants.jpg',
     mainMarketplace: 'Ламода',
     mainMarketplaceUrl: 'https://www.lamoda.ru/p/MP002XW1DT52/',
     partnerMarketplaces: [
@@ -265,7 +265,7 @@ export const ITEMS_DATABASE = [
     type: 'capsule',
     category: 'outfit',
     theme: 'date',
-    name: 'Бежевое платье с открытой спиной + Туфли',
+    name: 'Бежевое платье + бежевый кардиган',
     description: 'Нежный романтичный образ',
     image: '/images/capsules/outfit/date/capsule-1.jpg'
   },
@@ -275,11 +275,11 @@ export const ITEMS_DATABASE = [
     category: 'outfit',
     theme: 'date',
     capsule: 'outfit_date_capsule_1',
-    name: 'Бежевое платье с открытой спиной',
-    description: 'Очень нежное и женственное платье.',
+    name: 'Бежевое платье',
+    description: 'Женственное платье подчеркнёт ваши достоинства и сразит всех наповал своей лёгкостью и сексуальностью',
     image: '/images/outfit/date/beige-dress.jpg',
     mainMarketplace: 'Ламода',
-    mainMarketplaceUrl: 'https://www.lamoda.ru/p/MP002XW1L1IL/',
+    mainMarketplaceUrl: 'https://www.lamoda.ru/p/mp002xw1egr2/',
     partnerMarketplaces: [
       { name: 'Wildberries', url: 'https://www.wildberries.ru/catalog/715890589/detail.aspx' },
       { name: 'Ozon', url: 'https://ozon.ru/t/1EzEXsM' }
@@ -291,14 +291,14 @@ export const ITEMS_DATABASE = [
     category: 'outfit',
     theme: 'date',
     capsule: 'outfit_date_capsule_1',
-    name: 'Бежевые лаковые туфли',
-    description: 'Элегантные бежевые туфли-лодочки.',
-    image: '/images/outfit/date/beige-pumps.jpg',
+    name: 'Бежевый кардиган',
+    description: 'Элегантные бежевый кружевной кардиган добавит образу нежности и игривости',
+    image: '/images/outfit/date/beige-cardigan.jpg',
     mainMarketplace: 'Ламода',
-    mainMarketplaceUrl: 'https://www.lamoda.ru/p/MP002XW1ES0Q/',
+    mainMarketplaceUrl: 'https://www.lamoda.ru/p/mp002xw1d81z/',
     partnerMarketplaces: [
-      { name: 'Wildberries', url: 'https://www.wildberries.ru/catalog/632543089/detail.aspx' },
-      { name: 'Ozon', url: 'https://ozon.ru/t/Qi5ikcA' }
+      { name: 'Wildberries', url: 'https://www.wildberries.ru/catalog/382460587/detail.aspx' },
+      { name: 'Ozon', url: 'https://ozon.ru/t/p5ou3fq' }
     ]
   },
   {
@@ -306,8 +306,8 @@ export const ITEMS_DATABASE = [
     type: 'capsule',
     category: 'outfit',
     theme: 'date',
-    name: 'Шелковый белый топ + Светлые джинсы клёш + Черные лаковые туфли',
-    description: 'Соблазнительный и стильный лук',
+    name: 'Шёлковый белый топ + светлые джинсы клёш',
+    description: 'Соблазнительный и стильный образ',
     image: '/images/capsules/outfit/date/capsule-2.jpg'
   },
   {
@@ -316,9 +316,9 @@ export const ITEMS_DATABASE = [
     category: 'outfit',
     theme: 'date',
     capsule: 'outfit_date_capsule_2',
-    name: 'Шелковый белый топ',
-    description: 'Изысканный топ из натурального шелка с деликатным блеском. Нежный крой и струящаяся ткань создают романтичный и женственный образ.',
-    image: '/images/outfit/date/corset-black.jpg',
+    name: 'Шёлковый белый топ',
+    description: 'Изысканный топ из натурального шёлка. Нежный крой создаёт романтичный и женственный образ',
+    image: '/images/outfit/date/white-top.jpg',
     mainMarketplace: 'Ламода',
     mainMarketplaceUrl: 'https://www.lamoda.ru/p/MP002XW1LCUE/',
     partnerMarketplaces: [
@@ -333,29 +333,13 @@ export const ITEMS_DATABASE = [
     theme: 'date',
     capsule: 'outfit_date_capsule_2',
     name: 'Светлые джинсы клёш',
-    description: 'Джинсы клеш из мягкого денима светлого оттенка. Низкая посадка добавит образу женственности, а расклешенный крой — легкости и свободы. Идеальны для свидания.',
-    image: '/images/outfit/date/satin-skirt.jpg',
+    description: 'Джинсы клёш из мягкого денима светлого оттенка. Низкая посадка добавит образу женственности, а расклешённый крой — легкости и свободы. Идеальны для активного свидания',
+    image: '/images/outfit/date/jeans.jpg',
     mainMarketplace: 'Ламода',
-    mainMarketplaceUrl: 'https://www.lamoda.ru/p/MP002XW1DSUS/',
+    mainMarketplaceUrl: 'https://www.lamoda.ru/p/mp002xw1eozs/',
     partnerMarketplaces: [
       { name: 'Wildberries', url: 'https://www.wildberries.ru/catalog/786119924/detail.aspx'},
       { name: 'Ozon', url: 'https://ozon.ru/t/tK0KJMM' }
-    ]
-  },
-  {
-    id: 'outfit_date_item_5',
-    type: 'item',
-    category: 'outfit',
-    theme: 'date',
-    capsule: 'outfit_date_capsule_2',
-    name: 'Черные лаковые туфли',
-    description: 'Классические лаковые туфли.',
-    image: '/images/outfit/date/black-patent-pumps.jpg',
-    mainMarketplace: 'Ламода',
-    mainMarketplaceUrl: 'https://www.lamoda.ru/p/MP002XW0T1HL/',
-    partnerMarketplaces: [
-      { name: 'Wildberries', url: 'https://www.wildberries.ru/catalog/697482225/detail.aspx' },
-      { name: 'Ozon', url: 'https://ozon.ru/t/rlblmuP' }
     ]
   },
 
@@ -366,8 +350,8 @@ export const ITEMS_DATABASE = [
     type: 'capsule',
     category: 'outfit',
     theme: 'sport',
-    name: 'Спортивный комбинезон + Кроссовки',
-    description: 'Стильный total look для тренировок',
+    name: 'Спортивный комбинезон + олимпийка',
+    description: 'Стильный и удобный для тренировок',
     image: '/images/capsules/outfit/sport/capsule-1.jpg'
   },
   {
@@ -377,7 +361,7 @@ export const ITEMS_DATABASE = [
     theme: 'sport',
     capsule: 'outfit_sport_capsule_1',
     name: 'Спортивный комбинезон',
-    description: 'Цельный спортивный комбинезон из мягкого, дышащего материала. Удобство одного предмета вместо двух, идеальная посадка и свобода движений — лучший выбор для тренировок в зале или на улице.',
+    description: 'Цельный спортивный комбинезон из мягкого, дышащего материала. Удобство одного предмета вместо двух, идеальная посадка и свобода движений — лучший выбор для тренировок в зале или на улице',
     image: '/images/outfit/sport/bodysuit.jpg',
     mainMarketplace: 'Ламода',
     mainMarketplaceUrl: 'https://www.lamoda.ru/p/MP002XW1B5O4/',
@@ -392,14 +376,14 @@ export const ITEMS_DATABASE = [
     category: 'outfit',
     theme: 'sport',
     capsule: 'outfit_sport_capsule_1',
-    name: 'Кроссовки',
-    description: 'Лёгкие дышащие кроссовки на амортизирующей подошве. Удобная шнуровка и анатомическая стелька снижают усталость ног даже при длительных нагрузках. Идеальны для бега, фитнеса и активного образа жизни.',
-    image: '/images/outfit/sport/sneakers.jpg',
+    name: 'Олимпийка',
+    description: 'Дополнит образ и согреет в прохладную погоду или под конционерами в зале',
+    image: '/images/outfit/sport/olimp.jpg',
     mainMarketplace: 'Ламода',
-    mainMarketplaceUrl: 'https://www.lamoda.ru/p/RTLAEZ128201/',
+    mainMarketplaceUrl: 'https://www.lamoda.ru/p/mp002xw1dgv8/',
     partnerMarketplaces: [
-      { name: 'Wildberries', url: 'https://www.wildberries.ru/catalog/881149749/detail.aspx' },
-      { name: 'Ozon', url: 'https://ozon.ru/t/q4Ng1h5' }
+      { name: 'Wildberries', url: 'https://www.wildberries.ru/catalog/142680838/detail.aspx' },
+      { name: 'Ozon', url: 'https://ozon.ru/t/6dabbJN' }
     ]
   },
   {
@@ -407,7 +391,7 @@ export const ITEMS_DATABASE = [
     type: 'capsule',
     category: 'outfit',
     theme: 'sport',
-    name: 'Топ + Леггинсы',
+    name: 'Топ + леггинсы',
     description: 'Классический спортивный сет',
     image: '/images/capsules/outfit/sport/capsule-2.jpg'
   },
@@ -418,7 +402,7 @@ export const ITEMS_DATABASE = [
     theme: 'sport',
     capsule: 'outfit_sport_capsule_2',
     name: 'Спортивный топ',
-    description: 'Дышащий топ для активных тренировок.',
+    description: 'Дышащий топ для активных тренировок',
     image: '/images/outfit/sport/sports-top.jpg',
     mainMarketplace: 'Ламода',
     mainMarketplaceUrl: 'https://www.lamoda.ru/p/MP002XW1DE8D/',
@@ -434,8 +418,8 @@ export const ITEMS_DATABASE = [
     theme: 'sport',
     capsule: 'outfit_sport_capsule_2',
     name: 'Леггинсы',
-    description: 'Удобные черные леггинсы из эластичного, дышащего материала с высокой посадкой. Плотная ткань обеспечивает комфорт и поддержку во время любых тренировок, не сковывая движений. Идеальны для фитнеса, йоги или повседневной носки.',
-    image: '/images/outfit/sport/leggings.jpg',
+    description: 'Удобные черные леггинсы из эластичного, дышащего материала с высокой посадкой. Плотная ткань обеспечивает комфорт и поддержку во время любых тренировок, не сковывая движений. Идеальны для фитнеса, йоги или повседневной носки',
+    image: '/images/outfit/sport/leggins.jpg',
     mainMarketplace: 'Ламода',
     mainMarketplaceUrl: 'https://www.lamoda.ru/p/MP002XW0OSM6/',
     partnerMarketplaces: [
