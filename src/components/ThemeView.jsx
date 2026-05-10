@@ -57,7 +57,7 @@ export const ThemeView = (props) => {
               className="capsule-card"
               onClick={() => setSelectedCapsule(capsule)}
             >
-              <img src={capsule.image} alt={capsule.name} />
+              {/* <img src={capsule.image} alt={capsule.name} /> */}
               <h4>{capsule.name}</h4>
               <p>{capsule.description}</p>
             </div>

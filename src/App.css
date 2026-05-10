@@ -36,7 +36,7 @@ body {
   margin-bottom: 20px;
 }
 
-/* ===== ГЛАВНЫЕ КАТЕГОРИИ ===== */
+/* ГЛАВНЫЕ КАТЕГОРИИ */
 .main-categories {
   display: flex;
   gap: 40px;
@@ -97,7 +97,7 @@ body {
   box-shadow: 0 20px 40px rgba(217, 70, 239, 0.3);
 }
 
-/* ===== ВЫБОР ТЕМ ===== */
+/* ВЫБОР ТЕМ */
 .theme-selection {
   animation: fadeIn 0.3s ease;
 }
@@ -170,7 +170,7 @@ body {
   box-shadow: 0 0 20px rgba(217, 70, 239, 0.3);
 }
 
-/* ===== КАПСУЛЫ ===== */
+/* КАПСУЛЫ */
 .capsules-section {
   margin-top: 40px;
   margin-bottom: 60px;
@@ -191,14 +191,19 @@ body {
 }
 
 .capsule-card {
-  border-radius: 16px;
-  overflow: hidden;
-  background: rgba(217, 70, 239, 0.1);
-  border: 1px solid rgba(217, 70, 239, 0.2);
-  cursor: pointer;
-  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;       
+  justify-content: space-between; 
+  padding: 20px;
+  min-height: 200px;              
+  background: linear-gradient(     
+    135deg, 
+    rgba(89, 56, 234, 0.15) 0%, 
+    rgba(216, 55, 224, 0.15) 100%
+  );
+  border: 2px solid rgba(217, 70, 239, 0.3);
+  padding: 20px;
 }
-
 .capsule-card:hover {
   transform: translateY(-8px);
   border-color: #d946ef;
@@ -212,11 +217,13 @@ body {
 }
 
 .capsule-card h4 {
-  padding: 12px;
-  margin: 0;
-  font-size: 16px;
-  color: #ffffff;
-  font-weight: 600;
+  font-size: 18px;
+  text-align: center;
+}
+
+.capsule-card p {
+  font-size: 13px;
+  text-align: center;
 }
 
 .capsule-card p {
@@ -226,7 +233,7 @@ body {
   color: rgba(255, 255, 255, 0.7);
 }
 
-/* ===== КАПСУЛА - ДЕТАЛЬНЫЙ ВИД ===== */
+/* КАПСУЛА - ДЕТАЛЬНЫЙ ВИД */
 .capsule-view {
   animation: fadeIn 0.3s ease;
 }
@@ -267,7 +274,7 @@ body {
   transform: translateY(-3px);
 }
 
-/* ===== ТОВАРЫ ===== */
+/* ТОВАРЫ */
 .items-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
