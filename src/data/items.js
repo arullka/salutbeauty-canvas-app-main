@@ -12,7 +12,7 @@ export const ITEMS_DATABASE = [
     theme: 'party',
     name: 'Кружевной корсет + джинсовая юбка',
     description: 'Женственный вечерний образ',
-    image: '/images/capsules/outfit/party/capsule-1.jpg'
+    //image: '/images/capsules/outfit/party/capsule-1.jpg'
   },
   {
     id: 'outfit_party_item_1',
@@ -53,7 +53,7 @@ export const ITEMS_DATABASE = [
     theme: 'party',
     name: 'Кожаный топ + кожаные брюки',
     description: 'Смелый и стильный образ: кожаный топ с кожаными брюками для дерзкой девушки',
-    image: '/images/capsules/outfit/party/capsule-2.jpg'
+    //image: '/images/capsules/outfit/party/capsule-2.jpg'
   },
   {
     id: 'outfit_party_item_3',
@@ -97,7 +97,7 @@ export const ITEMS_DATABASE = [
     theme: 'work',
     name: 'Блузка + юбка-карандаш',
     description: 'Элегантный офисный образ',
-    image: '/images/capsules/outfit/work/capsule-1.jpg'
+    //image: '/images/capsules/outfit/work/capsule-1.jpg'
   },
   {
     id: 'outfit_work_item_1',
@@ -138,7 +138,7 @@ export const ITEMS_DATABASE = [
     theme: 'work',
     name: 'Чёрный пиджак + чёрные брюки',
     description: 'Строгий и стильный образ',
-    image: '/images/capsules/outfit/work/capsule-2.jpg'
+    //image: '/images/capsules/outfit/work/capsule-2.jpg'
   },
   {
     id: 'outfit_work_item_3',
@@ -182,7 +182,7 @@ export const ITEMS_DATABASE = [
     theme: 'study',
     name: 'Свитер + джинсы',
     description: 'Уютный и удобный образ для учёбы',
-    image: '/images/capsules/outfit/study/capsule-1.jpg'
+    //image: '/images/capsules/outfit/study/capsule-1.jpg'
   },
   {
     id: 'outfit_study_item_1',
@@ -223,7 +223,7 @@ export const ITEMS_DATABASE = [
     theme: 'study',
     name: 'Белая рубашка + серые брюки',
     description: 'Строгий, но стильный учебный образ',
-    image: '/images/capsules/outfit/study/capsule-2.jpg'
+    //image: '/images/capsules/outfit/study/capsule-2.jpg'
   },
   {
     id: 'outfit_study_item_3',
@@ -267,7 +267,7 @@ export const ITEMS_DATABASE = [
     theme: 'date',
     name: 'Бежевое платье + бежевый кардиган',
     description: 'Нежный романтичный образ',
-    image: '/images/capsules/outfit/date/capsule-1.jpg'
+    //image: '/images/capsules/outfit/date/capsule-1.jpg'
   },
   {
     id: 'outfit_date_item_1',
@@ -308,7 +308,7 @@ export const ITEMS_DATABASE = [
     theme: 'date',
     name: 'Шёлковый белый топ + светлые джинсы клёш',
     description: 'Соблазнительный и стильный образ',
-    image: '/images/capsules/outfit/date/capsule-2.jpg'
+    //image: '/images/capsules/outfit/date/capsule-2.jpg'
   },
   {
     id: 'outfit_date_item_3',
@@ -352,7 +352,7 @@ export const ITEMS_DATABASE = [
     theme: 'sport',
     name: 'Спортивный комбинезон + олимпийка',
     description: 'Стильный и удобный для тренировок',
-    image: '/images/capsules/outfit/sport/capsule-1.jpg'
+    //image: '/images/capsules/outfit/sport/capsule-1.jpg'
   },
   {
     id: 'outfit_sport_item_1',
@@ -393,7 +393,7 @@ export const ITEMS_DATABASE = [
     theme: 'sport',
     name: 'Топ + леггинсы',
     description: 'Классический спортивный сет',
-    image: '/images/capsules/outfit/sport/capsule-2.jpg'
+    //image: '/images/capsules/outfit/sport/capsule-2.jpg'
   },
   {
     id: 'outfit_sport_item_2',
@@ -418,7 +418,7 @@ export const ITEMS_DATABASE = [
     theme: 'sport',
     capsule: 'outfit_sport_capsule_2',
     name: 'Леггинсы',
-    description: 'Удобные черные леггинсы из эластичного, дышащего материала с высокой посадкой. Плотная ткань обеспечивает комфорт и поддержку во время любых тренировок, не сковывая движений. Идеальны для фитнеса, йоги или повседневной носки',
+    description: 'Удобные чёрные леггинсы из эластичного, дышащего материала с высокой посадкой. Плотная ткань обеспечивает комфорт и поддержку во время любых тренировок, не сковывая движений. Идеальны для фитнеса, йоги или повседневной носки',
     image: '/images/outfit/sport/leggins.jpg',
     mainMarketplace: 'Ламода',
     mainMarketplaceUrl: 'https://www.lamoda.ru/p/MP002XW0OSM6/',
@@ -435,9 +435,9 @@ export const ITEMS_DATABASE = [
     type: 'capsule',
     category: 'accessories',
     theme: 'party',
-    name: 'Сумка + Серьги',
+    name: 'Сумка + серьги',
     description: 'Вечерний комплект аксессуаров',
-    image: '/images/capsules/accessories/party/capsule-1.jpg'
+    //image: '/images/capsules/accessories/party/capsule-1.jpg'
   },
   {
     id: 'acc_party_item_1',
@@ -446,7 +446,7 @@ export const ITEMS_DATABASE = [
     theme: 'party',
     capsule: 'acc_party_capsule_1',
     name: 'Сумка',
-    description: 'Элегантная мини-сумка.',
+    description: 'Элегантная мини-сумка',
     image: '/images/accessories/party/bag.jpg',
     mainMarketplace: 'Ламода',
     mainMarketplaceUrl: 'https://www.lamoda.ru/p/MP002XW1CWBW/',
@@ -462,7 +462,7 @@ export const ITEMS_DATABASE = [
     theme: 'party',
     capsule: 'acc_party_capsule_1',
     name: 'Серьги',
-    description: 'Изящные серьги для вечеринки.',
+    description: 'Изящные серьги для вечеринки',
     image: '/images/accessories/party/earrings.jpg',
     mainMarketplace: 'Ламода',
     mainMarketplaceUrl: 'https://www.lamoda.ru/p/MP002XW16N5F/',
@@ -476,9 +476,9 @@ export const ITEMS_DATABASE = [
     type: 'capsule',
     category: 'accessories',
     theme: 'party',
-    name: 'Клатч + Чокер',
+    name: 'Клатч + чокер',
     description: 'Вечерний сет',
-    image: '/images/capsules/accessories/party/capsule-2.jpg'
+    //image: '/images/capsules/accessories/party/capsule-2.jpg'
   },
   {
     id: 'acc_party_item_3',
@@ -487,7 +487,7 @@ export const ITEMS_DATABASE = [
     theme: 'party',
     capsule: 'acc_party_capsule_2',
     name: 'Клатч',
-    description: 'Маленький клатч с цепочкой.',
+    description: 'Маленький элегантный клатч сделает ваш образ роскошным',
     image: '/images/accessories/party/clutch.jpg',
     mainMarketplace: 'Ламода',
     mainMarketplaceUrl: 'https://www.lamoda.ru/p/MP002XW1L1PF/',
@@ -503,12 +503,12 @@ export const ITEMS_DATABASE = [
     theme: 'party',
     capsule: 'acc_party_capsule_2',
     name: 'Чокер',
-    description: 'Черный бархатный чокер с подвеской.',
+    description: 'Чёрный бархатный чокер с подвеской',
     image: '/images/accessories/party/choker.jpg',
     mainMarketplace: 'Ламода',
-    mainMarketplaceUrl: 'https://www.lamoda.ru/p/MP002XW1E7H0/',
+    mainMarketplaceUrl: 'https://www.lamoda.ru/p/mp002xw1cywc/',
     partnerMarketplaces: [
-      { name: 'Wildberries', url: 'https://www.wildberries.ru/catalog/932749013/detail.aspx?size=1406802818'},
+      { name: 'Wildberries', url: 'https://www.wildberries.ru/catalog/209126006/detail.aspx'},
       { name: 'Ozon', url: 'https://ozon.ru/t/aH1bVr4' }
     ]
   },
@@ -520,9 +520,9 @@ export const ITEMS_DATABASE = [
     type: 'capsule',
     category: 'accessories',
     theme: 'work',
-    name: 'Часы + Сумка',
+    name: 'Часы + сумка',
     description: 'Классический деловой набор',
-    image: '/images/capsules/accessories/work/capsule-1.jpg'
+    //image: '/images/capsules/accessories/work/capsule-1.jpg'
   },
   {
     id: 'acc_work_item_1',
@@ -531,7 +531,7 @@ export const ITEMS_DATABASE = [
     theme: 'work',
     capsule: 'acc_work_capsule_1',
     name: 'Часы классические',
-    description: 'Элегантные женские часы.',
+    description: 'Элегантные женские часы',
     image: '/images/accessories/work/watch.jpg',
     mainMarketplace: 'Ламода',
     mainMarketplaceUrl: 'https://www.lamoda.ru/p/RTLAEP370901/',
@@ -547,8 +547,8 @@ export const ITEMS_DATABASE = [
     theme: 'work',
     capsule: 'acc_work_capsule_1',
     name: 'Сумка',
-    description: 'Кожаная сумка для ноутбука.',
-    image: '/images/accessories/work/briefcase.jpg',
+    description: 'Кожаная сумка, в которую поместится даже ноутбук',
+    image: '/images/accessories/work/big-bag.jpg',
     mainMarketplace: 'Ламода',
     mainMarketplaceUrl: 'https://www.lamoda.ru/p/RTLAEX867101/',
     partnerMarketplaces: [
@@ -561,9 +561,9 @@ export const ITEMS_DATABASE = [
     type: 'capsule',
     category: 'accessories',
     theme: 'work',
-    name: 'Сумка + Ремень + Серьги',
+    name: 'Сумка + ремень + серьги',
     description: 'Сдержанные офисные акценты',
-    image: '/images/capsules/accessories/work/capsule-2.jpg'
+    //image: '/images/capsules/accessories/work/capsule-2.jpg'
   },
   {
     id: 'acc_work_item_3',
@@ -572,7 +572,7 @@ export const ITEMS_DATABASE = [
     theme: 'work',
     capsule: 'acc_work_capsule_2',
     name: 'Ремень',
-    description: 'Тонкий черный ремень с пряжкой.',
+    description: 'Тонкий чёрный ремень с пряжкой',
     image: '/images/accessories/work/belt.jpg',
     mainMarketplace: 'Ламода',
     mainMarketplaceUrl: 'https://www.lamoda.ru/p/MP002XW0Q4Q9/',
@@ -588,7 +588,7 @@ export const ITEMS_DATABASE = [
     theme: 'work',
     capsule: 'acc_work_capsule_2',
     name: 'Серьги',
-    description: 'Аккуратные серьги-кольца.',
+    description: 'Аккуратные серьги-кольца',
     image: '/images/accessories/work/earrings.jpg',
     mainMarketplace: 'Ламода',
     mainMarketplaceUrl: 'https://www.lamoda.ru/p/MP002XW0SEZE/',
@@ -607,7 +607,7 @@ export const ITEMS_DATABASE = [
     theme: 'study',
     name: 'Рюкзак + Заколки',
     description: 'Практичный и милый набор',
-    image: '/images/capsules/accessories/study/capsule-1.jpg'
+    //image: '/images/capsules/accessories/study/capsule-1.jpg'
   },
   {
     id: 'acc_study_item_1',
@@ -648,7 +648,7 @@ export const ITEMS_DATABASE = [
     theme: 'study',
     name: 'Сумка на плечо + Гетры',
     description: 'Комфорт и стиль для пар',
-    image: '/images/capsules/accessories/study/capsule-2.jpg'
+    //image: '/images/capsules/accessories/study/capsule-2.jpg'
   },
   {
     id: 'acc_study_item_3',
@@ -692,7 +692,7 @@ export const ITEMS_DATABASE = [
     theme: 'date',
     name: 'Сумка + Серьги',
     description: 'Нежный комплект для романтичного вечера',
-    image: '/images/capsules/accessories/date/capsule-1.jpg'
+    //image: '/images/capsules/accessories/date/capsule-1.jpg'
   },
   {
     id: 'acc_date_item_1',
@@ -733,7 +733,7 @@ export const ITEMS_DATABASE = [
     theme: 'date',
     name: 'Сумка + Кулон + Лента для волос',
     description: 'Романтичный набор для особого вечера',
-    image: '/images/capsules/accessories/date/capsule-2.jpg'
+    //image: '/images/capsules/accessories/date/capsule-2.jpg'
   },
   {
     id: 'acc_date_item_3',
@@ -793,7 +793,7 @@ export const ITEMS_DATABASE = [
     theme: 'sport',
     name: 'Сумка + Повязка на голову',
     description: 'Практичный набор для тренировок',
-    image: '/images/capsules/accessories/sport/capsule-1.jpg'
+    //image: '/images/capsules/accessories/sport/capsule-1.jpg'
   },
   {
     id: 'acc_sport_item_1',
@@ -834,7 +834,7 @@ export const ITEMS_DATABASE = [
     theme: 'sport',
     name: 'Сумка + Умные часы + Перчатки',
     description: 'Технологичный набор для активного спорта',
-    image: '/images/capsules/accessories/sport/capsule-2.jpg'
+    //image: '/images/capsules/accessories/sport/capsule-2.jpg'
   },
   {
     id: 'acc_sport_item_3',
@@ -893,7 +893,7 @@ export const ITEMS_DATABASE = [
     theme: 'party',
     name: 'Смоки айс + Накладные ресницы',
     description: 'Драматичный вечерний макияж с дымчатым эффектом',
-    image: '/images/capsules/care/party/capsule-1.jpg'
+    //image: '/images/capsules/care/party/capsule-1.jpg'
   },
   {
     id: 'care_party_item_1',
@@ -934,7 +934,7 @@ export const ITEMS_DATABASE = [
     theme: 'party',
     name: 'Красная помада + Стразы',
     description: 'Яркий акцент на губах с праздничным декором',
-    image: '/images/capsules/care/party/capsule-2.jpg'
+    //image: '/images/capsules/care/party/capsule-2.jpg'
   },
   {
     id: 'care_party_item_3',
@@ -978,7 +978,7 @@ export const ITEMS_DATABASE = [
     theme: 'work',
     name: 'Нюдовая помада + Кремовые тени',
     description: 'Естественный и свежий офисный макияж',
-    image: '/images/capsules/care/work/capsule-1.jpg'
+    //image: '/images/capsules/care/work/capsule-1.jpg'
   },
   {
     id: 'care_work_item_1',
@@ -1019,7 +1019,7 @@ export const ITEMS_DATABASE = [
     theme: 'work',
     name: 'Тональная основа + Пудра',
     description: 'Идеальный тон для рабочего дня',
-    image: '/images/capsules/care/work/capsule-2.jpg'
+    //image: '/images/capsules/care/work/capsule-2.jpg'
   },
   {
     id: 'care_work_item_3',
@@ -1063,7 +1063,7 @@ export const ITEMS_DATABASE = [
     theme: 'study',
     name: 'Блеск для губ + Тушь',
     description: 'Быстрый и свежий макияж для универа',
-    image: '/images/capsules/care/study/capsule-1.jpg'
+    //image: '/images/capsules/care/study/capsule-1.jpg'
   },
   {
     id: 'care_study_item_1',
@@ -1104,7 +1104,7 @@ export const ITEMS_DATABASE = [
     theme: 'study',
     name: 'Тональная основа + Консилер',
     description: 'Маскировка несовершенств без сложного макияжа',
-    image: '/images/capsules/care/study/capsule-2.jpg'
+    //image: '/images/capsules/care/study/capsule-2.jpg'
   },
   {
     id: 'care_study_item_3',
@@ -1148,7 +1148,7 @@ export const ITEMS_DATABASE = [
     theme: 'date',
     name: 'Розовая помада + Шиммер-тени',
     description: 'Романтичный и нежный образ',
-    image: '/images/capsules/care/date/capsule-1.jpg'
+    //image: '/images/capsules/care/date/capsule-1.jpg'
   },
   {
     id: 'care_date_item_1',
@@ -1189,7 +1189,7 @@ export const ITEMS_DATABASE = [
     theme: 'date',
     name: 'Румяна + Хайлайтер',
     description: 'Свежий и сияющий образ для свидания',
-    image: '/images/capsules/care/date/capsule-2.jpg'
+    //image: '/images/capsules/care/date/capsule-2.jpg'
   },
   {
     id: 'care_date_item_3',
@@ -1233,7 +1233,7 @@ export const ITEMS_DATABASE = [
     theme: 'sport',
     name: 'Водостойкая тушь + Гигиеническая помада',
     description: 'Минимальный уход для активных тренировок',
-    image: '/images/capsules/care/sport/capsule-1.jpg'
+    //image: '/images/capsules/care/sport/capsule-1.jpg'
   },
   {
     id: 'care_sport_item_1',
@@ -1274,7 +1274,7 @@ export const ITEMS_DATABASE = [
     theme: 'sport',
     name: 'Гель для бровей',
     description: 'Аккуратные брови без макияжа',
-    image: '/images/capsules/care/sport/capsule-2.jpg'
+    //image: '/images/capsules/care/sport/capsule-2.jpg'
   },
   {
     id: 'care_sport_item_3',
