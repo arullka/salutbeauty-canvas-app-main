@@ -561,7 +561,7 @@ export const ITEMS_DATABASE = [
     type: 'capsule',
     category: 'accessories',
     theme: 'work',
-    name: 'Сумка + ремень + серьги',
+    name: 'Рюкзак + ремень + серьги',
     description: 'Сдержанные офисные акценты',
     //image: '/images/capsules/accessories/work/capsule-2.jpg'
   },
@@ -588,13 +588,29 @@ export const ITEMS_DATABASE = [
     theme: 'work',
     capsule: 'acc_work_capsule_2',
     name: 'Серьги',
-    description: 'Аккуратные серьги-кольца',
+    description: 'Аккуратные сдержанные, но эстетичные серьги',
     image: '/images/accessories/work/earrings.jpg',
     mainMarketplace: 'Ламода',
-    mainMarketplaceUrl: 'https://www.lamoda.ru/p/MP002XW0SEZE/',
+    mainMarketplaceUrl: 'https://www.lamoda.ru/p/mp002xw1d8eu/',
     partnerMarketplaces: [
       { name: 'Wildberries', url: 'https://www.wildberries.ru/catalog/99808291/detail.aspx' },
       { name: 'Ozon', url: 'https://ozon.ru/t/ZplxIpT' }
+    ]
+  },
+  {
+    id: 'acc_work_item_5',
+    type: 'item',
+    category: 'accessories',
+    theme: 'work',
+    capsule: 'acc_work_capsule_2',
+    name: 'Рюкзак',
+    description: 'Небольшой стильный и очень удобный рюкзак для ценительниц комфорта',
+    image: '/images/accessories/work/backpack.jpg',
+    mainMarketplace: 'Ламода',
+    mainMarketplaceUrl: 'https://www.lamoda.ru/p/mp002xw0g1nx/',
+    partnerMarketplaces: [
+      { name: 'Wildberries', url: 'https://www.wildberries.ru/catalog/253138570/detail.aspx' },
+      { name: 'Ozon', url: 'https://ozon.ru/t/VaQirhv' }
     ]
   },
 
@@ -605,7 +621,7 @@ export const ITEMS_DATABASE = [
     type: 'capsule',
     category: 'accessories',
     theme: 'study',
-    name: 'Рюкзак + Заколки',
+    name: 'Рюкзак + заколки',
     description: 'Практичный и милый набор',
     //image: '/images/capsules/accessories/study/capsule-1.jpg'
   },
@@ -616,7 +632,7 @@ export const ITEMS_DATABASE = [
     theme: 'study',
     capsule: 'acc_study_capsule_1',
     name: 'Рюкзак',
-    description: 'Повседневный рюкзак для учебы.',
+    description: 'Повседневный рюкзак для учёбы',
     image: '/images/accessories/study/backpack.jpg',
     mainMarketplace: 'Ламода',
     mainMarketplaceUrl: 'https://www.lamoda.ru/p/MP002XW1DMTW/',
@@ -632,7 +648,7 @@ export const ITEMS_DATABASE = [
     theme: 'study',
     capsule: 'acc_study_capsule_1',
     name: 'Заколки',
-    description: 'Набор стильных заколок.',
+    description: 'Набор стильных заколок',
     image: '/images/accessories/study/hairpins.jpg',
     mainMarketplace: 'Ламода',
     mainMarketplaceUrl: 'https://www.lamoda.ru/p/MP002XW0UDA0/',
@@ -646,8 +662,8 @@ export const ITEMS_DATABASE = [
     type: 'capsule',
     category: 'accessories',
     theme: 'study',
-    name: 'Сумка на плечо + Гетры',
-    description: 'Комфорт и стиль для пар',
+    name: 'Сумка на плечо + гетры',
+    description: 'Сет для модниц, которые хотят выглядеть комфортно, просто и стильно',
     //image: '/images/capsules/accessories/study/capsule-2.jpg'
   },
   {
@@ -657,7 +673,7 @@ export const ITEMS_DATABASE = [
     theme: 'study',
     capsule: 'acc_study_capsule_2',
     name: 'Сумка на плечо',
-    description: 'Удобная сумка через плечо.',
+    description: 'Удобная сумка через плечо',
     image: '/images/accessories/study/shoulder-bag.jpg',
     mainMarketplace: 'Ламода',
     mainMarketplaceUrl: 'https://www.lamoda.ru/p/MP002XW1K53J/',
@@ -673,7 +689,7 @@ export const ITEMS_DATABASE = [
     theme: 'study',
     capsule: 'acc_study_capsule_2',
     name: 'Гетры',
-    description: 'Тёплые гетры для прохладной погоды.',
+    description: 'Тёплые гетры для прохладной погоды',
     image: '/images/accessories/study/legwarmers.jpg',
     mainMarketplace: 'Ламода',
     mainMarketplaceUrl: 'https://www.lamoda.ru/p/MP002XW0VE9K/',
@@ -690,7 +706,7 @@ export const ITEMS_DATABASE = [
     type: 'capsule',
     category: 'accessories',
     theme: 'date',
-    name: 'Сумка + Серьги',
+    name: 'Сумка + cерьги',
     description: 'Нежный комплект для романтичного вечера',
     //image: '/images/capsules/accessories/date/capsule-1.jpg'
   },
@@ -701,7 +717,7 @@ export const ITEMS_DATABASE = [
     theme: 'date',
     capsule: 'acc_date_capsule_1',
     name: 'Сумка',
-    description: 'Элегантная сумка через плечо нейтрального оттенка. Компактная, но вместительная — идеальна для свидания.',
+    description: 'Элегантная сумка через плечо нейтрального оттенка. Компактная, но вместительная — идеальна для свидания',
     image: '/images/accessories/date/bag.jpg',
     mainMarketplace: 'Ламода',
     mainMarketplaceUrl: 'https://www.lamoda.ru/p/MP002XW1EN35/',
@@ -717,7 +733,7 @@ export const ITEMS_DATABASE = [
     theme: 'date',
     capsule: 'acc_date_capsule_1',
     name: 'Серьги',
-    description: 'Изящные серьги-подвески с нежным блеском. Подчеркивают женственность и добавляют образу лёгкости.',
+    description: 'Изящные серьги с нежным блеском. Подчеркивают женственность и добавляют образу лёгкости',
     image: '/images/accessories/date/earrings.jpg',
     mainMarketplace: 'Ламода',
     mainMarketplaceUrl: 'https://www.lamoda.ru/p/MP002XW131US/',
@@ -731,7 +747,7 @@ export const ITEMS_DATABASE = [
     type: 'capsule',
     category: 'accessories',
     theme: 'date',
-    name: 'Сумка + Кулон + Лента для волос',
+    name: 'Сумка + кулон + лента для волос',
     description: 'Романтичный набор для особого вечера',
     //image: '/images/capsules/accessories/date/capsule-2.jpg'
   },
@@ -742,10 +758,10 @@ export const ITEMS_DATABASE = [
     theme: 'date',
     capsule: 'acc_date_capsule_2',
     name: 'Сумка',
-    description: 'Небольшая сумка-кроссбоди нежного цвета. Идеально дополняет романтичный образ.',
+    description: 'Небольшая сумка-кроссбоди нежного цвета. Идеально дополняет романтичный образ',
     image: '/images/accessories/date/bag-pink.jpg',
     mainMarketplace: 'Ламода',
-    mainMarketplaceUrl: 'https://www.lamoda.ru/p/MP002XW1EN35/',
+    mainMarketplaceUrl: 'https://www.lamoda.ru/p/mp002xw1dn2v/',
     partnerMarketplaces: [
       { name: 'Wildberries', url: 'https://www.wildberries.ru/catalog/337953705/detail.aspx?size=504119689'},
       { name: 'Ozon', url: 'https://ozon.ru/t/Zplxwvg' }
@@ -758,10 +774,10 @@ export const ITEMS_DATABASE = [
     theme: 'date',
     capsule: 'acc_date_capsule_2',
     name: 'Кулон',
-    description: 'Нежная подвеска в виде капли на тонкой цепочке. Добавляет образу утончённости.',
+    description: 'Нежная подвеска добавит вашему образу утончённости',
     image: '/images/accessories/date/pendant.jpg',
     mainMarketplace: 'Ламода',
-    mainMarketplaceUrl: 'https://www.lamoda.ru/p/MP002XW1LUZ4/',
+    mainMarketplaceUrl: 'https://www.lamoda.ru/p/rtlaes096501/',
     partnerMarketplaces: [
       { name: 'Wildberries', url: 'https://www.wildberries.ru/catalog/248958621/detail.aspx?size=389701104'},
       { name: 'Ozon', url: 'https://ozon.ru/t/rlpk4US' }
@@ -774,10 +790,10 @@ export const ITEMS_DATABASE = [
     theme: 'date',
     capsule: 'acc_date_capsule_2',
     name: 'Лента для волос',
-    description: 'Шёлковая лента для волос нежного оттенка. Завершает романтичный образ.',
+    description: 'Шёлковая лента для волос нежного оттенка на заколке. Завершает романтичный образ',
     image: '/images/accessories/date/hair-ribbon.jpg',
     mainMarketplace: 'Ламода',
-    mainMarketplaceUrl: 'https://www.lamoda.ru/p/RTLAEL685001/',
+    mainMarketplaceUrl: 'https://www.lamoda.ru/p/rtlaei835101/',
     partnerMarketplaces: [
       { name: 'Wildberries', url: 'https://www.wildberries.ru/catalog/234512796/detail.aspx?size=369561559'},
       { name: 'Ozon', url: 'https://ozon.ru/t/ho8j3FC' }
@@ -791,7 +807,7 @@ export const ITEMS_DATABASE = [
     type: 'capsule',
     category: 'accessories',
     theme: 'sport',
-    name: 'Сумка + Повязка на голову',
+    name: 'Сумка + повязка на голову',
     description: 'Практичный набор для тренировок',
     //image: '/images/capsules/accessories/sport/capsule-1.jpg'
   },
@@ -802,7 +818,7 @@ export const ITEMS_DATABASE = [
     theme: 'sport',
     capsule: 'acc_sport_capsule_1',
     name: 'Сумка',
-    description: 'Лёгкая спортивная сумка-шоппер из прочной ткани. Вместительная и удобная — идеальна для зала.',
+    description: 'Лёгкая спортивная сумка из прочной ткани. Вместительная и удобная',
     image: '/images/accessories/sport/gym-bag.jpg',
     mainMarketplace: 'Ламода',
     mainMarketplaceUrl: 'https://www.lamoda.ru/p/MP002XW1KD9M/',
@@ -818,10 +834,10 @@ export const ITEMS_DATABASE = [
     theme: 'sport',
     capsule: 'acc_sport_capsule_1',
     name: 'Повязка на голову',
-    description: 'Мягкая повязка из хлопка, отводит влагу и убирает волосы с лица. Не скользит во время тренировки.',
+    description: 'Мягкая повязка отводит влагу и убирает волосы с лица. Не скользит во время тренировки',
     image: '/images/accessories/sport/headband.jpg',
     mainMarketplace: 'Ламода',
-    mainMarketplaceUrl: 'https://www.lamoda.ru/p/RTLAEN073501/',
+    mainMarketplaceUrl: 'https://www.lamoda.ru/p/rtlafd524201/',
     partnerMarketplaces: [
       { name: 'Wildberries', url: 'https://www.wildberries.ru/catalog/183761213/detail.aspx?size=302866810'},
       { name: 'Ozon', url: 'https://ozon.ru/t/vsnEYUU' }
@@ -832,7 +848,7 @@ export const ITEMS_DATABASE = [
     type: 'capsule',
     category: 'accessories',
     theme: 'sport',
-    name: 'Сумка + Умные часы + Перчатки',
+    name: 'Поясная сумка + умные часы + перчатки',
     description: 'Технологичный набор для активного спорта',
     //image: '/images/capsules/accessories/sport/capsule-2.jpg'
   },
@@ -842,14 +858,14 @@ export const ITEMS_DATABASE = [
     category: 'accessories',
     theme: 'sport',
     capsule: 'acc_sport_capsule_2',
-    name: 'Сумка',
-    description: 'Компактная спортивная сумка с отделением для обуви. Лёгкая и вместительная.',
+    name: 'Поясная сумка',
+    description: 'Лёгкая и вместительная сумка на пояс станет идеальным решением для кардио-тренировки',
     image: '/images/accessories/sport/sports-bag.jpg',
     mainMarketplace: 'Ламода',
-    mainMarketplaceUrl: 'https://www.lamoda.ru/p/MP002XW1KD9M/',
+    mainMarketplaceUrl: 'https://www.lamoda.ru/p/rtladh880801/',
     partnerMarketplaces: [
-      { name: 'Wildberries', url: 'https://www.wildberries.ru/catalog/492571049/detail.aspx?size=685619309'},
-      { name: 'Ozon', url: 'https://ozon.ru/t/aH1gHS1' }
+      { name: 'Wildberries', url: 'https://www.wildberries.ru/catalog/154006434/detail.aspx'},
+      { name: 'Ozon', url: 'https://ozon.ru/t/LnFVYO6' }
     ]
   },
   {
@@ -858,14 +874,14 @@ export const ITEMS_DATABASE = [
     category: 'accessories',
     theme: 'sport',
     capsule: 'acc_sport_capsule_2',
-    name: 'Умные часы',
-    description: 'Фитнес-трекер с пульсометром и шагомером. Отслеживают активность и помогают достигать целей.',
-    image: '/images/accessories/sport/smart-watch.jpg',
+    name: 'Перчатки для фитнеса',
+    description: 'Дышащие перчатки с усиленными ладонями. Защищают руки от мозолей и улучшают хват',
+    image: '/images/accessories/sport/fitness-gloves.jpg',
     mainMarketplace: 'Ламода',
-    mainMarketplaceUrl: 'https://goldapple.ru/19000401930-redmi-watch-5-active',
+    mainMarketplaceUrl: 'https://www.lamoda.ru/p/RTLABC793604/',
     partnerMarketplaces: [
-      { name: 'Wildberries', url: 'https://www.wildberries.ru/catalog/984494651/detail.aspx?size=1473736869'},
-      { name: 'Ozon', url: 'https://ozon.ru/t/7WOlQL2' }
+      { name: 'Wildberries', url: 'https://www.wildberries.ru/catalog/760455161/detail.aspx' },
+      { name: 'Ozon', url: 'https://ozon.ru/t/tKYL4V3' }
     ]
   },
   {
@@ -874,14 +890,14 @@ export const ITEMS_DATABASE = [
     category: 'accessories',
     theme: 'sport',
     capsule: 'acc_sport_capsule_2',
-    name: 'Перчатки для фитнеса',
-    description: 'Дышащие перчатки с усиленными ладонями. Защищают руки от мозолей и улучшают хват.',
-    image: '/images/accessories/sport/fitness-gloves.jpg',
-    mainMarketplace: 'Ламода',
-    mainMarketplaceUrl: 'https://www.lamoda.ru/p/RTLABC793604/',
+    name: 'Умные часы',
+    description: 'Фитнес-трекер с пульсометром и шагомером. Отслеживает активность и помогает достигать целей',
+    image: '/images/accessories/sport/smart-watch.jpg',
+    mainMarketplace: 'Золотое Яблоко',
+    mainMarketplaceUrl: 'https://goldapple.ru/19000401930-redmi-watch-5-active',
     partnerMarketplaces: [
-      { name: 'Wildberries', url: 'https://www.wildberries.ru/catalog/760455161/detail.aspx' },
-      { name: 'Ozon', url: 'https://ozon.ru/t/tKYL4V3' }
+      { name: 'Wildberries', url: 'https://www.wildberries.ru/catalog/984494651/detail.aspx?size=1473736869'},
+      { name: 'Ozon', url: 'https://ozon.ru/t/7WOlQL2' }
     ]
   },
  // ============ МАКИЯЖ - ВЕЧЕРИНКА ============
@@ -891,7 +907,7 @@ export const ITEMS_DATABASE = [
     type: 'capsule',
     category: 'care',
     theme: 'party',
-    name: 'Смоки айс + Накладные ресницы',
+    name: 'Смоки айс',
     description: 'Драматичный вечерний макияж с дымчатым эффектом',
     //image: '/images/capsules/care/party/capsule-1.jpg'
   },
@@ -902,8 +918,8 @@ export const ITEMS_DATABASE = [
     theme: 'party',
     capsule: 'care_party_capsule_1',
     name: 'Палетка теней для век',
-    description: 'Насыщенная палетка с матовыми и шиммерными оттенками от бежевого до угольно-черного. Идеальна для создания смоки айс.',
-    image: '/images/care/party/eyeshadow-palette.jpg',
+    description: 'Насыщенная палетка с матовыми и шиммерными оттенками. Идеальна для создания смоки айс',
+    image: '/images/care/party/palette.jpg',
     mainMarketplace: 'Золотое Яблоко',
     mainMarketplaceUrl: 'https://goldapple.ru/19000129129-quadro-eleganto',
     partnerMarketplaces: [
@@ -918,8 +934,8 @@ export const ITEMS_DATABASE = [
     theme: 'party',
     capsule: 'care_party_capsule_1',
     name: 'Накладные ресницы',
-    description: 'Объёмные накладные ресницы с эффектом кукольного взгляда. Легко крепятся и держатся всю ночь.',
-    image: '/images/care/party/false-lashes.jpg',
+    description: 'Объёмные накладные ресницы с эффектом кукольного взгляда. Легко крепятся и держатся всю ночь',
+    image: '/images/care/party/lashes.jpg',
     mainMarketplace: 'Золотое Яблоко',
     mainMarketplaceUrl: 'https://goldapple.ru/19000382830-individual-lashes-mermaid',
     partnerMarketplaces: [
@@ -932,7 +948,7 @@ export const ITEMS_DATABASE = [
     type: 'capsule',
     category: 'care',
     theme: 'party',
-    name: 'Красная помада + Стразы',
+    name: 'Красная помада + стразы',
     description: 'Яркий акцент на губах с праздничным декором',
     //image: '/images/capsules/care/party/capsule-2.jpg'
   },
@@ -943,7 +959,7 @@ export const ITEMS_DATABASE = [
     theme: 'party',
     capsule: 'care_party_capsule_2',
     name: 'Красная помада',
-    description: 'Насыщенная красная помада с матовым финишем. Стойкая формула не растекается и держится весь вечер.',
+    description: 'Насыщенная красная помада привлечёт внимание и сделает вас звездой вечеринки',
     image: '/images/care/party/lipstick-red.jpg',
     mainMarketplace: 'Золотое Яблоко',
     mainMarketplaceUrl: 'https://goldapple.ru/19760327251-color-riche',
@@ -959,8 +975,8 @@ export const ITEMS_DATABASE = [
     theme: 'party',
     capsule: 'care_party_capsule_2',
     name: 'Стразы',
-    description: 'Набор декоративных страз для макияжа. Легко фиксируются и создают праздничное настроение.',
-    image: '/images/care/party/rhinestones.jpg',
+    description: 'Набор декоративных страз для макияжа. Легко фиксируются и создают праздничное настроение',
+    image: '/images/care/party/shinestones.jpg',
     mainMarketplace: 'Золотое Яблоко',
     mainMarketplaceUrl: 'https://goldapple.ru/19000055599-pure-gold-stars',
     partnerMarketplaces: [
@@ -976,7 +992,7 @@ export const ITEMS_DATABASE = [
     type: 'capsule',
     category: 'care',
     theme: 'work',
-    name: 'Нюдовая помада + Кремовые тени',
+    name: 'Нюдовая помада + кремовые тени',
     description: 'Естественный и свежий офисный макияж',
     //image: '/images/capsules/care/work/capsule-1.jpg'
   },
@@ -987,7 +1003,7 @@ export const ITEMS_DATABASE = [
     theme: 'work',
     capsule: 'care_work_capsule_1',
     name: 'Нюдовая помада',
-    description: 'Нежная помада естественного оттенка с кремовой текстурой. Увлажняет губы и выглядит максимально натурально.',
+    description: 'Нежная помада естественного оттенка с кремовой текстурой. Увлажняет губы и выглядит максимально натурально',
     image: '/images/care/work/lipstick-nude.jpg',
     mainMarketplace: 'Золотое Яблоко',
     mainMarketplaceUrl: 'https://goldapple.ru/19000359867-rich-nude',
@@ -1002,9 +1018,9 @@ export const ITEMS_DATABASE = [
     category: 'care',
     theme: 'work',
     capsule: 'care_work_capsule_1',
-    name: 'Кремовые нюдовые тени',
-    description: 'Лёгкие кремовые тени с шиммером. Создают деликатное сияние на веках и не скатываются весь день.',
-    image: '/images/care/work/cream-eyeshadow.jpg',
+    name: 'Нюдовые тени',
+    description: 'Лёгкие нюдовые тени создадут деликатное сияние на веках и подчеркнут вашу естественную красоту',
+    image: '/images/care/work/eyeshadow.jpg',
     mainMarketplace: 'Золотое Яблоко',
     mainMarketplaceUrl: 'https://goldapple.ru/19000007278-ultimate-nudes',
     partnerMarketplaces: [
@@ -1017,8 +1033,8 @@ export const ITEMS_DATABASE = [
     type: 'capsule',
     category: 'care',
     theme: 'work',
-    name: 'Тональная основа + Пудра',
-    description: 'Идеальный тон для рабочего дня',
+    name: 'Тональная основа + пудра',
+    description: 'Идеальный тон для рабочего дня освежит ваше прекрасное лицо',
     //image: '/images/capsules/care/work/capsule-2.jpg'
   },
   {
@@ -1028,8 +1044,8 @@ export const ITEMS_DATABASE = [
     theme: 'work',
     capsule: 'care_work_capsule_2',
     name: 'Тональная основа',
-    description: 'Лёгкая тональная основа со средней степенью покрытия. Выравнивает тон, не создавая эффекта маски.',
-    image: '/images/care/work/foundation.jpg',
+    description: 'Лёгкая тональная основа со средней степенью покрытия. Выравнивает тон, не создавая эффекта маски',
+    image: '/images/care/work/ton.jpg',
     mainMarketplace: 'Золотое Яблоко',
     mainMarketplaceUrl: 'https://goldapple.ru/9481900002-perfect-cover',
     partnerMarketplaces: [
@@ -1044,7 +1060,7 @@ export const ITEMS_DATABASE = [
     theme: 'work',
     capsule: 'care_work_capsule_2',
     name: 'Пудра',
-    description: 'Матирующая пудра с микронизированными частицами. Фиксирует макияж и убирает жирный блеск на весь день.',
+    description: 'Матирующая пудра фиксирует макияж и убирает жирный блеск на весь день',
     image: '/images/care/work/powder.jpg',
     mainMarketplace: 'Золотое Яблоко',
     mainMarketplaceUrl: 'https://goldapple.ru/19000451373-soft-blur-matte-setting',
@@ -1061,8 +1077,8 @@ export const ITEMS_DATABASE = [
     type: 'capsule',
     category: 'care',
     theme: 'study',
-    name: 'Блеск для губ + Тушь',
-    description: 'Быстрый и свежий макияж для универа',
+    name: 'Блеск для губ + тушь',
+    description: 'Быстрый и свежий макияж для учёбы',
     //image: '/images/capsules/care/study/capsule-1.jpg'
   },
   {
@@ -1072,7 +1088,7 @@ export const ITEMS_DATABASE = [
     theme: 'study',
     capsule: 'care_study_capsule_1',
     name: 'Блеск для губ',
-    description: 'Прозрачный блеск с лёгким увлажнением. Придаёт губам объём и свежий вид.',
+    description: 'Прозрачный блеск с лёгким увлажнением. Придаёт губам объём и свежий вид',
     image: '/images/care/study/lip-gloss.jpg',
     mainMarketplace: 'Золотое Яблоко',
     mainMarketplaceUrl: 'https://goldapple.ru/19760306117-le-grand-volume',
@@ -1088,7 +1104,7 @@ export const ITEMS_DATABASE = [
     theme: 'study',
     capsule: 'care_study_capsule_1',
     name: 'Тушь',
-    description: 'Классическая тушь с разделяющей щёточкой. Создаёт естественный объём без комочков.',
+    description: 'Классическая тушь с разделяющей щёточкой. Создаёт естественный объём без комочков',
     image: '/images/care/study/mascara.jpg',
     mainMarketplace: 'Золотое Яблоко',
     mainMarketplaceUrl: 'https://goldapple.ru/3216800001-cabaret-premiere',
@@ -1102,7 +1118,7 @@ export const ITEMS_DATABASE = [
     type: 'capsule',
     category: 'care',
     theme: 'study',
-    name: 'Тональная основа + Консилер',
+    name: 'Консилер + цветная тушь',
     description: 'Маскировка несовершенств без сложного макияжа',
     //image: '/images/capsules/care/study/capsule-2.jpg'
   },
@@ -1112,24 +1128,8 @@ export const ITEMS_DATABASE = [
     category: 'care',
     theme: 'study',
     capsule: 'care_study_capsule_2',
-    name: 'Тональная основа',
-    description: 'Лёгкая ВВ-основа с увлажнением. Подходит для ежедневного использования.',
-    image: '/images/care/study/bb-cream.jpg',
-    mainMarketplace: 'Золотое Яблоко',
-    mainMarketplaceUrl: 'https://goldapple.ru/9481900002-perfect-cover',
-    partnerMarketplaces: [
-      { name: 'Wildberries', url: 'https://www.wildberries.ru/catalog/138742829/detail.aspx?size=235729482' },
-      { name: 'Ozon', url: 'https://ozon.ru/t/BYnQ1ma' }
-    ]
-  },
-  {
-    id: 'care_study_item_4',
-    type: 'item',
-    category: 'care',
-    theme: 'study',
-    capsule: 'care_study_capsule_2',
     name: 'Консилер',
-    description: 'Кремовый консилер со средней плотностью. Перекрывает покраснения и тени под глазами.',
+    description: 'Кремовый консилер со средней плотностью. Перекрывает покраснения и тени под глазами',
     image: '/images/care/study/concealer.jpg',
     mainMarketplace: 'Золотое Яблоко',
     mainMarketplaceUrl: 'https://goldapple.ru/19000000799-perfect-concealer',
@@ -1138,7 +1138,22 @@ export const ITEMS_DATABASE = [
       { name: 'Ozon', url: 'https://ozon.ru/t/5U1Fmti' }
     ]
   },
-
+  {
+    id: 'care_study_item_4',
+    type: 'item',
+    category: 'care',
+    theme: 'study',
+    capsule: 'care_study_capsule_2',
+    name: 'Цветная тушь',
+    description: 'Цветная тушь разбавит скучные учебные будни и сделает ваш образ дерзким и ярким',
+    image: '/images/care/study/color-mascara.jpg',
+    mainMarketplace: 'Золотое Яблоко',
+    mainMarketplaceUrl: 'https://goldapple.ru/19000162144-all-that-juice-mascara',
+    partnerMarketplaces: [
+      { name: 'Wildberries', url: 'https://www.wildberries.ru/catalog/892751736/detail.aspx' },
+      { name: 'Ozon', url: 'https://ozon.ru/t/jQ5u5Pf' }
+    ]
+  },
   // ============ МАКИЯЖ - СВИДАНИЕ ============
 
   {
@@ -1146,7 +1161,7 @@ export const ITEMS_DATABASE = [
     type: 'capsule',
     category: 'care',
     theme: 'date',
-    name: 'Розовая помада + Шиммер-тени',
+    name: 'Розовая помада + шиммер-тени',
     description: 'Романтичный и нежный образ',
     //image: '/images/capsules/care/date/capsule-1.jpg'
   },
@@ -1156,14 +1171,14 @@ export const ITEMS_DATABASE = [
     category: 'care',
     theme: 'date',
     capsule: 'care_date_capsule_1',
-    name: 'Нюдовая помада',
-    description: 'Нежная розово-бежевая помада с матовым финишем. Выглядит очень естественно и романтично.',
+    name: 'Розовая помада',
+    description: 'Нежная перламутрово-розовая помада будет очень романтично смотреться на губах и заворожит любого',
     image: '/images/care/date/lipstick-rose.jpg',
     mainMarketplace: 'Золотое Яблоко',
-    mainMarketplaceUrl: 'https://goldapple.ru/19000359867-rich-nude',
+    mainMarketplaceUrl: 'https://goldapple.ru/3016400047-colour-elixir',
     partnerMarketplaces: [
-      { name: 'Wildberries', url: 'https://www.wildberries.ru/catalog/868527127/detail.aspx?size=1308033060' },
-      { name: 'Ozon', url: 'https://ozon.ru/t/91To1Cj' }
+      { name: 'Wildberries', url: 'https://www.wildberries.ru/catalog/806905792/detail.aspx' },
+      { name: 'Ozon', url: 'https://ozon.ru/t/BY6w97h' }
     ]
   },
   {
@@ -1173,7 +1188,7 @@ export const ITEMS_DATABASE = [
     theme: 'date',
     capsule: 'care_date_capsule_1',
     name: 'Палетка теней для век',
-    description: 'Палетка с нежными розовыми и шиммерными оттенками. Создаёт мягкое сияние на веках.',
+    description: 'Палетка с нежными розовыми и шиммерными оттенками. Создаёт мягкое сияние на веках',
     image: '/images/care/date/eyeshadow-shimmer.jpg',
     mainMarketplace: 'Золотое Яблоко',
     mainMarketplaceUrl: 'https://goldapple.ru/19000007278-ultimate-nudes',
@@ -1187,7 +1202,7 @@ export const ITEMS_DATABASE = [
     type: 'capsule',
     category: 'care',
     theme: 'date',
-    name: 'Румяна + Хайлайтер',
+    name: 'Румяна + хайлайтер',
     description: 'Свежий и сияющий образ для свидания',
     //image: '/images/capsules/care/date/capsule-2.jpg'
   },
@@ -1198,7 +1213,7 @@ export const ITEMS_DATABASE = [
     theme: 'date',
     capsule: 'care_date_capsule_2',
     name: 'Румяна',
-    description: 'Нежные розовые румяна с лёгким шиммером. Освежают лицо и придают здоровый румянец.',
+    description: 'Нежные розовые румяна с лёгким шиммером. Освежают лицо и придают здоровый румянец',
     image: '/images/care/date/blush.jpg',
     mainMarketplace: 'Золотое Яблоко',
     mainMarketplaceUrl: 'https://goldapple.ru/89459600003-blusher-reloaded',
@@ -1214,7 +1229,7 @@ export const ITEMS_DATABASE = [
     theme: 'date',
     capsule: 'care_date_capsule_2',
     name: 'Хайлайтер',
-    description: 'Хайлайтер с мелкими частицами. Создаёт деликатное сияние на скулах и над губой.',
+    description: 'Хайлайтер с мелкими частицами. Создаёт деликатное сияние',
     image: '/images/care/date/highlighter.jpg',
     mainMarketplace: 'Золотое Яблоко',
     mainMarketplaceUrl: 'https://goldapple.ru/89458900002-highlight-reloaded',
@@ -1231,7 +1246,7 @@ export const ITEMS_DATABASE = [
     type: 'capsule',
     category: 'care',
     theme: 'sport',
-    name: 'Водостойкая тушь + Гигиеническая помада',
+    name: 'Водостойкая тушь + гигиеническая помада',
     description: 'Минимальный уход для активных тренировок',
     //image: '/images/capsules/care/sport/capsule-1.jpg'
   },
@@ -1242,7 +1257,7 @@ export const ITEMS_DATABASE = [
     theme: 'sport',
     capsule: 'care_sport_capsule_1',
     name: 'Тушь',
-    description: 'Водостойкая тушь, которая не осыпается и не размазывается даже во время интенсивного потоотделения.',
+    description: 'Водостойкая тушь, которая не осыпается и не размазывается даже во время интенсивного потоотделения',
     image: '/images/care/sport/waterproof-mascara.jpg',
     mainMarketplace: 'Золотое Яблоко',
     mainMarketplaceUrl: 'https://goldapple.ru/3216800001-cabaret-premiere',
@@ -1258,7 +1273,7 @@ export const ITEMS_DATABASE = [
     theme: 'sport',
     capsule: 'care_sport_capsule_1',
     name: 'Гигиеническая помада',
-    description: 'Увлажняющая гигиеническая помада с SPF. Защищает губы от обветривания и сухости.',
+    description: 'Увлажняющая гигиеническая помада с SPF. Защищает губы от обветривания и сухости',
     image: '/images/care/sport/lip-balm.jpg',
     mainMarketplace: 'Золотое Яблоко',
     mainMarketplaceUrl: 'https://goldapple.ru/19000052026-panthenol',
@@ -1283,7 +1298,7 @@ export const ITEMS_DATABASE = [
     theme: 'sport',
     capsule: 'care_sport_capsule_2',
     name: 'Гель для бровей',
-    description: 'Фиксирующий гель для бровей с натуральным составом. Укладывает волоски и держит форму весь день.',
+    description: 'Фиксирующий гель для бровей с натуральным составом. Укладывает волоски и держит форму весь день',
     image: '/images/care/sport/brow-gel.jpg',
     mainMarketplace: 'Золотое Яблоко',
     mainMarketplaceUrl: 'https://goldapple.ru/19000062318-brow-fix-gel',
