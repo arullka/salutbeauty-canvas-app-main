@@ -1,23 +1,38 @@
 import React from 'react';
 import { createAssistant, createSmartappDebugger } from '@salutejs/client';
+import { ITEMS_DATABASE } from './data/items';
 
 import './App.css';
 import { MainScreen } from './pages/MainScreen';
 
+if (typeof window !== 'undefined') {
+  window.ITEMS_DATABASE = ITEMS_DATABASE;
+}
+
 const initializeAssistant = (getState) => {
-  if (process.env.NODE_ENV === 'development') {
-    return createSmartappDebugger({
-      token: process.env.REACT_APP_TOKEN ?? '',
-      initPhrase: `Запусти ${process.env.REACT_APP_SMARTAPP}`,
-      getState,
-      nativePanel: {
-        defaultText: 'Говорите!',
-        screenshotMode: false,
-        tabIndex: -1,
-      },
-    });
-  } else {
-    return createAssistant({ getState });
+  try {
+    if (process.env.NODE_ENV === 'development') {
+      return createSmartappDebugger({
+        token: process.env.REACT_APP_TOKEN ?? '',
+        initPhrase: `Запусти ${process.env.REACT_APP_SMARTAPP}`,
+        getState,
+        nativePanel: {
+          defaultText: 'Говорите!',
+          screenshotMode: false,
+          tabIndex: -1,
+        },
+      });
+    } else {
+      return createAssistant({ getState });
+    }
+  } catch (error) {
+    console.warn('Assistant initialization failed:', error);
+    // ✅ Возвращаем mock объект если ассистент не инициализировался
+    return {
+      on: () => {},
+      sendData: () => {},
+      close: () => {},
+    };
   }
 };
 
@@ -29,37 +44,41 @@ export class App extends React.Component {
     this.state = {
       selectedCategory: null,
       selectedTheme: null,
+      assistantReady: false,
     };
 
     this.assistant = initializeAssistant(() => this.getStateForAssistant());
 
-    this.assistant.on('data', (event) => {
-      console.log(`assistant.on(data)`, event);
-      if (event.type === 'character') {
-        console.log(`Character: "${event?.character?.id}"`);
-      } else if (event.type === 'insets') {
-        console.log(`Insets received`);
-      } else {
-        const { action } = event;
-        this.dispatchAssistantAction(action);
-      }
-    });
+    if (this.assistant && typeof this.assistant.on === 'function') {
+      this.assistant.on('data', (event) => {
+        console.log(`assistant.on(data)`, event);
+        if (event.type === 'character') {
+          console.log(`Character: "${event?.character?.id}"`);
+        } else if (event.type === 'insets') {
+          console.log(`Insets received`);
+        } else {
+          const { action } = event;
+          this.dispatchAssistantAction(action);
+        }
+      });
 
-    this.assistant.on('start', (event) => {
-      console.log(`assistant.on(start)`, event);
-    });
+      this.assistant.on('start', (event) => {
+        console.log(`assistant.on(start)`, event);
+        this.setState({ assistantReady: true });
+      });
 
-    this.assistant.on('command', (event) => {
-      console.log(`assistant.on(command)`, event);
-    });
+      this.assistant.on('command', (event) => {
+        console.log(`assistant.on(command)`, event);
+      });
 
-    this.assistant.on('error', (event) => {
-      console.log(`assistant.on(error)`, event);
-    });
+      this.assistant.on('error', (event) => {
+        console.log(`assistant.on(error)`, event);
+      });
 
-    this.assistant.on('tts', (event) => {
-      console.log(`assistant.on(tts)`, event);
-    });
+      this.assistant.on('tts', (event) => {
+        console.log(`assistant.on(tts)`, event);
+      });
+    }
   }
 
   componentDidMount() {
@@ -81,8 +100,12 @@ export class App extends React.Component {
     console.log('dispatchAssistantAction', action);
     if (action) {
       switch (action.type) {
-        case 'select_category':
-          return this.selectCategory(action);
+        case 'select_look':
+          return this.selectCategory({ category: 'outfit' });
+        case 'select_ac':
+          return this.selectCategory({ category: 'accessories' });
+        case 'select_care':
+          return this.selectCategory({ category: 'care' });
         case 'select_theme':
           return this.selectTheme(action);
         case 'show_items':
