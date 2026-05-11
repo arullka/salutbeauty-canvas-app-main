@@ -4,7 +4,7 @@ import { ITEMS_DATABASE } from '../data/items';
 
 export const ThemeView = (props) => {
   const { category, themes, onBack } = props;
-  const [selectedTheme, setSelectedTheme] = useState('party');
+  const [selectedTheme, setSelectedTheme] = useState('study');
   const [selectedCapsule, setSelectedCapsule] = useState(null);
 
   const getCapsules = () => {
@@ -17,7 +17,7 @@ export const ThemeView = (props) => {
 
   const getCategoryName = () => {
     const names = { outfit: 'Образы', accessories: 'Аксессуары', care: 'Макияж' };
-    return names[category];
+    //return names[category];
   };
 
   if (selectedCapsule) {

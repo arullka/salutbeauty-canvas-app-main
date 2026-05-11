@@ -176,12 +176,12 @@ body {
   margin-bottom: 60px;
 }
 
-.capsules-section h3 {
+/* .capsules-section h3 {
   font-size: 24px;
   margin-bottom: 20px;
   text-align: center;
   color: #d946ef;
-}
+} */
 
 .capsules-grid {
   display: grid;
@@ -198,23 +198,24 @@ body {
   min-height: 200px;              
   background: linear-gradient(     
     135deg, 
-    rgba(89, 56, 234, 0.15) 0%, 
-    rgba(216, 55, 224, 0.15) 100%
+    rgba(89, 56, 234, 0.201) 0%, 
+    rgba(215, 49, 224, 0.211) 100%
   );
-  border: 2px solid rgba(217, 70, 239, 0.3);
+  border: 3px solid rgba(106, 43, 118, 0.436);
   padding: 20px;
 }
+
 .capsule-card:hover {
   transform: translateY(-8px);
   border-color: #d946ef;
   box-shadow: 0 15px 40px rgba(217, 70, 239, 0.2);
 }
 
-.capsule-card img {
+/* .capsule-card img {
   width: 100%;
   height: 180px;
   object-fit: cover;
-}
+} */
 
 .capsule-card h4 {
   font-size: 18px;
@@ -222,14 +223,10 @@ body {
 }
 
 .capsule-card p {
-  font-size: 13px;
-  text-align: center;
-}
-
-.capsule-card p {
   padding: 0 12px 12px;
   margin: 0;
-  font-size: 12px;
+  font-size: 14px;
+  text-align: center;
   color: rgba(255, 255, 255, 0.7);
 }
 
@@ -300,7 +297,7 @@ body {
 
 .item-image {
   width: 100%;
-  height: 200px;
+  height: 250px;
   overflow: hidden;
 }
 
