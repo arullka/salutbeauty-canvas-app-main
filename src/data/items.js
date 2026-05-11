@@ -992,7 +992,7 @@ export const ITEMS_DATABASE = [
     type: 'capsule',
     category: 'care',
     theme: 'work',
-    name: 'Нюдовая помада + кремовые тени',
+    name: 'Нюдовая помада + нюдовые тени',
     description: 'Естественный и свежий офисный макияж',
     //image: '/images/capsules/care/work/capsule-1.jpg'
   },
@@ -1018,7 +1018,7 @@ export const ITEMS_DATABASE = [
     category: 'care',
     theme: 'work',
     capsule: 'care_work_capsule_1',
-    name: 'Нюдовые тени',
+    name: 'Палетка теней для век',
     description: 'Лёгкие нюдовые тени создадут деликатное сияние на веках и подчеркнут вашу естественную красоту',
     image: '/images/care/work/eyeshadow.jpg',
     mainMarketplace: 'Золотое Яблоко',
@@ -1161,7 +1161,7 @@ export const ITEMS_DATABASE = [
     type: 'capsule',
     category: 'care',
     theme: 'date',
-    name: 'Розовая помада + шиммер-тени',
+    name: 'Розовая помада + розовые тени',
     description: 'Романтичный и нежный образ',
     //image: '/images/capsules/care/date/capsule-1.jpg'
   },
@@ -1188,13 +1188,13 @@ export const ITEMS_DATABASE = [
     theme: 'date',
     capsule: 'care_date_capsule_1',
     name: 'Палетка теней для век',
-    description: 'Палетка с нежными розовыми и шиммерными оттенками. Создаёт мягкое сияние на веках',
-    image: '/images/care/date/eyeshadow-shimmer.jpg',
+    description: 'Палетка с насыщенными розовыми оттенками создаст мягкое сияние на веках',
+    image: '/images/care/date/eyeshadow-pink.jpg',
     mainMarketplace: 'Золотое Яблоко',
-    mainMarketplaceUrl: 'https://goldapple.ru/19000007278-ultimate-nudes',
+    mainMarketplaceUrl: 'https://goldapple.ru/19000143513-mini-match-palette',
     partnerMarketplaces: [
-      { name: 'Wildberries', url: 'https://www.wildberries.ru/catalog/379906475/detail.aspx?size=552731340' },
-      { name: 'Ozon', url: 'https://ozon.ru/t/p5hHmGj' }
+      { name: 'Wildberries', url: 'https://www.wildberries.ru/catalog/287591942/detail.aspx' },
+      { name: 'Ozon', url: 'https://ozon.ru/t/c0kG2XT' }
     ]
   },
   {
@@ -1213,13 +1213,13 @@ export const ITEMS_DATABASE = [
     theme: 'date',
     capsule: 'care_date_capsule_2',
     name: 'Румяна',
-    description: 'Нежные розовые румяна с лёгким шиммером. Освежают лицо и придают здоровый румянец',
+    description: 'Нежные розовые румяна освежат ваше прекрасное лицо и придадут здоровый румянец',
     image: '/images/care/date/blush.jpg',
     mainMarketplace: 'Золотое Яблоко',
-    mainMarketplaceUrl: 'https://goldapple.ru/89459600003-blusher-reloaded',
+    mainMarketplaceUrl: 'https://goldapple.ru/19000007948-flush-blush',
     partnerMarketplaces: [
       { name: 'Wildberries', url: 'https://www.wildberries.ru/catalog/10111638/detail.aspx?size=32994153' },
-      { name: 'Ozon', url: 'https://ozon.ru/t/yCApLP4' }
+      { name: 'Ozon', url: 'https://ozon.ru/t/TzGgQ3t' }
     ]
   },
   {
@@ -1229,13 +1229,13 @@ export const ITEMS_DATABASE = [
     theme: 'date',
     capsule: 'care_date_capsule_2',
     name: 'Хайлайтер',
-    description: 'Хайлайтер с мелкими частицами. Создаёт деликатное сияние',
+    description: 'Хайлайтер с мелкими частицами сделает из вас сияющую нимфу',
     image: '/images/care/date/highlighter.jpg',
     mainMarketplace: 'Золотое Яблоко',
-    mainMarketplaceUrl: 'https://goldapple.ru/89458900002-highlight-reloaded',
+    mainMarketplaceUrl: 'https://goldapple.ru/19000455221-capsule',
     partnerMarketplaces: [
       { name: 'Wildberries', url: 'https://www.wildberries.ru/catalog/17196521/detail.aspx?size=47954737' },
-      { name: 'Ozon', url: 'https://ozon.ru/t/5U1FpBq' }
+      { name: 'Ozon', url: 'https://ozon.ru/t/4kSqa4z' }
     ]
   },
 
@@ -1260,10 +1260,10 @@ export const ITEMS_DATABASE = [
     description: 'Водостойкая тушь, которая не осыпается и не размазывается даже во время интенсивного потоотделения',
     image: '/images/care/sport/waterproof-mascara.jpg',
     mainMarketplace: 'Золотое Яблоко',
-    mainMarketplaceUrl: 'https://goldapple.ru/3216800001-cabaret-premiere',
+    mainMarketplaceUrl: 'https://goldapple.ru/3305000009-vamp-waterproof',
     partnerMarketplaces: [
-      { name: 'Wildberries', url: 'https://www.wildberries.ru/catalog/93048650/detail.aspx?size=149050945' },
-      { name: 'Ozon', url: 'https://ozon.ru/t/yCAav89' }
+      { name: 'Wildberries', url: 'https://www.wildberries.ru/catalog/568707708/detail.aspx' },
+      { name: 'Ozon', url: 'https://ozon.ru/t/3hmKusq' }
     ]
   },
   {
@@ -1273,13 +1273,13 @@ export const ITEMS_DATABASE = [
     theme: 'sport',
     capsule: 'care_sport_capsule_1',
     name: 'Гигиеническая помада',
-    description: 'Увлажняющая гигиеническая помада с SPF. Защищает губы от обветривания и сухости',
+    description: 'Увлажняющая гигиеническая помада защитит губы от обветривания и сухости',
     image: '/images/care/sport/lip-balm.jpg',
     mainMarketplace: 'Золотое Яблоко',
     mainMarketplaceUrl: 'https://goldapple.ru/19000052026-panthenol',
     partnerMarketplaces: [
       { name: 'Wildberries', url: 'https://www.wildberries.ru/catalog/162924063/detail.aspx?size=271354854' },
-      { name: 'Ozon', url: 'https://ozon.ru/t/rlVq2pY' }
+      { name: 'Ozon', url: 'https://ozon.ru/t/3hmKnbk' }
     ]
   },
   {
@@ -1303,8 +1303,8 @@ export const ITEMS_DATABASE = [
     mainMarketplace: 'Золотое Яблоко',
     mainMarketplaceUrl: 'https://goldapple.ru/19000062318-brow-fix-gel',
     partnerMarketplaces: [
-      { name: 'Wildberries', url: 'https://www.wildberries.ru/catalog/51524888/detail.aspx?size=97285677' },
-      { name: 'Ozon', url: 'https://ozon.ru/t/91246fN' }
+      { name: 'Wildberries', url: 'https://www.wildberries.ru/catalog/381083306/detail.aspx' },
+      { name: 'Ozon', url: 'https://ozon.ru/t/ofLQE1u' }
     ]
   }
 ];
