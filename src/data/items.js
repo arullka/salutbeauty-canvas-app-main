@@ -1,6 +1,6 @@
-function getImagePath(category, theme, filename) {
-   return `/images/${category}/${theme}/${filename}`;
-}
+// function getImagePath(category, theme, filename) {
+//    return `/images/${category}/${theme}/${filename}`;
+// }
 
 export const ITEMS_DATABASE = [
   {
@@ -152,7 +152,7 @@ export const ITEMS_DATABASE = [
     mainMarketplace: 'Ламода',
     mainMarketplaceUrl: 'https://www.lamoda.ru/p/MP002XW1KRK3/',
     partnerMarketplaces: [
-      { name: 'Wildberries', url: "https://www.wildberries.ru/catalog/552493313/detail.aspx:" },
+      { name: 'Wildberries', url: "https://www.wildberries.ru/catalog/208437035/detail.aspx" },
       { name: 'Ozon', url: "https://ozon.ru/t/b2door3" }
     ]
   },
@@ -168,7 +168,7 @@ export const ITEMS_DATABASE = [
     mainMarketplace: 'Ламода',
     mainMarketplaceUrl: 'https://www.lamoda.ru/p/MP002XW1CUDD/',
     partnerMarketplaces: [
-      { name: 'Wildberries', url: "https://www.wildberries.ru/catalog/58253040/detail.aspx:"},
+      { name: 'Wildberries', url: "https://www.wildberries.ru/catalog/58253040/detail.aspx"},
       { name: 'Ozon', url: 'https://ozon.ru/t/rlb5Og1' }
     ]
   },
@@ -361,7 +361,7 @@ export const ITEMS_DATABASE = [
     theme: 'sport',
     capsule: 'outfit_sport_capsule_1',
     name: 'Спортивный комбинезон',
-    description: 'Цельный спортивный комбинезон из мягкого, дышащего материала. Удобство одного предмета вместо двух, идеальная посадка и свобода движений — лучший выбор для тренировок в зале или на улице',
+    description: 'Цельный спортивный комбинезон из мягкого, дышащего материала',
     image: '/images/outfit/sport/bodysuit.jpg',
     mainMarketplace: 'Ламода',
     mainMarketplaceUrl: 'https://www.lamoda.ru/p/MP002XW1B5O4/',
@@ -418,7 +418,7 @@ export const ITEMS_DATABASE = [
     theme: 'sport',
     capsule: 'outfit_sport_capsule_2',
     name: 'Леггинсы',
-    description: 'Удобные чёрные леггинсы из эластичного, дышащего материала с высокой посадкой. Плотная ткань обеспечивает комфорт и поддержку во время любых тренировок, не сковывая движений. Идеальны для фитнеса, йоги или повседневной носки',
+    description: 'Удобные чёрные леггинсы из эластичного, дышащего материала с высокой посадкой',
     image: '/images/outfit/sport/leggins.jpg',
     mainMarketplace: 'Ламода',
     mainMarketplaceUrl: 'https://www.lamoda.ru/p/MP002XW0OSM6/',
@@ -452,7 +452,7 @@ export const ITEMS_DATABASE = [
     mainMarketplaceUrl: 'https://www.lamoda.ru/p/MP002XW1CWBW/',
     partnerMarketplaces: [
       { name: 'Wildberries', url: 'https://www.wildberries.ru/catalog/156624460/detail.aspx?size=261256450'},
-      { name: 'Ozon', url: 'https://ozon.ru/t/p5wVVY1' }
+      { name: 'Ozon', url: 'https://ozon.ru/t/7Wq2Aho' }
     ]
   },
   {
@@ -537,7 +537,7 @@ export const ITEMS_DATABASE = [
     mainMarketplaceUrl: 'https://www.lamoda.ru/p/RTLAEP370901/',
     partnerMarketplaces: [
       { name: 'Wildberries', url: 'https://www.wildberries.ru/catalog/75451387/detail.aspx?size=127013840'},
-      { name: 'Ozon', url: 'https://ozon.ru/t/Va9YstK' }
+      { name: 'Ozon', url: 'https://ozon.ru/t/q40WD1z' }
     ]
   },
   {
@@ -577,7 +577,7 @@ export const ITEMS_DATABASE = [
     mainMarketplace: 'Ламода',
     mainMarketplaceUrl: 'https://www.lamoda.ru/p/MP002XW0Q4Q9/',
     partnerMarketplaces: [
-      { name: 'Wildberries', url: 'https://www.wildberries.ru/catalog/213892750/detail.aspx' },
+      { name: 'Wildberries', url: 'https://www.wildberries.ru/catalog/145529980/detail.aspx' },
       { name: 'Ozon', url: 'https://ozon.ru/t/Va9YS33' }
     ]
   },
@@ -638,7 +638,7 @@ export const ITEMS_DATABASE = [
     mainMarketplaceUrl: 'https://www.lamoda.ru/p/MP002XW1DMTW/',
     partnerMarketplaces: [
       { name: 'Wildberries', url: 'https://www.wildberries.ru/catalog/437319749/detail.aspx?size=620265747'},
-      { name: 'Ozon', url: 'https://ozon.ru/t/d7mrtBy' }
+      { name: 'Ozon', url: 'https://ozon.ru/t/DusWMfJ' }
     ]
   },
   {
@@ -723,7 +723,7 @@ export const ITEMS_DATABASE = [
     mainMarketplaceUrl: 'https://www.lamoda.ru/p/MP002XW1EN35/',
     partnerMarketplaces: [
       { name: 'Wildberries', url: 'https://www.wildberries.ru/catalog/337953705/detail.aspx?size=504119689'},
-      { name: 'Ozon', url: 'https://ozon.ru/t/Zplxwvg' }
+      { name: 'Ozon', url: 'https://ozon.ru/t/sSR4TGN' }
     ]
   },
   {
@@ -738,7 +738,7 @@ export const ITEMS_DATABASE = [
     mainMarketplace: 'Ламода',
     mainMarketplaceUrl: 'https://www.lamoda.ru/p/MP002XW131US/',
     partnerMarketplaces: [
-      { name: 'Wildberries', url: 'https://www.wildberries.ru/catalog/207452094/detail.aspx?size=332807090'},
+      { name: 'Wildberries', url: 'https://www.wildberries.ru/catalog/308118083/detail.aspx'},
       { name: 'Ozon', url: 'https://ozon.ru/t/7WOlr3r' }
     ]
   },
@@ -763,8 +763,8 @@ export const ITEMS_DATABASE = [
     mainMarketplace: 'Ламода',
     mainMarketplaceUrl: 'https://www.lamoda.ru/p/mp002xw1dn2v/',
     partnerMarketplaces: [
-      { name: 'Wildberries', url: 'https://www.wildberries.ru/catalog/337953705/detail.aspx?size=504119689'},
-      { name: 'Ozon', url: 'https://ozon.ru/t/Zplxwvg' }
+      { name: 'Wildberries', url: 'https://www.wildberries.ru/catalog/243803300/detail.aspx?targetUrl=MI'},
+      { name: 'Ozon', url: 'https://ozon.ru/t/EAnOb9Z' }
     ]
   },
   {
@@ -780,7 +780,7 @@ export const ITEMS_DATABASE = [
     mainMarketplaceUrl: 'https://www.lamoda.ru/p/rtlaes096501/',
     partnerMarketplaces: [
       { name: 'Wildberries', url: 'https://www.wildberries.ru/catalog/248958621/detail.aspx?size=389701104'},
-      { name: 'Ozon', url: 'https://ozon.ru/t/rlpk4US' }
+      { name: 'Ozon', url: 'https://ozon.ru/t/ueSv9PA' }
     ]
   },
   {
@@ -823,8 +823,8 @@ export const ITEMS_DATABASE = [
     mainMarketplace: 'Ламода',
     mainMarketplaceUrl: 'https://www.lamoda.ru/p/MP002XW1KD9M/',
     partnerMarketplaces: [
-      { name: 'Wildberries', url: 'https://www.wildberries.ru/catalog/492571049/detail.aspx?size=685619309'},
-      { name: 'Ozon', url: 'https://ozon.ru/t/aH1gHS1' }
+      { name: 'Wildberries', url: 'https://www.wildberries.ru/catalog/374923063/detail.aspx'},
+      { name: 'Ozon', url: 'https://ozon.ru/t/q40G902' }
     ]
   },
   {
@@ -881,7 +881,7 @@ export const ITEMS_DATABASE = [
     mainMarketplaceUrl: 'https://www.lamoda.ru/p/RTLABC793604/',
     partnerMarketplaces: [
       { name: 'Wildberries', url: 'https://www.wildberries.ru/catalog/760455161/detail.aspx' },
-      { name: 'Ozon', url: 'https://ozon.ru/t/tKYL4V3' }
+      { name: 'Ozon', url: 'https://ozon.ru/t/d78bgDR' }
     ]
   },
   {
@@ -896,8 +896,8 @@ export const ITEMS_DATABASE = [
     mainMarketplace: 'Золотое Яблоко',
     mainMarketplaceUrl: 'https://goldapple.ru/19000401930-redmi-watch-5-active',
     partnerMarketplaces: [
-      { name: 'Wildberries', url: 'https://www.wildberries.ru/catalog/984494651/detail.aspx?size=1473736869'},
-      { name: 'Ozon', url: 'https://ozon.ru/t/7WOlQL2' }
+      { name: 'Wildberries', url: 'https://www.wildberries.ru/catalog/732874146/detail.aspx'},
+      { name: 'Ozon', url: 'https://ozon.ru/t/Wv484uw' }
     ]
   },
  // ============ МАКИЯЖ - ВЕЧЕРИНКА ============
@@ -923,8 +923,8 @@ export const ITEMS_DATABASE = [
     mainMarketplace: 'Золотое Яблоко',
     mainMarketplaceUrl: 'https://goldapple.ru/19000129129-quadro-eleganto',
     partnerMarketplaces: [
-      { name: 'Wildberries', url: 'https://www.wildberries.ru/catalog/550549741/detail.aspx?size=757567418' },
-      { name: 'Ozon', url: 'https://ozon.ru/t/EAMP6HP' }
+      { name: 'Wildberries', url: 'https://www.wildberries.ru/catalog/494952096/detail.aspx?targetUrl=MI' },
+      { name: 'Ozon', url: 'https://ozon.ru/t/Wv48ROn' }
     ]
   },
   {
@@ -964,8 +964,8 @@ export const ITEMS_DATABASE = [
     mainMarketplace: 'Золотое Яблоко',
     mainMarketplaceUrl: 'https://goldapple.ru/19760327251-color-riche',
     partnerMarketplaces: [
-      { name: 'Wildberries', url: 'https://www.wildberries.ru/catalog/807080118/detail.aspx?size=1207173340' },
-      { name: 'Ozon', url: 'https://ozon.ru/t/jQpD5If' }
+      { name: 'Wildberries', url: 'https://www.wildberries.ru/catalog/807092863/detail.aspx' },
+      { name: 'Ozon', url: 'https://ozon.ru/t/Lnxfqin' }
     ]
   },
   {
@@ -1008,8 +1008,8 @@ export const ITEMS_DATABASE = [
     mainMarketplace: 'Золотое Яблоко',
     mainMarketplaceUrl: 'https://goldapple.ru/19000359867-rich-nude',
     partnerMarketplaces: [
-      { name: 'Wildberries', url: 'https://www.wildberries.ru/catalog/868527127/detail.aspx?size=1308033060' },
-      { name: 'Ozon', url: 'https://ozon.ru/t/wG8uBch' }
+      { name: 'Wildberries', url: 'https://www.wildberries.ru/catalog/139279942/detail.aspx?targetUrl=MI' },
+      { name: 'Ozon', url: 'https://ozon.ru/t/MtFEX8i' }
     ]
   },
   {
@@ -1024,8 +1024,8 @@ export const ITEMS_DATABASE = [
     mainMarketplace: 'Золотое Яблоко',
     mainMarketplaceUrl: 'https://goldapple.ru/19000007278-ultimate-nudes',
     partnerMarketplaces: [
-      { name: 'Wildberries', url: 'https://www.wildberries.ru/catalog/373276873/detail.aspx?size=544938792' },
-      { name: 'Ozon', url: 'https://ozon.ru/t/homM7FO' }
+      { name: 'Wildberries', url: 'https://www.wildberries.ru/catalog/10168018/detail.aspx' },
+      { name: 'Ozon', url: 'https://ozon.ru/t/b2wr9eD' }
     ]
   },
   {
@@ -1050,7 +1050,7 @@ export const ITEMS_DATABASE = [
     mainMarketplaceUrl: 'https://goldapple.ru/9481900002-perfect-cover',
     partnerMarketplaces: [
       { name: 'Wildberries', url: 'https://www.wildberries.ru/catalog/138742829/detail.aspx?size=235729482' },
-      { name: 'Ozon', url: 'https://ozon.ru/t/BYnQ1ma' }
+      { name: 'Ozon', url: 'https://ozon.ru/t/c0KMC9X' }
     ]
   },
   {
@@ -1066,7 +1066,7 @@ export const ITEMS_DATABASE = [
     mainMarketplaceUrl: 'https://goldapple.ru/19000451373-soft-blur-matte-setting',
     partnerMarketplaces: [
       { name: 'Wildberries', url: 'https://www.wildberries.ru/catalog/147796707/detail.aspx?size=248386617' },
-      { name: 'Ozon', url: 'https://ozon.ru/t/DuNFOWt' }
+      { name: 'Ozon', url: 'https://ozon.ru/t/jQHVKby' }
     ]
   },
 
@@ -1088,13 +1088,13 @@ export const ITEMS_DATABASE = [
     theme: 'study',
     capsule: 'care_study_capsule_1',
     name: 'Блеск для губ',
-    description: 'Прозрачный блеск с лёгким увлажнением. Придаёт губам объём и свежий вид',
+    description: 'Блеск с лёгким увлажнением. Придаёт губам объём и свежий вид',
     image: '/images/care/study/lip-gloss.jpg',
     mainMarketplace: 'Золотое Яблоко',
     mainMarketplaceUrl: 'https://goldapple.ru/19760306117-le-grand-volume',
     partnerMarketplaces: [
-      { name: 'Wildberries', url: 'https://www.wildberries.ru/catalog/115940834/detail.aspx?size=207488596' },
-      { name: 'Ozon', url: 'https://ozon.ru/t/nP0mq4n' }
+      { name: 'Wildberries', url: 'https://www.wildberries.ru/catalog/15904002/detail.aspx' },
+      { name: 'Ozon', url: 'https://ozon.ru/t/aHWdQqZ' }
     ]
   },
   {
@@ -1109,7 +1109,7 @@ export const ITEMS_DATABASE = [
     mainMarketplace: 'Золотое Яблоко',
     mainMarketplaceUrl: 'https://goldapple.ru/3216800001-cabaret-premiere',
     partnerMarketplaces: [
-      { name: 'Wildberries', url: 'https://www.wildberries.ru/catalog/349497697/detail.aspx?size=517612016' },
+      { name: 'Wildberries', url: 'https://www.wildberries.ru/catalog/349497702/detail.aspx' },
       { name: 'Ozon', url: 'https://ozon.ru/t/ofzK316' }
     ]
   },
@@ -1134,8 +1134,8 @@ export const ITEMS_DATABASE = [
     mainMarketplace: 'Золотое Яблоко',
     mainMarketplaceUrl: 'https://goldapple.ru/19000000799-perfect-concealer',
     partnerMarketplaces: [
-      { name: 'Wildberries', url: 'https://www.wildberries.ru/catalog/663778504/detail.aspx?size=892317684' },
-      { name: 'Ozon', url: 'https://ozon.ru/t/5U1Fmti' }
+      { name: 'Wildberries', url: 'https://www.wildberries.ru/catalog/70492070/detail.aspx' },
+      { name: 'Ozon', url: 'https://ozon.ru/t/BYrunij' }
     ]
   },
   {
@@ -1308,3 +1308,4 @@ export const ITEMS_DATABASE = [
     ]
   }
 ];
+
