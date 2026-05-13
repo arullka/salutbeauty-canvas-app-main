@@ -27,7 +27,6 @@ const initializeAssistant = (getState) => {
     }
   } catch (error) {
     console.warn('Assistant initialization failed:', error);
-    // ✅ Возвращаем mock объект если ассистент не инициализировался
     return {
       on: () => {},
       sendData: () => {},
@@ -101,43 +100,20 @@ export class App extends React.Component {
     if (action) {
       switch (action.type) {
         case 'select_look':
-          return this.selectCategory({ category: 'outfit' });
-        case 'select_ac':
-          return this.selectCategory({ category: 'accessories' });
+          return this.selectCapsule({ category: 'outfit' });
+        case 'select_accessories':
+          return this.selectCapsule({ category: 'accessories' });
         case 'select_care':
-          return this.selectCategory({ category: 'care' });
-        case 'select_theme':
-          return this.selectTheme(action);
-        case 'show_items':
-          return this.showItems(action);
-        case 'open_marketplace':
-          return this.openMarketplace(action);
+          return this.selectCapsule({ category: 'care' });
         default:
           console.log('Unknown action type:', action.type);
       }
     }
   }
 
-  selectCategory(action) {
+  selectCapsule(action) {
     console.log('selectCategory', action);
     this.setState({ selectedCategory: action.category });
-  }
-
-  selectTheme(action) {
-    console.log('selectTheme', action);
-    this.setState({ selectedTheme: action.theme });
-  }
-
-  showItems(action) {
-    console.log('showItems', action);
-    this.setState({ 
-      selectedCategory: action.category,
-      selectedTheme: action.theme,
-    });
-  }
-
-  openMarketplace(action) {
-    console.log('openMarketplace', action);
   }
 
   render() {
