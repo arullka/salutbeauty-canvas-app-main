@@ -38,7 +38,7 @@ const initializeAssistant = (getState) => {
 export class App extends React.Component {
   constructor(props) {
     super(props);
-    console.log('SalutBeauty App initialized');
+    console.log('SmartBeauty App initialized');
 
     this.state = {
       selectedCategory: null,

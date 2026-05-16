@@ -10,7 +10,7 @@ const CATEGORIES = [
 ];
 
 const THEMES = [
-  { id: 'study', name: 'Учеба' },
+  { id: 'study', name: 'Учёба' },
   { id: 'work', name: 'Работа' },
   { id: 'party', name: 'Вечеринка' },
   { id: 'date', name: 'Свидание' },
@@ -34,7 +34,7 @@ export const MainScreen = (props) => {
   return (
     <main className="container">
     <div class="header">
-      <h1>SalutBeauty</h1>
+      <h1>SmartBeauty</h1>
       <h3>Персональный ассистент красоты от Сбера</h3>
       <div class="subtitle">
         <h2>Красотка, что наденем сегодня?</h2>

@@ -15,10 +15,10 @@ export const ThemeView = (props) => {
     );
   };
 
-  const getCategoryName = () => {
-    const names = { outfit: 'Образы', accessories: 'Аксессуары', care: 'Макияж' };
-    //return names[category];
-  };
+  // const getCategoryName = () => {
+  //   const names = { outfit: 'Образы', accessories: 'Аксессуары', care: 'Макияж' };
+  //   //return names[category];
+  // };
 
   if (selectedCapsule) {
     return (
@@ -49,7 +49,7 @@ export const ThemeView = (props) => {
       </div>
 
       <div className="theme-content">
-        <h2>{getCategoryName()}</h2>
+        {/* <h2>{getCategoryName()}</h2> */}
         <div className="capsules-grid">
           {getCapsules().map((capsule) => (
             <div
