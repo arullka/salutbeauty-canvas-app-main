@@ -2,6 +2,9 @@ import React from "react";
 import "./index.css";
 import { App } from "./App";
 import { createRoot } from 'react-dom/client';
+import { spatnavInstance } from '@salutejs/spatial';
+
+spatnavInstance.init();
 
 const container = document.getElementById('root');
 const root = createRoot(container);

@@ -105,6 +105,10 @@ export class App extends React.Component {
           return this.selectCapsule({ category: 'accessories' });
         case 'select_care':
           return this.selectCapsule({ category: 'care' });
+        case 'go_back': 
+          window.history.back();
+          return;
+          
         default:
           console.log('Unknown action type:', action.type);
       }

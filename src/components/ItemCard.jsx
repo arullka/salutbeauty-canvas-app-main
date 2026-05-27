@@ -3,6 +3,14 @@ import React from 'react';
 export const ItemCard = (props) => {
   const { item } = props;
 
+  const handleOpenLink = (url, e) => {
+    if (e.type === 'keydown' && e.key !== 'Enter' && e.keyCode !== 13) {
+      return;
+    }
+    e.preventDefault();
+    window.location.href = url;
+  };
+
   return (
     <div className="item-card">
       <div className="item-image">
@@ -13,23 +21,27 @@ export const ItemCard = (props) => {
         <div className="item-description">{item.description}</div>
         
         <div className="marketplaces">
+          {}
           <a 
             href={item.mainMarketplaceUrl} 
-            target="_blank" 
-            rel="noopener noreferrer" 
-            className="main-marketplace"
+            className="main-marketplace sn-section-item"
+            tabIndex={-1}
+            onClick={(e) => handleOpenLink(item.mainMarketplaceUrl, e)}
+            onKeyDown={(e) => handleOpenLink(item.mainMarketplaceUrl, e)}
           >
             {item.mainMarketplace}
           </a>
           
+          {}
           <div className="partner-marketplaces">
             {item.partnerMarketplaces.map(partner => (
               <a
                 key={partner.name}
                 href={partner.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="partner-marketplace"
+                className="partner-marketplace sn-section-item"
+                tabIndex={-1}
+                onClick={(e) => handleOpenLink(partner.url, e)}
+                onKeyDown={(e) => handleOpenLink(partner.url, e)}
               >
                 {partner.name}
               </a>
