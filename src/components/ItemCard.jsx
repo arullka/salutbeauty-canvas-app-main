@@ -8,7 +8,7 @@ export const ItemCard = (props) => {
       return;
     }
     e.preventDefault();
-    window.location.href = url;
+    window.open(url, '_blank', 'noopener,noreferrer');
   };
 
   return (
