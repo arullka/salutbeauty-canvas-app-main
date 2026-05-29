@@ -3,12 +3,12 @@ import React from 'react';
 export const ItemCard = (props) => {
   const { item } = props;
 
-  const handleOpenLink = (url, e) => {
-    if (e.type === 'keydown' && e.key !== 'Enter' && e.keyCode !== 13) {
-      return;
+  // Оставляем только обработку нажатия с пульта (Spatial Navigation)
+  const handleKeyDown = (e) => {
+    if (e.key === 'Enter' || e.keyCode === 13) {
+      // Имитируем физический клик по ссылке при нажатии "ОК" на пульте
+      e.currentTarget.click();
     }
-    e.preventDefault();
-    window.open(url, '_blank', 'noopener,noreferrer');
   };
 
   return (
@@ -21,27 +21,30 @@ export const ItemCard = (props) => {
         <div className="item-description">{item.description}</div>
         
         <div className="marketplaces">
-          {}
+          {/* Главный маркетплейс */}
           <a 
             href={item.mainMarketplaceUrl} 
+            target="_blank" 
+            rel="noopener noreferrer"
             className="main-marketplace sn-section-item"
             tabIndex={-1}
-            onClick={(e) => handleOpenLink(item.mainMarketplaceUrl, e)}
-            onKeyDown={(e) => handleOpenLink(item.mainMarketplaceUrl, e)}
+            onKeyDown={handleKeyDown}
+            // onClick больше не нужен, браузер сам перейдет по href
           >
             {item.mainMarketplace}
           </a>
           
-          {}
+          {/* Партнерские маркетплейсы */}
           <div className="partner-marketplaces">
             {item.partnerMarketplaces.map(partner => (
               <a
                 key={partner.name}
                 href={partner.url}
+                target="_blank" 
+                rel="noopener noreferrer"
                 className="partner-marketplace sn-section-item"
                 tabIndex={-1}
-                onClick={(e) => handleOpenLink(partner.url, e)}
-                onKeyDown={(e) => handleOpenLink(partner.url, e)}
+                onKeyDown={handleKeyDown}
               >
                 {partner.name}
               </a>
